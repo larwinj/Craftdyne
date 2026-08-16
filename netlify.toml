@@ -1,0 +1,44 @@
+[build]
+  command = "npm run build"
+  publish = "build/client"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# "/" is a language gateway. 302 (not 301) because the choice of default locale
+# may change, and a cached permanent redirect would be painful to undo.
+[[redirects]]
+  from = "/"
+  to = "/en"
+  status = 302
+  force = false
+
+# Every route is prerendered to its own index.html, so this only catches URLs
+# with no matching file — the app then renders its own 404.
+[[redirects]]
+  from = "/*"
+  to = "/__spa-fallback.html"
+  status = 404
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=(), interest-cohort=()"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+    # The contact form posts to Web3Forms; nothing else may be loaded off-origin.
+    Content-Security-Policy = "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://api.web3forms.com; form-action 'self' https://api.web3forms.com; frame-ancestors 'self'; base-uri 'self'; object-src 'none'"
+
+# Fingerprinted assets can be cached forever.
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# HTML must revalidate so content edits go live on the next visit.
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"

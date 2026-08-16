@@ -1,0 +1,303 @@
+{
+  "about": {
+    "meta": {
+      "title": "About Us",
+      "description": "CraftDyne Private Limited is an innovation-driven company from Dindigul, Tamil Nadu, developing sustainable agricultural solutions through Green Chemistry."
+    },
+    "eyebrow": "Who We Are",
+    "title": "An innovation-driven company built around Green Chemistry",
+    "description": "CraftDyne Private Limited develops innovative Green Chemistry solutions that promote healthier crops and sustainable agriculture.",
+    "story": {
+      "heading": "Why CraftDyne exists",
+      "body": [
+        "Conventional crop protection has asked farmers to accept a trade-off: control the pest, and accept what the chemistry leaves behind in the soil, the water and the food chain. CraftDyne was founded in 2023 on the premise that this trade-off is a design problem, not a law of nature.",
+        "Our work starts from the IUPAC Green Chemistry principles rather than adapting to them afterwards. That means designing molecules that do their job in the field and then break down cleanly, instead of taking an existing active ingredient and trying to soften its edges.",
+        "We are based in Dindigul, Tamil Nadu, in the middle of the farming communities our products are made for. That proximity is deliberate: it keeps development anchored to how growers actually spray, what equipment they own, and what a season really costs them."
+      ]
+    },
+    "mission": {
+      "heading": "What we are working towards",
+      "items": {
+        "healthier": {
+          "title": "Healthier crops",
+          "description": "Protection that supports the plant rather than merely defending it, so vigour and yield potential hold through the season."
+        },
+        "safer": {
+          "title": "Safer for everyone downstream",
+          "description": "Products that are safe around the people who apply them, the animals that live alongside the crop, and the people who eventually eat it."
+        },
+        "lasting": {
+          "title": "A lasting soil and water base",
+          "description": "Inputs that leave no accumulating burden, so the land stays productive for the growers who come next."
+        }
+      }
+    },
+    "facts": {
+      "heading": "CraftDyne at a glance",
+      "items": {
+        "founded": { "label": "Founded", "value": "2023" },
+        "based": { "label": "Based in", "value": "Dindigul, Tamil Nadu, India" },
+        "industry": { "label": "Industry", "value": "Agricultural chemical manufacturing" },
+        "focus": { "label": "Focus", "value": "Green Chemistry crop protection" },
+        "brand": { "label": "Product brand", "value": "EcoAgta — Proactive, Naturally" },
+        "reach": { "label": "Reach", "value": "India, with field evaluation underway in export markets" }
+      }
+    },
+    "tagline": {
+      "heading": "Green & Efficient Molecules at Work",
+      "body": "Our tagline is a description of method, not a slogan. \"Green\" is the design constraint: every molecule has to be safe and biodegradable by construction. \"Efficient\" is the commercial reality: it also has to work hard enough in the field that a farmer would choose it on merit. We do not treat those two as being in tension."
+    }
+  },
+
+  "greenChemistry": {
+    "meta": {
+      "title": "Green Chemistry",
+      "description": "How CraftDyne applies IUPAC Green Chemistry principles to crop protection — designing molecules that work in the field and break down cleanly afterwards."
+    },
+    "eyebrow": "Our Approach",
+    "title": "Green Chemistry, applied to the field",
+    "description": "Green Chemistry is a design discipline: build the safety and the degradability into the molecule from the start, rather than managing the consequences afterwards.",
+    "intro": {
+      "heading": "Designed green, not made green afterwards",
+      "body": [
+        "Most efforts to make agricultural chemistry safer begin with an existing active ingredient and work backwards — reducing a dose, adding a buffer, restricting an application window. The underlying molecule is unchanged; only its handling is.",
+        "Green Chemistry inverts that. The properties you want at the end — low toxicity, ready biodegradation, no accumulation in soil, water or the food chain — become constraints at the start, alongside efficacy. A molecule that cannot meet them is not developed further.",
+        "This is why CraftDyne describes its products as formulated on IUPAC Green Chemistry principles rather than simply as eco-friendly. It refers to how the chemistry was arrived at, not just how it is marketed."
+      ]
+    },
+    "principles": {
+      "heading": "The principles that shape our formulations",
+      "description": "The IUPAC Green Chemistry framework runs to twelve principles. These are the ones that most directly determine how an EcoAgta product is designed.",
+      "items": {
+        "prevention": {
+          "title": "Prevention over treatment",
+          "description": "It is better to prevent waste than to treat or clean it up after it has been created."
+        },
+        "saferChemicals": {
+          "title": "Designing safer chemicals",
+          "description": "Products should do their intended job while minimising toxicity — efficacy and safety designed together, not traded off."
+        },
+        "degradation": {
+          "title": "Design for degradation",
+          "description": "Products should break down into innocuous substances at the end of their function rather than persisting in the environment."
+        },
+        "saferSolvents": {
+          "title": "Safer solvents and auxiliaries",
+          "description": "Auxiliary substances should be avoided where possible, and harmless where they are necessary."
+        },
+        "renewable": {
+          "title": "Renewable feedstocks",
+          "description": "Raw materials should be renewable rather than depleting wherever it is technically and economically practicable."
+        },
+        "accident": {
+          "title": "Inherently safer chemistry",
+          "description": "Substances should be chosen to minimise the potential for chemical accidents, including releases and fires."
+        }
+      }
+    },
+    "meaning": {
+      "heading": "What this means on your farm",
+      "items": {
+        "applicator": {
+          "title": "For the person spraying",
+          "description": "Non-toxic and non-poisonous formulations mean the handling risk that shapes so much of conventional spray practice is substantially reduced."
+        },
+        "land": {
+          "title": "For the land",
+          "description": "Completely readily biodegradable inputs do not accumulate season after season in the soil or the water table."
+        },
+        "produce": {
+          "title": "For the produce",
+          "description": "No harm to the food chain matters commercially as well as ethically — particularly for growers supplying export and residue-sensitive markets."
+        },
+        "season": {
+          "title": "For the season",
+          "description": "Long-lasting performance from a single application means fewer passes, less labour, and less fuel across the crop cycle."
+        }
+      }
+    }
+  },
+
+  "applications": {
+    "meta": {
+      "title": "Applications",
+      "description": "EcoAgta EZ3+ is intended for vegetable, fruit, plantation and field crops — helping control whiteflies and prevent sooty mold across Indian farming systems."
+    },
+    "eyebrow": "Applications",
+    "title": "Where EcoAgta works",
+    "description": "Whiteflies and the sooty mold that follows them affect nearly every major farming system in India. EcoAgta EZ3+ is intended for use across four broad crop groups.",
+    "problem": {
+      "heading": "The problem EZ3+ is built for",
+      "body": [
+        "Whitefly (Bemisia tabaci and related species) does damage on two fronts. Direct feeding drains the plant and can transmit viral disease. Then the honeydew the insect excretes coats the leaf surface, and sooty mold fungus colonises it.",
+        "That black fungal film is often the more expensive problem. It blocks light from reaching the leaf, suppressing photosynthesis exactly when the crop needs it, and on fruit and vegetables it downgrades the produce cosmetically even where the plant survives.",
+        "Treating only the insect leaves the mold already established. EZ3+ is formulated to act on both, and to support the plant while it recovers."
+      ]
+    },
+    "cropsHeading": "Crop groups",
+    "crops": {
+      "vegetable": {
+        "title": "Vegetable Crops",
+        "examples": "Tomato, brinjal, okra, chilli, gourds and leafy vegetables",
+        "note": "High-value, short-cycle crops where whitefly pressure and cosmetic downgrading from sooty mold hit margins hardest."
+      },
+      "fruit": {
+        "title": "Fruit Crops",
+        "examples": "Mango, guava, citrus, banana and pomegranate",
+        "note": "Sooty mold on fruit surfaces affects market grade directly, even when overall tree health is maintained."
+      },
+      "plantation": {
+        "title": "Plantation Crops",
+        "examples": "Coconut, oil palm, areca nut, tea and coffee",
+        "note": "Long-cycle crops where repeated spraying is costly and difficult, so extended protection from a single application matters most."
+      },
+      "field": {
+        "title": "Field Crops",
+        "examples": "Cotton, pulses, groundnut, soybean and millets",
+        "note": "Large areas where whitefly outbreaks can move quickly and where input cost per acre is under constant pressure."
+      }
+    },
+    "notice": "Suitability, dosage and timing vary by crop, variety, growth stage and region. Contact our team for a recommendation for your specific crop before first use.",
+    "cta": {
+      "title": "Not sure if it suits your crop?",
+      "description": "Tell us what you grow and where, and we will tell you honestly whether EZ3+ is the right fit.",
+      "primary": "Ask our team",
+      "secondary": "Chat on WhatsApp"
+    }
+  },
+
+  "sustainability": {
+    "meta": {
+      "title": "Sustainability & Safety",
+      "description": "CraftDyne products are non-toxic, non-poisonous and completely readily biodegradable — designed to protect crops without harming people, animals, soil, water or the food chain."
+    },
+    "eyebrow": "Sustainability & Safety",
+    "title": "Protection that does not shift the cost elsewhere",
+    "description": "A crop input should not solve one problem by creating another downstream. That principle sets the boundaries of what CraftDyne is willing to develop.",
+    "commitments": {
+      "heading": "Our commitments",
+      "items": {
+        "people": {
+          "title": "Safe for people",
+          "description": "Non-toxic and non-poisonous formulations, designed with the person holding the sprayer in mind — the one most exposed to any farm input."
+        },
+        "animals": {
+          "title": "Safe for animals",
+          "description": "Formulated to be safe around livestock, working animals and the pollinators the crop itself depends on."
+        },
+        "environment": {
+          "title": "No harm to air, water or soil",
+          "description": "Ready biodegradation means no accumulating residue in the ground water or the topsoil that has to sustain the next season."
+        },
+        "foodChain": {
+          "title": "No harm to the food chain",
+          "description": "What is applied to the crop should not follow it to the table. This is a design requirement, not an afterthought."
+        }
+      }
+    },
+    "biodegradable": {
+      "heading": "What \"readily biodegradable\" means",
+      "body": [
+        "Biodegradability is not a binary property. A substance can degrade eventually, degrade only under specific conditions, or degrade readily under the ordinary conditions found in soil and water.",
+        "CraftDyne products are described as completely readily biodegradable — the last of those. In practice this means the material is broken down by naturally occurring processes in normal field conditions, rather than requiring particular temperatures, treatment or time horizons.",
+        "The practical consequence for a grower is the absence of a slow accumulation problem. Inputs that persist build up over seasons; inputs that degrade readily do not."
+      ]
+    },
+    "responsibility": {
+      "heading": "Responsible use still matters",
+      "body": "Designing an input to be safe does not remove the grower's responsibility to use it correctly. Always read the product label, apply at the recommended rate for your crop and growth stage, and follow standard good practice for handling and storing any farm input. Where you are unsure, ask us — we would rather answer a question than have a product used outside its intended conditions."
+    }
+  },
+
+  "notFound": {
+    "meta": { "title": "Page not found", "description": "The page you were looking for could not be found." },
+    "title": "We could not find that page",
+    "description": "The link may be out of date, or the address may have been mistyped.",
+    "cta": "Back to home",
+    "productsCta": "Browse products"
+  },
+
+  "legal": {
+    "privacy": {
+      "meta": {
+        "title": "Privacy Policy",
+        "description": "How CraftDyne Private Limited collects, uses and protects personal information submitted through this website."
+      },
+      "title": "Privacy Policy",
+      "updated": "Last updated",
+      "sections": {
+        "intro": {
+          "heading": "Introduction",
+          "body": "This policy explains how CraftDyne Private Limited handles personal information you provide through this website. We collect only what we need in order to respond to you."
+        },
+        "collect": {
+          "heading": "What we collect",
+          "body": "When you submit an enquiry we collect the name, email address, phone number, location and message you provide. We do not collect this information any other way, and the site does not require you to create an account."
+        },
+        "use": {
+          "heading": "How we use it",
+          "body": "We use your details solely to respond to your enquiry and, where relevant, to follow up about the product or distribution opportunity you asked about. We do not sell your information, and we do not use it for unrelated marketing without your consent."
+        },
+        "sharing": {
+          "heading": "Who we share it with",
+          "body": "Enquiry submissions are delivered to us by a third-party form service, which processes the message in order to pass it on. We do not otherwise share your details with third parties except where we are required to by law."
+        },
+        "retention": {
+          "heading": "How long we keep it",
+          "body": "We keep enquiry correspondence for as long as needed to deal with your request and to maintain a record of our business relationship. You may ask us to delete it at any time."
+        },
+        "rights": {
+          "heading": "Your choices",
+          "body": "You can ask us what information we hold about you, ask us to correct it, or ask us to delete it. Contact us using the details below and we will act on your request."
+        },
+        "cookies": {
+          "heading": "Cookies",
+          "body": "This site does not use advertising or tracking cookies. Your chosen language is reflected in the page address rather than stored for advertising purposes."
+        },
+        "contact": {
+          "heading": "Contact",
+          "body": "For any question about this policy or about your information, contact us at the address below."
+        }
+      }
+    },
+    "terms": {
+      "meta": {
+        "title": "Terms of Use",
+        "description": "Terms governing the use of the CraftDyne Private Limited website and the information published on it."
+      },
+      "title": "Terms of Use",
+      "updated": "Last updated",
+      "sections": {
+        "acceptance": {
+          "heading": "Acceptance",
+          "body": "By using this website you accept these terms. If you do not accept them, please do not use the site."
+        },
+        "information": {
+          "heading": "Information on this site",
+          "body": "The content here is provided for general information about CraftDyne Private Limited and its products. We take care to keep it accurate, but it does not replace the product label, and it is not a substitute for advice specific to your crop and conditions."
+        },
+        "product": {
+          "heading": "Product performance",
+          "body": "Statements about product performance describe intended use under suitable conditions. Actual results vary with crop, variety, growth stage, climate, pest pressure and application practice. Always read the product label before use, and contact us for a recommendation for your circumstances."
+        },
+        "ip": {
+          "heading": "Intellectual property",
+          "body": "The CraftDyne and EcoAgta names, logos, text and images on this site belong to CraftDyne Private Limited unless otherwise stated, and may not be reproduced without permission."
+        },
+        "liability": {
+          "heading": "Liability",
+          "body": "To the extent permitted by law, CraftDyne Private Limited is not liable for loss arising from reliance on information published on this site where the product has been used other than in accordance with its label and our guidance."
+        },
+        "links": {
+          "heading": "External links",
+          "body": "Where we link to other websites, we do so for convenience. We are not responsible for their content or their privacy practices."
+        },
+        "law": {
+          "heading": "Governing law",
+          "body": "These terms are governed by the laws of India, and disputes are subject to the jurisdiction of the courts of Tamil Nadu."
+        },
+        "contact": { "heading": "Contact", "body": "Questions about these terms can be sent to the address below." }
+      }
+    }
+  }
+}

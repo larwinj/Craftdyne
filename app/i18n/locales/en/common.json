@@ -1,0 +1,73 @@
+{
+  "brand": {
+    "name": "CraftDyne",
+    "legalName": "CraftDyne Private Limited",
+    "tagline": "Green & Efficient Molecules at Work",
+    "productBrand": "EcoAgta",
+    "productBrandTagline": "Proactive, Naturally"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "greenChemistry": "Green Chemistry",
+    "products": "Products",
+    "applications": "Applications",
+    "sustainability": "Sustainability",
+    "contact": "Contact"
+  },
+  "actions": {
+    "enquire": "Enquire Now",
+    "enquireShort": "Enquire",
+    "whatsapp": "WhatsApp",
+    "chatOnWhatsapp": "Chat on WhatsApp",
+    "call": "Call",
+    "callUs": "Call us",
+    "emailUs": "Email us",
+    "learnMore": "Learn more",
+    "viewProduct": "View product",
+    "exploreProducts": "Explore products",
+    "becomeDistributor": "Become a distributor",
+    "backHome": "Back to home",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "skipToContent": "Skip to content",
+    "changeLanguage": "Change language",
+    "selectLanguage": "Select language",
+    "backToTop": "Back to top"
+  },
+  "footer": {
+    "about": "CraftDyne Private Limited develops Green Chemistry solutions for sustainable agriculture — eco-friendly technologies that improve productivity while protecting people, animals and the environment.",
+    "explore": "Explore",
+    "getInTouch": "Get in touch",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use",
+    "followUs": "Follow us",
+    "rights": "All rights reserved.",
+    "registeredOffice": "Registered office"
+  },
+  "labels": {
+    "featuredProduct": "Featured Product",
+    "ourProducts": "Our Products",
+    "whyCraftdyne": "Why CraftDyne?",
+    "whatWeOffer": "What We Offer",
+    "whoWeAre": "Who We Are",
+    "applications": "Applications",
+    "faq": "Frequently asked questions",
+    "readMore": "Read more",
+    "close": "Close",
+    "loading": "Loading",
+    "required": "Required",
+    "optional": "Optional",
+    "you": "You are here"
+  },
+  "whatsappMessage": "Hello CraftDyne, I would like to know more about EcoAgta EZ3+.",
+  "disclaimer": {
+    "short": "Product performance varies with crop, climate, pest pressure and application practice. Always read the product label before use.",
+    "heading": "Important information"
+  },
+  "meta": {
+    "titleSuffix": "CraftDyne",
+    "defaultDescription": "CraftDyne Private Limited develops Green Chemistry solutions for sustainable agriculture — eco-friendly crop protection that is safe for people, animals and the environment."
+  }
+}

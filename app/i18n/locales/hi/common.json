@@ -1,0 +1,73 @@
+{
+  "brand": {
+    "name": "CraftDyne",
+    "legalName": "CraftDyne Private Limited",
+    "tagline": "हरित और कुशल अणु, काम पर",
+    "productBrand": "EcoAgta",
+    "productBrandTagline": "सक्रिय, स्वाभाविक रूप से"
+  },
+  "nav": {
+    "home": "होम",
+    "about": "हमारे बारे में",
+    "greenChemistry": "हरित रसायन",
+    "products": "उत्पाद",
+    "applications": "अनुप्रयोग",
+    "sustainability": "स्थिरता",
+    "contact": "संपर्क"
+  },
+  "actions": {
+    "enquire": "अभी पूछताछ करें",
+    "enquireShort": "पूछताछ",
+    "whatsapp": "व्हाट्सएप",
+    "chatOnWhatsapp": "व्हाट्सएप पर बात करें",
+    "call": "कॉल",
+    "callUs": "हमें कॉल करें",
+    "emailUs": "हमें ईमेल करें",
+    "learnMore": "और जानें",
+    "viewProduct": "उत्पाद देखें",
+    "exploreProducts": "उत्पाद देखें",
+    "becomeDistributor": "वितरक बनें",
+    "backHome": "होम पर वापस जाएँ",
+    "openMenu": "मेन्यू खोलें",
+    "closeMenu": "मेन्यू बंद करें",
+    "skipToContent": "सामग्री पर जाएँ",
+    "changeLanguage": "भाषा बदलें",
+    "selectLanguage": "भाषा चुनें",
+    "backToTop": "ऊपर जाएँ"
+  },
+  "footer": {
+    "about": "CraftDyne Private Limited टिकाऊ कृषि के लिए हरित रसायन समाधान विकसित करती है — ऐसी पर्यावरण-अनुकूल तकनीकें जो लोगों, पशुओं और पर्यावरण की रक्षा करते हुए उत्पादकता बढ़ाती हैं।",
+    "explore": "देखें",
+    "getInTouch": "संपर्क करें",
+    "legal": "कानूनी",
+    "privacy": "गोपनीयता नीति",
+    "terms": "उपयोग की शर्तें",
+    "followUs": "हमें फ़ॉलो करें",
+    "rights": "सर्वाधिकार सुरक्षित।",
+    "registeredOffice": "पंजीकृत कार्यालय"
+  },
+  "labels": {
+    "featuredProduct": "विशेष उत्पाद",
+    "ourProducts": "हमारे उत्पाद",
+    "whyCraftdyne": "CraftDyne क्यों?",
+    "whatWeOffer": "हम क्या प्रदान करते हैं",
+    "whoWeAre": "हम कौन हैं",
+    "applications": "अनुप्रयोग",
+    "faq": "अक्सर पूछे जाने वाले प्रश्न",
+    "readMore": "और पढ़ें",
+    "close": "बंद करें",
+    "loading": "लोड हो रहा है",
+    "required": "आवश्यक",
+    "optional": "वैकल्पिक",
+    "you": "आप यहाँ हैं"
+  },
+  "whatsappMessage": "नमस्ते CraftDyne, मैं EcoAgta EZ3+ के बारे में और जानना चाहता हूँ।",
+  "disclaimer": {
+    "short": "उत्पाद का प्रदर्शन फसल, जलवायु, कीट दबाव और छिड़काव की विधि के अनुसार बदलता है। उपयोग से पहले हमेशा उत्पाद लेबल पढ़ें।",
+    "heading": "महत्वपूर्ण जानकारी"
+  },
+  "meta": {
+    "titleSuffix": "CraftDyne",
+    "defaultDescription": "CraftDyne Private Limited टिकाऊ कृषि के लिए हरित रसायन समाधान विकसित करती है — ऐसी फसल सुरक्षा जो लोगों, पशुओं और पर्यावरण के लिए सुरक्षित है।"
+  }
+}

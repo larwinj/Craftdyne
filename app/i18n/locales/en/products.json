@@ -1,0 +1,129 @@
+{
+  "index": {
+    "meta": {
+      "title": "Products",
+      "description": "EcoAgta crop protection from CraftDyne — green chemistry farm inputs that are non-toxic, readily biodegradable and safe for people, animals and the environment."
+    },
+    "eyebrow": "Our Products",
+    "title": "Green chemistry inputs, built for real fields",
+    "description": "The EcoAgta range applies IUPAC Green Chemistry principles to everyday crop protection — effective against the pests that cost growers yield, without the burden conventional chemistry leaves behind.",
+    "moreSoon": {
+      "title": "More of the range is on the way",
+      "description": "CraftDyne is actively developing further EcoAgta formulations. Tell us what pest or crop problem you are facing and we will let you know what is coming.",
+      "cta": "Talk to our team"
+    }
+  },
+  "ez3plus": {
+    "meta": {
+      "title": "EcoAgta EZ3+ — Triple Acting Organic Farm Input",
+      "description": "EcoAgta EZ3+ helps control and deter whiteflies and helps prevent sooty mold fungus, while promoting healthier growth. Non-toxic, readily biodegradable green chemistry from CraftDyne."
+    },
+    "name": "EcoAgta EZ3+",
+    "kicker": "Triple Acting Organic Farm Input",
+    "tagline": "One spray. Three actions. Up to six months of protection.",
+    "intro": "EZ3+ is CraftDyne's flagship green-chemistry farm input. It addresses the whitefly problem and the sooty mold that follows it, while supporting the plant's own growth and immunity — from a single application, using chemistry designed to break down cleanly.",
+
+    "benefits": {
+      "heading": "What EZ3+ does",
+      "items": {
+        "whiteflies": {
+          "title": "Helps control and deter whiteflies",
+          "description": "Acts on the pest that drives both direct feeding damage and the honeydew behind sooty mold."
+        },
+        "sootyMold": {
+          "title": "Helps prevent sooty mold fungus",
+          "description": "Interrupts the cycle where honeydew deposits become a black fungal film that blocks photosynthesis."
+        },
+        "growth": {
+          "title": "Promotes healthier plant growth",
+          "description": "Supports vigour and canopy development through the protected period."
+        },
+        "productivity": {
+          "title": "Supports higher crop productivity",
+          "description": "Healthier, less-stressed plants hold their yield potential through the season."
+        },
+        "safety": {
+          "title": "Safe for people, animals and the environment",
+          "description": "Non-toxic and non-poisonous, with no harm to the food chain."
+        }
+      }
+    },
+
+    "howItWorks": {
+      "heading": "How the triple action works",
+      "description": "Whitefly damage is rarely just the insect. Feeding weakens the plant, the honeydew it excretes feeds sooty mold, and the mold then blocks the light the plant needs. EZ3+ is formulated to act at all three points rather than only the first.",
+      "steps": {
+        "deter": {
+          "title": "Deter the pest",
+          "description": "Helps control and deter whiteflies, reducing feeding pressure before an infestation establishes."
+        },
+        "prevent": {
+          "title": "Prevent the secondary infection",
+          "description": "Helps prevent the sooty mold fungus that colonises honeydew residue on leaves and fruit."
+        },
+        "promote": {
+          "title": "Promote the plant",
+          "description": "Supports growth, vigour, immunity and yield, and provides systemic protection against pathogens."
+        }
+      }
+    },
+
+    "properties": {
+      "heading": "Product properties",
+      "items": {
+        "type": { "label": "Type", "value": "Triple acting organic farm input" },
+        "targets": { "label": "Primary targets", "value": "Whiteflies; sooty mold fungus" },
+        "crops": { "label": "Suitable for", "value": "Vegetable, fruit, plantation and field crops" },
+        "toxicity": { "label": "Toxicity", "value": "Non-toxic, non-poisonous" },
+        "biodegradability": { "label": "Biodegradability", "value": "Completely and readily biodegradable" },
+        "basis": { "label": "Formulated on", "value": "IUPAC Green Chemistry principles" },
+        "foodChain": { "label": "Food chain", "value": "No harm to the food chain" },
+        "residue": { "label": "Air, water and soil", "value": "No harm to air, water or soil" }
+      }
+    },
+
+    "application": {
+      "heading": "Using EZ3+",
+      "description": "EZ3+ is applied as a foliar spray using standard equipment, so it fits existing routines without new machinery or training.",
+      "notice": "Dosage and spray interval depend on crop, growth stage and local pest pressure. Our team will recommend a schedule for your crop and region — please get in touch before first use, and always read the product label.",
+      "cta": "Get an application schedule"
+    },
+
+    "faq": {
+      "heading": "Frequently asked questions",
+      "items": {
+        "howLong": {
+          "question": "How long does one application last?",
+          "answer": "CraftDyne states that a single spray provides up to six months of protection. Actual duration varies with crop, climate, growth stage and local pest pressure, so treat six months as an upper figure rather than a guarantee and confirm a schedule for your conditions with our team."
+        },
+        "organic": {
+          "question": "Is EZ3+ suitable for organic farming?",
+          "answer": "EZ3+ is described by CraftDyne as a triple acting organic farm input, formulated on IUPAC Green Chemistry principles and completely readily biodegradable. Organic certification requirements differ between certifying bodies and export markets, so please contact us with the certification scheme you work under before using it in a certified system."
+        },
+        "safety": {
+          "question": "Is it safe around people and animals?",
+          "answer": "EZ3+ is formulated to be non-toxic and non-poisonous, with no harm to the food chain and no harm to air, water or soil. Standard good practice when spraying any farm input still applies — follow the directions on the product label."
+        },
+        "crops": {
+          "question": "Which crops can it be used on?",
+          "answer": "EZ3+ is intended for vegetable, fruit, plantation and field crops. If your crop is not listed on our applications page, contact us and we will advise whether it is suitable."
+        },
+        "mixing": {
+          "question": "Can it be tank-mixed with other inputs?",
+          "answer": "Compatibility depends on what else you are applying. Please check with our team before tank-mixing so we can confirm there is no interaction that would reduce performance."
+        },
+        "buy": {
+          "question": "How do I buy EZ3+ or become a distributor?",
+          "answer": "Contact us by phone, WhatsApp or the enquiry form. We work with farmers directly and with agri-input dealers and distributors across India and in export markets."
+        }
+      }
+    },
+
+    "cta": {
+      "title": "Interested in EZ3+ for your crop?",
+      "description": "Tell us your crop, area and location, and we will come back with an application recommendation.",
+      "primary": "Send an enquiry",
+      "secondary": "Chat on WhatsApp"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "name": "craftdyne-web",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "CraftDyne Private Limited — Green Chemistry for Sustainable Agriculture",
+  "scripts": {
+    "dev": "react-router dev",
+    "build": "react-router build && node scripts/postbuild.mjs",
+    "start": "vite preview",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "format": "prettier --write \"app/**/*.{js,jsx,css,json}\"",
+    "assets": "node scripts/generate-assets.mjs",
+    "audit:responsive": "node scripts/audit-responsive.mjs",
+    "test:smoke": "node scripts/smoke-test.mjs",
+    "audit:contrast": "node scripts/audit-contrast.mjs"
+  },
+  "dependencies": {
+    "@fontsource-variable/inter": "^5.2.8",
+    "@fontsource-variable/noto-sans-devanagari": "^5.3.0",
+    "@fontsource-variable/noto-sans-tamil": "^5.3.0",
+    "@fontsource-variable/plus-jakarta-sans": "^5.2.8",
+    "@hookform/resolvers": "^5.9.0",
+    "clsx": "^2.1.1",
+    "i18next": "^26.3.6",
+    "isbot": "^5",
+    "lucide-react": "^1.31.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-hook-form": "^7.85.0",
+    "react-i18next": "^17.0.11",
+    "react-router": "^8.3.0",
+    "tailwind-merge": "^3.4.1",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@react-router/dev": "^8.3.0",
+    "@tailwindcss/vite": "^4.3.3",
+    "eslint": "^10.8.1",
+    "eslint-plugin-react-hooks": "^7.1.0",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "globals": "^17.11.0",
+    "playwright": "^1.62.1",
+    "prettier": "^3.6.2",
+    "prettier-plugin-tailwindcss": "^0.6.14",
+    "sharp": "^0.35.3",
+    "tailwindcss": "^4.3.3",
+    "vite": "^8.2.1"
+  }
+}

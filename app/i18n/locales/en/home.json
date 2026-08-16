@@ -1,0 +1,140 @@
+{
+  "meta": {
+    "title": "Green Chemistry for Sustainable Agriculture",
+    "description": "CraftDyne develops Green Chemistry crop protection for sustainable agriculture. EcoAgta EZ3+ helps control whiteflies and prevent sooty mold — safe for people, animals and the environment."
+  },
+  "hero": {
+    "eyebrow": "Green & Efficient Molecules at Work",
+    "title": "Green Chemistry for Sustainable Agriculture",
+    "subtitle": "CraftDyne develops eco-friendly technologies that improve productivity while protecting people, animals and the environment.",
+    "claimLead": "Just one spray",
+    "claimHighlight": "up to 6 months of protection",
+    "primaryCta": "Explore EcoAgta EZ3+",
+    "secondaryCta": "Talk to our team",
+    "scrollHint": "Discover more"
+  },
+  "intro": {
+    "eyebrow": "Who We Are",
+    "title": "Innovation-driven, built on Green Chemistry",
+    "body": "CraftDyne Private Limited develops innovative Green Chemistry solutions that promote healthier crops and sustainable agriculture. Our eco-friendly technologies improve productivity while protecting people, animals and the environment.",
+    "cta": "More about CraftDyne"
+  },
+  "offerings": {
+    "eyebrow": "What We Offer",
+    "title": "Solutions across the sustainable farming cycle",
+    "items": {
+      "greenChemistrySolutions": {
+        "title": "Green Chemistry Solutions",
+        "description": "Molecules designed against IUPAC Green Chemistry principles from the first step, not adapted afterwards."
+      },
+      "ecoTechnologies": {
+        "title": "Eco-Friendly Agricultural Technologies",
+        "description": "Crop inputs formulated to break down readily and leave no lasting burden on soil or water."
+      },
+      "cropHealth": {
+        "title": "Crop Health Enhancement",
+        "description": "Support for plant health, vigour and immunity alongside protection from pests and pathogens."
+      },
+      "sustainableFarming": {
+        "title": "Sustainable Farming Solutions",
+        "description": "Practical inputs that fit existing spray routines, so adopting them asks little of the farmer."
+      },
+      "responsibleProducts": {
+        "title": "Environmentally Responsible Products",
+        "description": "Non-toxic and non-poisonous by design — safe around people, animals and pollinators."
+      }
+    }
+  },
+  "product": {
+    "eyebrow": "Featured Product",
+    "title": "EcoAgta EZ3+",
+    "kicker": "Triple Acting Organic Farm Input",
+    "description": "A single green-chemistry formulation that works on three fronts at once — deterring pests, preventing the mold that follows them, and supporting the plant's own growth and immunity.",
+    "benefits": {
+      "whiteflies": "Helps control and deter whiteflies",
+      "sootyMold": "Helps prevent sooty mold fungus",
+      "growth": "Promotes healthier plant growth",
+      "productivity": "Supports higher crop productivity",
+      "safety": "Safe for people, animals and the environment"
+    },
+    "cta": "See full product details",
+    "enquiryCta": "Enquire about EZ3+",
+    "tripleAction": {
+      "title": "Three actions, one spray",
+      "steps": {
+        "deter": {
+          "step": "01",
+          "title": "Deters the pest",
+          "description": "Helps control and deter whiteflies before an infestation takes hold."
+        },
+        "prevent": {
+          "step": "02",
+          "title": "Prevents what follows",
+          "description": "Helps prevent the sooty mold fungus that grows on whitefly honeydew."
+        },
+        "promote": {
+          "step": "03",
+          "title": "Promotes the plant",
+          "description": "Supports growth, vigour and the plant's own immunity through the season."
+        }
+      }
+    }
+  },
+  "crops": {
+    "eyebrow": "Applications",
+    "title": "Proven across four crop groups",
+    "description": "EcoAgta EZ3+ is intended for use across the crops that matter most to Indian growers.",
+    "items": {
+      "vegetable": { "title": "Vegetable Crops", "description": "Tomato, brinjal, okra, chilli and gourds." },
+      "fruit": { "title": "Fruit Crops", "description": "Mango, guava, citrus, banana and pomegranate." },
+      "plantation": { "title": "Plantation Crops", "description": "Coconut, oil palm, areca nut, tea and coffee." },
+      "field": { "title": "Field Crops", "description": "Cotton, pulses, groundnut, soybean and millets." }
+    },
+    "cta": "View all applications"
+  },
+  "pillars": {
+    "eyebrow": "Why CraftDyne?",
+    "title": "Green chemistry, made practical for the field",
+    "items": {
+      "greenChemistry": {
+        "title": "Innovative Green Chemistry",
+        "description": "Formulations built on IUPAC Green Chemistry principles rather than retrofitted to them."
+      },
+      "cropProtection": {
+        "title": "Sustainable Crop Protection",
+        "description": "Protection that holds up season after season without accumulating in soil, water or the food chain."
+      },
+      "research": {
+        "title": "Research-Driven Solutions",
+        "description": "Every formulation is developed and field-evaluated before it reaches a grower."
+      },
+      "ecoFormulations": {
+        "title": "Eco-Friendly Formulations",
+        "description": "Non-toxic, non-poisonous and completely readily biodegradable."
+      },
+      "longLasting": {
+        "title": "Long-Lasting Performance",
+        "description": "Extended protection from a single application means fewer sprays across the season."
+      },
+      "farmerFocused": {
+        "title": "Farmer-Focused Innovation",
+        "description": "Designed around how farmers actually spray, so it fits existing routines and equipment."
+      }
+    }
+  },
+  "promise": {
+    "title": "Healthier crop. Higher yield. Sustainable future.",
+    "items": {
+      "innovation": "Green Chemistry Innovation",
+      "biodegradable": "Eco Friendly & Biodegradable",
+      "safe": "Safe for People, Animals & the Environment",
+      "yield": "Healthier Crop, Higher Yield"
+    }
+  },
+  "cta": {
+    "title": "Bring green chemistry to your fields",
+    "description": "Talk to our team about EcoAgta EZ3+, trial plots, or distribution in your region.",
+    "primary": "Enquire now",
+    "secondary": "Chat on WhatsApp"
+  }
+}
