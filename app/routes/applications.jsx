@@ -57,12 +57,19 @@ export default function Applications() {
               <article className="shadow-card overflow-hidden rounded-2xl bg-white ring-1 ring-slate-100 sm:flex">
                 <div
                   className={cn(
-                    'flex h-32 items-center justify-center bg-gradient-to-br sm:h-auto sm:w-48 sm:shrink-0',
+                    'relative flex h-40 overflow-hidden items-center justify-center bg-gradient-to-br sm:h-auto sm:w-56 sm:shrink-0',
                     crop.accent,
                   )}
                 >
-                  {/* TODO(client): licensed crop photography replaces this tile. */}
-                  <Sprout className="size-12 text-white/80" aria-hidden="true" />
+                  {crop.image ? (
+                    <img
+                      src={crop.image}
+                      alt={t(`applications.crops.${crop.id}.title`)}
+                      className="h-full w-full object-cover"
+                    />
+                  ) : (
+                    <Sprout className="size-12 text-white/80" aria-hidden="true" />
+                  )}
                 </div>
                 <div className="p-6 sm:p-7">
                   <h3 className="text-fluid-xl">{t(`applications.crops.${crop.id}.title`)}</h3>

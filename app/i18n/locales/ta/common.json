@@ -9,6 +9,7 @@
   "nav": {
     "home": "முகப்பு",
     "about": "எங்களைப் பற்றி",
+    "ecoChemistry": "சுற்றுச்சூழல் வேதியியல்",
     "greenChemistry": "பசுமை வேதியியல்",
     "products": "தயாரிப்புகள்",
     "applications": "பயன்பாடுகள்",
@@ -25,6 +26,7 @@
     "emailUs": "மின்னஞ்சல் அனுப்பவும்",
     "learnMore": "மேலும் அறிக",
     "viewProduct": "தயாரிப்பைப் பார்க்கவும்",
+    "downloadBrochure": "கையேட்டைப் பதிவிறக்கவும்",
     "exploreProducts": "தயாரிப்புகளைப் பாருங்கள்",
     "becomeDistributor": "விநியோகஸ்தராகுங்கள்",
     "backHome": "முகப்புக்குத் திரும்பு",

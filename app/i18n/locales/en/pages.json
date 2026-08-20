@@ -49,6 +49,16 @@
     }
   },
 
+  "ecoChemistry": {
+    "meta": {
+      "title": "Eco-Chemistry & Sustainability",
+      "description": "How CraftDyne applies Green Chemistry principles to crop protection and sustainability — designing molecules that work in the field and break down cleanly."
+    },
+    "eyebrow": "Green Chemistry & Sustainability",
+    "title": "Eco-Chemistry: Science for Sustainable Agriculture",
+    "description": "Building safety, degradability, and crop productivity into the molecule from the very start."
+  },
+
   "greenChemistry": {
     "meta": {
       "title": "Green Chemistry",
@@ -136,25 +146,30 @@
     },
     "cropsHeading": "Crop groups",
     "crops": {
-      "vegetable": {
-        "title": "Vegetable Crops",
-        "examples": "Tomato, brinjal, okra, chilli, gourds and leafy vegetables",
-        "note": "High-value, short-cycle crops where whitefly pressure and cosmetic downgrading from sooty mold hit margins hardest."
+      "plantation": {
+        "title": "Plantation Crops",
+        "examples": "Coconut, oil palm, areca nut, tea and coffee",
+        "note": "Long-cycle crops where repeated spraying is costly and difficult, so extended protection from a single application matters most."
       },
       "fruit": {
         "title": "Fruit Crops",
         "examples": "Mango, guava, citrus, banana and pomegranate",
         "note": "Sooty mold on fruit surfaces affects market grade directly, even when overall tree health is maintained."
       },
-      "plantation": {
-        "title": "Plantation Crops",
-        "examples": "Coconut, oil palm, areca nut, tea and coffee",
-        "note": "Long-cycle crops where repeated spraying is costly and difficult, so extended protection from a single application matters most."
+      "vegetable": {
+        "title": "Vegetable Crops",
+        "examples": "Tomato, brinjal, okra, chilli, gourds and leafy vegetables",
+        "note": "High-value, short-cycle crops where whitefly pressure and cosmetic downgrading from sooty mold hit margins hardest."
       },
-      "field": {
-        "title": "Field Crops",
-        "examples": "Cotton, pulses, groundnut, soybean and millets",
-        "note": "Large areas where whitefly outbreaks can move quickly and where input cost per acre is under constant pressure."
+      "commercial": {
+        "title": "Commercial Crops",
+        "examples": "Cotton, sugarcane, maize, pulses and groundnut",
+        "note": "Large areas where whitefly and pest outbreaks can move quickly and input cost per acre is under constant pressure."
+      },
+      "mulberry": {
+        "title": "Mulberry Crops",
+        "examples": "Mulberry plants grown for sericulture and silkworm rearing",
+        "note": "Requires zero-toxicity formulas safe for silkworms while eliminating sap-sucking pests and leaf diseases."
       }
     },
     "notice": "Suitability, dosage and timing vary by crop, variety, growth stage and region. Contact our team for a recommendation for your specific crop before first use.",

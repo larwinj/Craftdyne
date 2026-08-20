@@ -82,13 +82,14 @@
   },
   "crops": {
     "eyebrow": "Applications",
-    "title": "Proven across four crop groups",
-    "description": "EcoAgta EZ3+ is intended for use across the crops that matter most to Indian growers.",
+    "title": "Proven across five crop groups",
+    "description": "EcoAgta products are intended for use across the crops that matter most to growers.",
     "items": {
-      "vegetable": { "title": "Vegetable Crops", "description": "Tomato, brinjal, okra, chilli and gourds." },
-      "fruit": { "title": "Fruit Crops", "description": "Mango, guava, citrus, banana and pomegranate." },
       "plantation": { "title": "Plantation Crops", "description": "Coconut, oil palm, areca nut, tea and coffee." },
-      "field": { "title": "Field Crops", "description": "Cotton, pulses, groundnut, soybean and millets." }
+      "fruit": { "title": "Fruit Crops", "description": "Mango, guava, citrus, banana and pomegranate." },
+      "vegetable": { "title": "Vegetable Crops", "description": "Tomato, brinjal, okra, chilli and gourds." },
+      "commercial": { "title": "Commercial Crops", "description": "Cotton, sugarcane, maize, pulses and groundnut." },
+      "mulberry": { "title": "Mulberry Crops", "description": "Mulberry leaves for sericulture and silkworms." }
     },
     "cta": "View all applications"
   },

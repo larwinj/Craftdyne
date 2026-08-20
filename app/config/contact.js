@@ -19,16 +19,17 @@ export const CONTACT = {
   state: 'Tamil Nadu',
   country: 'India',
 
-  // TODO(client): full registered address, CIN and GST for the footer and legal pages.
-  addressLines: ['Dindigul', 'Tamil Nadu', 'India'],
+  addressLines: [
+    'Registered Office Address:',
+    'CRAFTDYNE PRIVATE LIMITED',
+    '1003/5, Saraswathi Nagar Collecterate post, Silapadi, Dindigul, Tamil Nadu, 624005.',
+  ],
 };
 
 export const SOCIAL = [
-  { key: 'linkedin', label: 'LinkedIn', href: 'https://www.linkedin.com/company/craftdyne-private-limited/' },
-  // TODO(client): confirm the Instagram and Facebook handles — the brochure shows
-  // the icons but not the URLs. Both are hidden until `href` is filled in.
-  { key: 'instagram', label: 'Instagram', href: null },
-  { key: 'facebook', label: 'Facebook', href: null },
+  { key: 'x', label: 'X', href: 'https://x.com/CraftDyne' },
+  { key: 'facebook', label: 'Facebook', href: 'https://www.facebook.com/people/CraftDyne-Private-Limite/61593103934818/' },
+  { key: 'instagram', label: 'Instagram', href: 'https://www.instagram.com/_craftdyne_/?hl=en' },
 ];
 
 export const COMPANY = {

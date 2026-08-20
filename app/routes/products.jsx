@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { Link, useOutletContext } from 'react-router';
-import { ArrowRight, Check } from 'lucide-react';
+import { ArrowRight, Check, Download } from 'lucide-react';
 
 import { CtaBand } from '../components/sections/cta-band.jsx';
 import { PageHero } from '../components/sections/page-hero.jsx';
@@ -13,7 +13,8 @@ import { getI18n } from '../i18n/index.js';
 import { localePath } from '../lib/links.js';
 import { breadcrumbSchema, buildMeta } from '../lib/seo.js';
 
-const BENEFITS = ['whiteflies', 'sootyMold', 'growth', 'productivity', 'safety'];
+const EZ3_BENEFITS = ['whiteflies', 'sootyMold', 'growth', 'productivity', 'safety'];
+const BLUMENN_BENEFITS = ['drop', 'yield', 'immunity', 'decay', 'safety'];
 
 export function meta({ params }) {
   const t = getI18n(params.lang).getFixedT(params.lang, 'products');
@@ -43,53 +44,76 @@ export default function Products() {
 
       <Section tone="white">
         <ul className="flex flex-col gap-8">
-          {PRODUCTS.map((product) => (
-            <li key={product.id}>
-              <article className="bg-mist ring-brand-100 overflow-hidden rounded-3xl ring-1">
-                <div className="grid gap-8 p-6 sm:p-8 lg:grid-cols-12 lg:items-center lg:gap-12 lg:p-10">
-                  <div className="lg:col-span-4">
-                    <ProductBottle className="mx-auto max-w-[15rem]" />
-                  </div>
-
-                  <div className="lg:col-span-8">
-                    <div className="flex flex-wrap items-center gap-3">
-                      <EcoAgtaLeaf className="text-eco-green size-8" />
-                      <h2 className="text-fluid-2xl">
-                        <Link
-                          to={localePath(lang, product.slug)}
-                          className="hover:text-brand-700 inline-flex min-h-11 items-center rounded transition-colors"
-                        >
-                          {t(`${product.id}.name`)}
-                        </Link>
-                      </h2>
+          {PRODUCTS.map((product) => {
+            const benefits = product.id === 'ez3plus' ? EZ3_BENEFITS : BLUMENN_BENEFITS;
+            return (
+              <li key={product.id}>
+                <article className="bg-mist ring-brand-100 overflow-hidden rounded-3xl ring-1">
+                  <div className="grid gap-8 p-6 sm:p-8 lg:grid-cols-12 lg:items-center lg:gap-12 lg:p-10">
+                    <div className="lg:col-span-4">
+                      <ProductBottle className="mx-auto max-w-[15rem]" />
                     </div>
 
-                    <p className="bg-brand-600 font-display mt-3 inline-block rounded-full px-4 py-1.5 text-sm font-bold text-white">
-                      {t(`${product.id}.kicker`)}
-                    </p>
+                    <div className="lg:col-span-8">
+                      <div className="flex flex-wrap items-center gap-3">
+                        <EcoAgtaLeaf className="text-eco-green size-8" />
+                        <h2 className="text-fluid-2xl">
+                          <Link
+                            to={localePath(lang, product.slug)}
+                            className="hover:text-brand-700 inline-flex min-h-11 items-center rounded transition-colors"
+                          >
+                            {product.id === 'ez3plus' ? (
+                              <span>
+                                EcoAgta EZ3+<sub className="text-sm font-medium font-sans">concentrate</sub>
+                              </span>
+                            ) : (
+                              t(`${product.id}.name`)
+                            )}
+                          </Link>
+                        </h2>
+                      </div>
 
-                    <p className="text-fluid-lg mt-5 text-pretty text-slate-600">{t(`${product.id}.tagline`)}</p>
+                      <p className="bg-brand-600 font-display mt-3 inline-block rounded-full px-4 py-1.5 text-sm font-bold text-white">
+                        {t(`${product.id}.kicker`)}
+                      </p>
 
-                    <ul className="mt-6 grid gap-2.5 sm:grid-cols-2">
-                      {BENEFITS.map((id) => (
-                        <li key={id} className="flex items-start gap-2.5">
-                          <Check className="text-brand-600 mt-1 size-4 shrink-0" aria-hidden="true" />
-                          <span className="text-fluid-sm text-slate-700">
-                            {t(`${product.id}.benefits.items.${id}.title`)}
-                          </span>
-                        </li>
-                      ))}
-                    </ul>
+                      <p className="text-fluid-lg mt-5 text-pretty text-slate-600">{t(`${product.id}.tagline`)}</p>
 
-                    <Button to={localePath(lang, product.slug)} size="lg" className="mt-8">
-                      {t('common:actions.viewProduct')}
-                      <ArrowRight className="size-5" aria-hidden="true" />
-                    </Button>
+                      <ul className="mt-6 grid gap-2.5 sm:grid-cols-2">
+                        {benefits.map((id) => (
+                          <li key={id} className="flex items-start gap-2.5">
+                            <Check className="text-brand-600 mt-1 size-4 shrink-0" aria-hidden="true" />
+                            <span className="text-fluid-sm text-slate-700">
+                              {t(`${product.id}.benefits.items.${id}.title`)}
+                            </span>
+                          </li>
+                        ))}
+                      </ul>
+
+                      <div className="mt-8 flex flex-wrap items-center gap-4">
+                        <Button to={localePath(lang, product.slug)} size="lg">
+                          {t('common:actions.viewProduct')}
+                          <ArrowRight className="size-5" aria-hidden="true" />
+                        </Button>
+                        {product.brochureUrl && (
+                          <a
+                            href={product.brochureUrl}
+                            download
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex min-h-11 items-center gap-2 rounded-xl border border-slate-300 bg-white px-5 text-sm font-semibold text-slate-700 shadow-sm transition-colors hover:bg-slate-50"
+                          >
+                            <Download className="size-4 text-brand-600" />
+                            {t('common:actions.downloadBrochure')}
+                          </a>
+                        )}
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </article>
-            </li>
-          ))}
+                </article>
+              </li>
+            );
+          })}
         </ul>
 
         <div className="mt-10 rounded-2xl border border-dashed border-slate-300 p-8 text-center">

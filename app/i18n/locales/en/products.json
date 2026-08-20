@@ -125,5 +125,102 @@
       "primary": "Send an enquiry",
       "secondary": "Chat on WhatsApp"
     }
+  },
+  "blumennStrong": {
+    "meta": {
+      "title": "EcoAgta Blumenn Strong Super Concentrate — Premature Fruit Drop Prevention",
+      "description": "Blumenn Strong Super Concentrate prevents premature fruit drop, increases yield, and provides systemic protection & insect repellency. Made with Green Chemistry principles."
+    },
+    "name": "EcoAgta Blumenn Strong Super Concentrate",
+    "kicker": "For Preventing Premature Fruit Drop & Increasing Yield",
+    "tagline": "Systemic Protection, Immunity & Yield Enhancement for Fruit & Plantation Crops.",
+    "intro": "EcoAgta Blumenn Strong Super Concentrate is formulated using IUPAC Green Chemistry principles to address both internal and external root causes of premature fruit drop. It increases viable fruit, enhances plant immunity, and repels insects & fungal pathogens while causing ZERO harm to air, water, soil, and the food chain.",
+
+    "benefits": {
+      "heading": "Key Benefits",
+      "items": {
+        "drop": {
+          "title": "Prevents Premature Fruit Drop",
+          "description": "Addresses abscission layer formation, ovule degeneration, and fruitlet competition to retain viable fruit."
+        },
+        "yield": {
+          "title": "Increases Farm Yield & Savings",
+          "description": "Saves farming costs over longer protection periods and significantly boosts usable harvest volume."
+        },
+        "immunity": {
+          "title": "Provides Systemic Protection",
+          "description": "Strengthens internal plant immunity against fungal pathogens like Powdery Mildew and Anthracnose."
+        },
+        "decay": {
+          "title": "Insect & Fungal Repellency",
+          "description": "Deters sap-sucking insects like Leaf Hoppers and Mealybugs alongside fungal infections."
+        },
+        "safety": {
+          "title": "100% Non-toxic & Readily Biodegradable",
+          "description": "Safe for applicators, livestock, wildlife, and natural water bodies."
+        }
+      }
+    },
+
+    "causes": {
+      "heading": "Underlying Causes Addressed",
+      "sub": "Blumenn Strong works on both internal physiological stress and external pest/disease pressure.",
+      "internalTitle": "Internal Physiological Causes",
+      "externalTitle": "External Pest & Disease Pressures",
+      "internal": {
+        "micros": "Lack of Specific Micronutrients",
+        "soil": "Poor Soil Conditions",
+        "flowers": "Defective Flowers",
+        "ovules": "Degeneration of Ovules",
+        "competition": "Competition between developing Fruitlets",
+        "climate": "Climatic Stresses",
+        "abscission": "Formation of abscission layer at fruit attachment point"
+      },
+      "external": {
+        "fungal": "High incidence of fungal diseases (Powdery Mildew, Anthracnose)",
+        "suckers": "High incidence of Leaf Hoppers and Mealybugs (Sap Suckers)"
+      }
+    },
+
+    "dilution": {
+      "heading": "Dilution & Spray Recommendations",
+      "description": "Follow recommended dilution rates using clean fresh well or stream water for best efficacy.",
+      "ratioTitle": "Dilution Ratio for Tree & Plantation Crops",
+      "ratioExample": "1 : 2000 (Example: 100 mL in 200 Liters of fresh non-chlorinated water)",
+      "waterType": "Mix thoroughly for 10 minutes in a clean drum. Wash and rinse all contents into the mixing drum."
+    },
+
+    "usage": {
+      "timingTitle": "Spraying Directions & Timing",
+      "timingBody": "Preferably spray between 6:00 AM – 10:30 AM or 3:30 PM – 6:30 PM for optimal foliar absorption.",
+      "coverage": "Spray thoroughly to cover all leaves and plant parts. Apply symptomatically at first sight of insects or fungi."
+    },
+
+    "safety": {
+      "heading": "Safety & Eco-Compatibility",
+      "notice": "Non-poisonous, non-fuming, non-irritating to persons and animals. Readily biodegradable with zero environmental burden. Always wash hands after handling."
+    },
+
+    "faq": {
+      "heading": "Frequently Asked Questions",
+      "items": {
+        "purpose": {
+          "question": "What is the primary function of Blumenn Strong Super Concentrate?",
+          "answer": "Blumenn Strong is specifically formulated to prevent premature fruit drop, increase viable fruit retention, and boost overall harvest yield."
+        },
+        "crops": {
+          "question": "Which crops benefit most from Blumenn Strong?",
+          "answer": "It is ideal for Tree and Plantation crops such as Guava, Mango, Coconut, Lemon, Lime, and Tapioca."
+        },
+        "dilution": {
+          "question": "What is the recommended dosage and dilution?",
+          "answer": "The recommended dilution is 1:2000 (e.g., 100 mL in 200 Liters of water). Ensure thorough mixing in non-chlorinated fresh water."
+        },
+        "safety": {
+          "question": "Is Blumenn Strong safe for animals and the environment?",
+          "answer": "Yes. It is made according to IUPAC Green Chemistry principles, completely non-toxic, readily biodegradable, and leaves ZERO harmful residues in air, water, soil, or the food chain."
+        }
+      }
+    }
   }
 }

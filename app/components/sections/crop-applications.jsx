@@ -21,20 +21,27 @@ export function CropApplications({ lang }) {
         `-mx-5 px-5` lets the rail bleed to the screen edge so the next card
         peeks in, which is what signals that it scrolls.
       */}
-      <ul className="-mx-5 mt-12 flex snap-x snap-mandatory [scrollbar-width:none] gap-4 overflow-x-auto px-5 pb-4 sm:mx-0 sm:grid sm:grid-cols-2 sm:overflow-visible sm:px-0 sm:pb-0 lg:grid-cols-4 [&::-webkit-scrollbar]:hidden">
+      <ul className="-mx-5 mt-12 flex snap-x snap-mandatory [scrollbar-width:none] gap-4 overflow-x-auto px-5 pb-4 sm:mx-0 sm:grid sm:grid-cols-2 sm:overflow-visible sm:px-0 sm:pb-0 md:grid-cols-3 lg:grid-cols-5 [&::-webkit-scrollbar]:hidden">
         {CROPS.map((crop) => (
           <li key={crop.id} className="xs:w-[65vw] w-[72vw] max-w-[17rem] shrink-0 snap-start sm:w-auto sm:max-w-none">
-            <article className="group shadow-card h-full overflow-hidden rounded-2xl bg-white ring-1 ring-slate-100">
-              <div className={cn('relative flex h-40 items-center justify-center bg-gradient-to-br', crop.accent)}>
-                {/* TODO(client): licensed crop photography replaces this tile. */}
-                <Sprout className="size-12 text-white/80" aria-hidden="true" />
+            <article className="group shadow-card flex h-full flex-col overflow-hidden rounded-2xl bg-white ring-1 ring-slate-100 transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+              <div className={cn('relative flex h-44 overflow-hidden items-center justify-center bg-gradient-to-br', crop.accent)}>
+                {crop.image ? (
+                  <img
+                    src={crop.image}
+                    alt={t(`crops.items.${crop.id}.title`)}
+                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                ) : (
+                  <Sprout className="size-12 text-white/80" aria-hidden="true" />
+                )}
                 <div
                   aria-hidden="true"
                   className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,white,transparent_60%)] opacity-15"
                 />
               </div>
-              <div className="p-5">
-                <h3 className="text-fluid-base">{t(`crops.items.${crop.id}.title`)}</h3>
+              <div className="flex flex-1 flex-col p-5">
+                <h3 className="text-fluid-base font-bold text-navy-800">{t(`crops.items.${crop.id}.title`)}</h3>
                 <p className="text-fluid-sm mt-1.5 text-slate-600">{t(`crops.items.${crop.id}.description`)}</p>
               </div>
             </article>

@@ -4,10 +4,9 @@
  */
 export const MAIN_NAV = [
   { key: 'about', path: 'about', labelKey: 'nav.about' },
-  { key: 'green-chemistry', path: 'green-chemistry', labelKey: 'nav.greenChemistry' },
+  { key: 'eco-chemistry', path: 'eco-chemistry', labelKey: 'nav.ecoChemistry' },
   { key: 'products', path: 'products', labelKey: 'nav.products' },
   { key: 'applications', path: 'applications', labelKey: 'nav.applications' },
-  { key: 'sustainability', path: 'sustainability', labelKey: 'nav.sustainability' },
   { key: 'contact', path: 'contact', labelKey: 'nav.contact' },
 ];
 

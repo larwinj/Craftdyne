@@ -100,11 +100,6 @@ export default function Contact() {
                 </span>
               </li>
             </ul>
-
-            <div className="bg-navy-700 mt-6 rounded-2xl p-6 text-white">
-              <h3 className="font-display text-fluid-base font-bold text-white">{t('distributor.title')}</h3>
-              <p className="text-fluid-sm mt-2 text-white/75">{t('distributor.description')}</p>
-            </div>
           </div>
 
           <div className="lg:col-span-7">

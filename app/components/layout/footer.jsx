@@ -5,11 +5,11 @@ import { Mail, MapPin, MessageCircle, Phone } from 'lucide-react';
 import { COMPANY, CONTACT, SOCIAL } from '../../config/contact.js';
 import { FOOTER_LEGAL_NAV, MAIN_NAV } from '../../config/nav.js';
 import { Container } from '../ui/container.jsx';
-import { FacebookIcon, InstagramIcon, LinkedInIcon } from '../ui/social-icons.jsx';
+import { FacebookIcon, InstagramIcon, LinkedInIcon, XIcon } from '../ui/social-icons.jsx';
 import { localePath, mailtoHref, telHref, whatsappHref } from '../../lib/links.js';
 import { BrandMark } from './brand-mark.jsx';
 
-const SOCIAL_ICONS = { linkedin: LinkedInIcon, instagram: InstagramIcon, facebook: FacebookIcon };
+const SOCIAL_ICONS = { linkedin: LinkedInIcon, instagram: InstagramIcon, facebook: FacebookIcon, x: XIcon };
 
 export function Footer({ lang }) {
   const { t } = useTranslation();
@@ -24,7 +24,9 @@ export function Footer({ lang }) {
       <Container size="wide" className="py-14 sm:py-16">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-12 lg:gap-8">
           <div className="lg:col-span-5">
-            <BrandMark lang={lang} tone="light" />
+            <div className="inline-block rounded-2xl bg-white/95 p-3.5 shadow-lg ring-1 ring-slate-200/60 backdrop-blur-sm">
+              <BrandMark lang={lang} tone="dark" />
+            </div>
             <p className="text-fluid-sm mt-5 max-w-md text-white/70">{t('footer.about')}</p>
 
             {socials.length > 0 ? (

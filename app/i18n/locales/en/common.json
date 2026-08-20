@@ -9,6 +9,7 @@
   "nav": {
     "home": "Home",
     "about": "About Us",
+    "ecoChemistry": "Eco-Chemistry",
     "greenChemistry": "Green Chemistry",
     "products": "Products",
     "applications": "Applications",
@@ -25,6 +26,7 @@
     "emailUs": "Email us",
     "learnMore": "Learn more",
     "viewProduct": "View product",
+    "downloadBrochure": "Download Brochure",
     "exploreProducts": "Explore products",
     "becomeDistributor": "Become a distributor",
     "backHome": "Back to home",
