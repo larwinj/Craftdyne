@@ -14,6 +14,7 @@
     "products": "उत्पाद",
     "applications": "अनुप्रयोग",
     "sustainability": "स्थिरता",
+    "customerReviews": "ग्राहक समीक्षाएं",
     "contact": "संपर्क"
   },
   "actions": {
@@ -63,7 +64,7 @@
     "optional": "वैकल्पिक",
     "you": "आप यहाँ हैं"
   },
-  "whatsappMessage": "नमस्ते CraftDyne, मैं EcoAgta EZ3+ के बारे में और जानना चाहता हूँ।",
+  "whatsappMessage": "नमस्ते CraftDyne, मैं EcoAgta उत्पाद श्रृंखला के बारे में और जानना चाहता हूँ।",
   "disclaimer": {
     "short": "उत्पाद का प्रदर्शन फसल, जलवायु, कीट दबाव और छिड़काव की विधि के अनुसार बदलता है। उपयोग से पहले हमेशा उत्पाद लेबल पढ़ें।",
     "heading": "महत्वपूर्ण जानकारी"

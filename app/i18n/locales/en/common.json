@@ -14,6 +14,7 @@
     "products": "Products",
     "applications": "Applications",
     "sustainability": "Sustainability",
+    "customerReviews": "Customer Reviews",
     "contact": "Contact"
   },
   "actions": {
@@ -63,7 +64,7 @@
     "optional": "Optional",
     "you": "You are here"
   },
-  "whatsappMessage": "Hello CraftDyne, I would like to know more about EcoAgta EZ3+.",
+  "whatsappMessage": "Hello CraftDyne, I would like to know more about your EcoAgta product range.",
   "disclaimer": {
     "short": "Product performance varies with crop, climate, pest pressure and application practice. Always read the product label before use.",
     "heading": "Important information"

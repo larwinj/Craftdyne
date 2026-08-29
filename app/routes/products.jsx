@@ -13,8 +13,14 @@ import { getI18n } from '../i18n/index.js';
 import { localePath } from '../lib/links.js';
 import { breadcrumbSchema, buildMeta } from '../lib/seo.js';
 
-const EZ3_BENEFITS = ['whiteflies', 'sootyMold', 'growth', 'productivity', 'safety'];
-const BLUMENN_BENEFITS = ['drop', 'yield', 'immunity', 'decay', 'safety'];
+const BENEFITS_MAP = {
+  ez3plus: ['whiteflies', 'sootyMold', 'growth', 'productivity'],
+  ez3Coconut: ['rsw', 'sooty', 'stress', 'pathogens'],
+  ez3Cardamom: ['suckers', 'virus', 'nematodes', 'photosynthesis'],
+  blumennStrong: ['drop', 'yield', 'immunity', 'decay'],
+  mycoSpectra: ['fungiControl', 'duration', 'bioavailable', 'yieldSupport'],
+  soilAmend: ['porosity', 'nematode', 'durability', 'cec'],
+};
 
 export function meta({ params }) {
   const t = getI18n(params.lang).getFixedT(params.lang, 'products');
@@ -43,72 +49,78 @@ export default function Products() {
       />
 
       <Section tone="white">
-        <ul className="flex flex-col gap-8">
+        <ul className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {PRODUCTS.map((product) => {
-            const benefits = product.id === 'ez3plus' ? EZ3_BENEFITS : BLUMENN_BENEFITS;
+            const benefits = BENEFITS_MAP[product.id] || BENEFITS_MAP.ez3plus;
             return (
-              <li key={product.id}>
-                <article className="bg-mist ring-brand-100 overflow-hidden rounded-3xl ring-1">
-                  <div className="grid gap-8 p-6 sm:p-8 lg:grid-cols-12 lg:items-center lg:gap-12 lg:p-10">
-                    <div className="lg:col-span-4">
-                      <ProductBottle className="mx-auto max-w-[15rem]" />
-                    </div>
+              <li key={product.id} className="flex">
+                <article className="bg-mist ring-brand-100 hover:border-brand-300 flex w-full flex-col justify-between overflow-hidden rounded-2xl p-4 sm:p-5 ring-1 transition-all hover:shadow-lg">
+                  <div>
+                    {/* Compact Card Header: Bottle icon on left + Title & Kicker on right */}
+                    <div className="flex items-start gap-3">
+                      <div className="bg-white/90 shrink-0 rounded-xl p-1.5 ring-1 ring-slate-200/60 shadow-xs flex items-center justify-center w-16 h-20 overflow-hidden">
+                        <ProductBottle className="max-w-[3.2rem]" />
+                      </div>
 
-                    <div className="lg:col-span-8">
-                      <div className="flex flex-wrap items-center gap-3">
-                        <EcoAgtaLeaf className="text-eco-green size-8" />
-                        <h2 className="text-fluid-2xl">
+                      <div className="min-w-0 flex-1">
+                        <span className="bg-brand-600 font-display inline-block rounded-full px-2.5 py-0.5 text-[0.6875rem] font-bold text-white leading-tight">
+                          {t(`${product.id}.kicker`)}
+                        </span>
+
+                        <h2 className="text-base font-bold leading-snug mt-1.5 text-navy-900">
                           <Link
                             to={localePath(lang, product.slug)}
-                            className="hover:text-brand-700 inline-flex min-h-11 items-center rounded transition-colors"
+                            className="hover:text-brand-700 transition-colors flex items-center gap-1.5"
                           >
-                            {product.id === 'ez3plus' ? (
-                              <span>
-                                EcoAgta EZ3+<sub className="text-sm font-medium font-sans">concentrate</sub>
-                              </span>
-                            ) : (
-                              t(`${product.id}.name`)
-                            )}
+                            <EcoAgtaLeaf className="text-eco-green size-4 shrink-0" />
+                            <span className="truncate">
+                              {product.id === 'ez3plus' ? (
+                                <span>
+                                  EcoAgta EZ3+<sub className="text-[0.65rem] font-medium font-sans">concentrate</sub>
+                                </span>
+                              ) : (
+                                t(`${product.id}.name`)
+                              )}
+                            </span>
                           </Link>
                         </h2>
-                      </div>
 
-                      <p className="bg-brand-600 font-display mt-3 inline-block rounded-full px-4 py-1.5 text-sm font-bold text-white">
-                        {t(`${product.id}.kicker`)}
-                      </p>
-
-                      <p className="text-fluid-lg mt-5 text-pretty text-slate-600">{t(`${product.id}.tagline`)}</p>
-
-                      <ul className="mt-6 grid gap-2.5 sm:grid-cols-2">
-                        {benefits.map((id) => (
-                          <li key={id} className="flex items-start gap-2.5">
-                            <Check className="text-brand-600 mt-1 size-4 shrink-0" aria-hidden="true" />
-                            <span className="text-fluid-sm text-slate-700">
-                              {t(`${product.id}.benefits.items.${id}.title`)}
-                            </span>
-                          </li>
-                        ))}
-                      </ul>
-
-                      <div className="mt-8 flex flex-wrap items-center gap-4">
-                        <Button to={localePath(lang, product.slug)} size="lg">
-                          {t('common:actions.viewProduct')}
-                          <ArrowRight className="size-5" aria-hidden="true" />
-                        </Button>
-                        {product.brochureUrl && (
-                          <a
-                            href={product.brochureUrl}
-                            download
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="inline-flex min-h-11 items-center gap-2 rounded-xl border border-slate-300 bg-white px-5 text-sm font-semibold text-slate-700 shadow-sm transition-colors hover:bg-slate-50"
-                          >
-                            <Download className="size-4 text-brand-600" />
-                            {t('common:actions.downloadBrochure')}
-                          </a>
-                        )}
+                        <p className="mt-1 text-xs text-slate-600 line-clamp-2 leading-tight">
+                          {t(`${product.id}.tagline`)}
+                        </p>
                       </div>
                     </div>
+
+                    {/* Compact Key Benefits Checklist */}
+                    <ul className="mt-3.5 flex flex-col gap-1.5 border-t border-slate-200/60 pt-3">
+                      {benefits.slice(0, 3).map((id) => (
+                        <li key={id} className="flex items-center gap-2 text-xs text-slate-700">
+                          <Check className="text-brand-600 size-3 shrink-0" aria-hidden="true" />
+                          <span className="truncate">{t(`${product.id}.benefits.items.${id}.title`)}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  {/* Compact Side-by-Side Action Buttons */}
+                  <div className="mt-4 grid grid-cols-2 gap-2 border-t border-slate-200/60 pt-3">
+                    <Button to={localePath(lang, product.slug)} size="sm" className="w-full justify-center text-xs px-2 py-1.5 min-h-9">
+                      {t('common:actions.viewProduct')}
+                      <ArrowRight className="size-3.5" aria-hidden="true" />
+                    </Button>
+                    {product.brochureUrl && (
+                      <a
+                        href={product.brochureUrl}
+                        download
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex min-h-9 items-center justify-center gap-1.5 rounded-xl border border-slate-300 bg-white px-2 py-1.5 text-xs font-semibold text-slate-700 shadow-2xs transition-colors hover:bg-slate-50 hover:border-slate-400"
+                        title={t('common:actions.downloadBrochure')}
+                      >
+                        <Download className="size-3.5 text-brand-600" />
+                        <span className="truncate">Brochure</span>
+                      </a>
+                    )}
                   </div>
                 </article>
               </li>
@@ -116,10 +128,10 @@ export default function Products() {
           })}
         </ul>
 
-        <div className="mt-10 rounded-2xl border border-dashed border-slate-300 p-8 text-center">
-          <h2 className="text-fluid-xl">{t('index.moreSoon.title')}</h2>
-          <p className="mx-auto mt-3 max-w-xl text-slate-600">{t('index.moreSoon.description')}</p>
-          <Button to={localePath(lang, 'contact')} variant="outline" className="mt-6">
+        <div className="mt-10 rounded-2xl border border-dashed border-slate-300 p-6 text-center">
+          <h2 className="text-fluid-lg font-bold">{t('index.moreSoon.title')}</h2>
+          <p className="mx-auto mt-2 max-w-xl text-xs text-slate-600">{t('index.moreSoon.description')}</p>
+          <Button to={localePath(lang, 'contact')} variant="outline" size="sm" className="mt-4">
             {t('index.moreSoon.cta')}
           </Button>
         </div>

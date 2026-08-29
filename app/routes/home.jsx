@@ -1,6 +1,7 @@
 import { useOutletContext } from 'react-router';
 
 import { CropApplications } from '../components/sections/crop-applications.jsx';
+import { CustomerReviews } from '../components/sections/customer-reviews.jsx';
 import { CtaBand } from '../components/sections/cta-band.jsx';
 import { Hero } from '../components/sections/hero.jsx';
 import { Intro, PromiseStrip } from '../components/sections/intro.jsx';
@@ -31,6 +32,7 @@ export default function Home() {
       <ProductSpotlight lang={lang} />
       <Offerings />
       <CropApplications lang={lang} />
+      <CustomerReviews lang={lang} limit={3} showFilters={false} />
       <Pillars />
       <PromiseStrip />
       <CtaBand lang={lang} />

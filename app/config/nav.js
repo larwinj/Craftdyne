@@ -7,6 +7,7 @@ export const MAIN_NAV = [
   { key: 'eco-chemistry', path: 'eco-chemistry', labelKey: 'nav.ecoChemistry' },
   { key: 'products', path: 'products', labelKey: 'nav.products' },
   { key: 'applications', path: 'applications', labelKey: 'nav.applications' },
+  { key: 'reviews', path: 'reviews', labelKey: 'nav.customerReviews' },
   { key: 'contact', path: 'contact', labelKey: 'nav.contact' },
 ];
 

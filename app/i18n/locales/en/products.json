@@ -6,165 +6,174 @@
     },
     "eyebrow": "Our Products",
     "title": "Green chemistry inputs, built for real fields",
-    "description": "The EcoAgta range applies IUPAC Green Chemistry principles to everyday crop protection — effective against the pests that cost growers yield, without the burden conventional chemistry leaves behind.",
+    "description": "The EcoAgta and CraftDyne range applies IUPAC Green Chemistry principles to everyday crop protection — effective against pests, premature fruit drop, fungal blights, and soil degradation without environmental burden.",
     "moreSoon": {
-      "title": "More of the range is on the way",
-      "description": "CraftDyne is actively developing further EcoAgta formulations. Tell us what pest or crop problem you are facing and we will let you know what is coming.",
-      "cta": "Talk to our team"
+      "title": "Need custom application advice?",
+      "description": "CraftDyne agronomy specialists support custom spray schedules and trial recommendations across all major crop types.",
+      "cta": "Talk to our agronomy team"
     }
   },
   "ez3plus": {
     "meta": {
-      "title": "EcoAgta EZ3+ — Triple Acting Organic Farm Input",
-      "description": "EcoAgta EZ3+ helps control and deter whiteflies and helps prevent sooty mold fungus, while promoting healthier growth. Non-toxic, readily biodegradable green chemistry from CraftDyne."
+      "title": "EcoAgta EZ3+ Multi-Crop Concentrate — Triple Acting Organic Input",
+      "description": "EcoAgta EZ3+ helps control and deter whiteflies and helps prevent sooty mold fungus, while promoting healthier growth. Non-toxic, readily biodegradable green chemistry."
     },
-    "name": "EcoAgta EZ3+",
+    "name": "EcoAgta EZ3+ Multi-Crop Concentrate",
     "kicker": "Triple Acting Organic Farm Input",
     "tagline": "One spray. Three actions. Up to six months of protection.",
-    "intro": "EZ3+ is CraftDyne's flagship green-chemistry farm input. It addresses the whitefly problem and the sooty mold that follows it, while supporting the plant's own growth and immunity — from a single application, using chemistry designed to break down cleanly.",
-
+    "intro": "EZ3+ is CraftDyne's flagship green-chemistry farm input. It addresses whiteflies and sooty mold while supporting the plant's growth and immunity from a single application.",
     "benefits": {
       "heading": "What EZ3+ does",
       "items": {
-        "whiteflies": {
-          "title": "Helps control and deter whiteflies",
-          "description": "Acts on the pest that drives both direct feeding damage and the honeydew behind sooty mold."
-        },
-        "sootyMold": {
-          "title": "Helps prevent sooty mold fungus",
-          "description": "Interrupts the cycle where honeydew deposits become a black fungal film that blocks photosynthesis."
-        },
-        "growth": {
-          "title": "Promotes healthier plant growth",
-          "description": "Supports vigour and canopy development through the protected period."
-        },
-        "productivity": {
-          "title": "Supports higher crop productivity",
-          "description": "Healthier, less-stressed plants hold their yield potential through the season."
-        },
-        "safety": {
-          "title": "Safe for people, animals and the environment",
-          "description": "Non-toxic and non-poisonous, with no harm to the food chain."
-        }
+        "whiteflies": { "title": "Helps control and deter whiteflies", "description": "Acts on the pest that drives both direct feeding damage and honeydew production." },
+        "sootyMold": { "title": "Helps prevent sooty mold fungus", "description": "Interrupts the cycle where honeydew deposits become a black fungal film blocking photosynthesis." },
+        "growth": { "title": "Promotes healthier plant growth", "description": "Supports vigour and canopy development through the protected period." },
+        "productivity": { "title": "Supports higher crop productivity", "description": "Healthier plants hold yield potential throughout the growing season." },
+        "safety": { "title": "100% Non-toxic & Biodegradable", "description": "Zero harm to air, water, soil, and the food chain." }
       }
     },
-
     "howItWorks": {
       "heading": "How the triple action works",
-      "description": "Whitefly damage is rarely just the insect. Feeding weakens the plant, the honeydew it excretes feeds sooty mold, and the mold then blocks the light the plant needs. EZ3+ is formulated to act at all three points rather than only the first.",
+      "description": "Whitefly damage causes feeding stress and honeydew deposits that cultivate sooty mold. EZ3+ targets all three stages simultaneously.",
       "steps": {
-        "deter": {
-          "title": "Deter the pest",
-          "description": "Helps control and deter whiteflies, reducing feeding pressure before an infestation establishes."
-        },
-        "prevent": {
-          "title": "Prevent the secondary infection",
-          "description": "Helps prevent the sooty mold fungus that colonises honeydew residue on leaves and fruit."
-        },
-        "promote": {
-          "title": "Promote the plant",
-          "description": "Supports growth, vigour, immunity and yield, and provides systemic protection against pathogens."
-        }
+        "deter": { "title": "Deter the pest", "description": "Repels whiteflies, aphids, mealybugs, and larvae to prevent heavy infestations." },
+        "prevent": { "title": "Prevent secondary infection", "description": "Inhibits sooty mold fungus from colonising leaf surfaces." },
+        "promote": { "title": "Promote plant vigour", "description": "Boosts chlorophyll efficiency, photosynthesis, and natural systemic immunity." }
       }
     },
-
     "properties": {
       "heading": "Product properties",
       "items": {
         "type": { "label": "Type", "value": "Triple acting organic farm input" },
-        "targets": { "label": "Primary targets", "value": "Whiteflies; sooty mold fungus" },
-        "crops": { "label": "Suitable for", "value": "Vegetable, fruit, plantation and field crops" },
+        "targets": { "label": "Primary targets", "value": "Whiteflies, aphids, mealybugs, sooty mold fungus" },
+        "crops": { "label": "Suitable for", "value": "Vegetable, fruit, plantation and commercial crops" },
         "toxicity": { "label": "Toxicity", "value": "Non-toxic, non-poisonous" },
         "biodegradability": { "label": "Biodegradability", "value": "Completely and readily biodegradable" },
         "basis": { "label": "Formulated on", "value": "IUPAC Green Chemistry principles" },
         "foodChain": { "label": "Food chain", "value": "No harm to the food chain" },
-        "residue": { "label": "Air, water and soil", "value": "No harm to air, water or soil" }
+        "residue": { "label": "Air, water and soil", "value": "Zero harm to air, water or soil" }
       }
     },
-
     "application": {
       "heading": "Using EZ3+",
-      "description": "EZ3+ is applied as a foliar spray using standard equipment, so it fits existing routines without new machinery or training.",
-      "notice": "Dosage and spray interval depend on crop, growth stage and local pest pressure. Our team will recommend a schedule for your crop and region — please get in touch before first use, and always read the product label.",
+      "description": "EZ3+ is applied as a foliar spray using standard spraying equipment.",
+      "notice": "Recommended dosage varies with crop and pest pressure. Spray in early morning or late afternoon for best results.",
       "cta": "Get an application schedule"
     },
-
     "faq": {
       "heading": "Frequently asked questions",
       "items": {
-        "howLong": {
-          "question": "How long does one application last?",
-          "answer": "CraftDyne states that a single spray provides up to six months of protection. Actual duration varies with crop, climate, growth stage and local pest pressure, so treat six months as an upper figure rather than a guarantee and confirm a schedule for your conditions with our team."
-        },
-        "organic": {
-          "question": "Is EZ3+ suitable for organic farming?",
-          "answer": "EZ3+ is described by CraftDyne as a triple acting organic farm input, formulated on IUPAC Green Chemistry principles and completely readily biodegradable. Organic certification requirements differ between certifying bodies and export markets, so please contact us with the certification scheme you work under before using it in a certified system."
-        },
-        "safety": {
-          "question": "Is it safe around people and animals?",
-          "answer": "EZ3+ is formulated to be non-toxic and non-poisonous, with no harm to the food chain and no harm to air, water or soil. Standard good practice when spraying any farm input still applies — follow the directions on the product label."
-        },
-        "crops": {
-          "question": "Which crops can it be used on?",
-          "answer": "EZ3+ is intended for vegetable, fruit, plantation and field crops. If your crop is not listed on our applications page, contact us and we will advise whether it is suitable."
-        },
-        "mixing": {
-          "question": "Can it be tank-mixed with other inputs?",
-          "answer": "Compatibility depends on what else you are applying. Please check with our team before tank-mixing so we can confirm there is no interaction that would reduce performance."
-        },
-        "buy": {
-          "question": "How do I buy EZ3+ or become a distributor?",
-          "answer": "Contact us by phone, WhatsApp or the enquiry form. We work with farmers directly and with agri-input dealers and distributors across India and in export markets."
-        }
+        "howLong": { "question": "How long does one application last?", "answer": "A single application can provide up to six months of protection under standard conditions." },
+        "organic": { "question": "Is EZ3+ suitable for organic farming?", "answer": "Yes, EZ3+ is formulated according to IUPAC Green Chemistry principles using 100% readily biodegradable organic inputs." },
+        "safety": { "question": "Is it safe around farm workers and animals?", "answer": "Yes, EZ3+ is non-poisonous, non-fuming, and non-irritating." },
+        "crops": { "question": "Which crops can it be used on?", "answer": "Suitable for vegetables, fruits, commercial crops, and tree plantations." },
+        "mixing": { "question": "Can it be tank-mixed?", "answer": "Check with our technical team before tank-mixing with chemical inputs." },
+        "buy": { "question": "How do I purchase or become a distributor?", "answer": "Contact our sales team directly via WhatsApp, phone, or the enquiry form." }
       }
     },
-
     "cta": {
       "title": "Interested in EZ3+ for your crop?",
-      "description": "Tell us your crop, area and location, and we will come back with an application recommendation.",
+      "description": "Contact our technical team for custom dosage and application schedules.",
       "primary": "Send an enquiry",
       "secondary": "Chat on WhatsApp"
+    }
+  },
+  "ez3Coconut": {
+    "meta": {
+      "title": "EcoAgta EZ3+ Concentrate for Coconut Trees — Whitefly & Sooty Mold Control",
+      "description": "Targeted organic treatment for Coconut Palms against Rugose Spiraling Whitefly (RSW), sooty mold fungus, and sap-sucking insects. Long-lasting protection."
+    },
+    "name": "EcoAgta EZ3+ Concentrate for Coconut Trees",
+    "kicker": "Specialized Coconut Palm Protection",
+    "tagline": "Eradicates Rugose Spiraling Whitefly & Sooty Mold on Coconut Canopies.",
+    "intro": "EcoAgta EZ3+ Coconut Formula provides fast-acting and lasting protection against Rugose Spiraling Whitefly (RSW Aleurodicus rugioperculatus) and the resulting Sooty Mold Fungus (Capnodium) on coconut trees.",
+    "benefits": {
+      "heading": "Coconut Specific Benefits",
+      "items": {
+        "rsw": { "title": "Controls Rugose Spiraling Whitefly", "description": "Effectively repels and deters RSW, aphids, soft scales, and felt scales on coconut fronds." },
+        "sooty": { "title": "Eradicates Sooty Mold Fungus", "description": "Clears black sooty mold film from fronds, restoring light absorption and photosynthesis within weeks." },
+        "stress": { "title": "Reduces Shade & Canopy Stress", "description": "Boosts photosynthesis in shaded canopy areas and improves overall palm vigour." },
+        "pathogens": { "title": "Prevents Secondary Diseases", "description": "Interrupts insect-vectored diseases such as Phytophthora and Fusarium." },
+        "safety": { "title": "Zero Environmental Harm", "description": "Safe for soil earthworms, surrounding livestock, and natural water bodies." }
+      }
+    },
+    "dilution": {
+      "heading": "Dilution & Spray Directions",
+      "description": "Use clean, fresh stream or well water (non-chlorinated preferred). Mix thoroughly for 10 minutes.",
+      "startingDose": "1 : 300 (First / Starting Spray)",
+      "continuingDose": "1 : 400 (Continuing / Follow-up Spray)",
+      "timing": "Spray between 6:00 AM - 10:30 AM or 3:30 PM - 6:30 PM. Ensure full canopy coverage."
+    },
+    "faq": {
+      "heading": "Coconut Palms FAQ",
+      "items": {
+        "rswControl": { "question": "Does EZ3+ control Rugose Spiraling Whitefly (RSW)?", "answer": "Yes! EZ3+ specifically deters RSW adult feeding and egg laying while clearing sooty mold fungus." },
+        "dosage": { "question": "What is the dosage for Coconut trees?", "answer": "Use a starting dose of 1:300 for initial treatment, followed by 1:400 for maintenance sprays." },
+        "frequency": { "question": "How often should I spray coconut trees?", "answer": "Typically 2 to 3 sprays per year maintain a clear frond canopy and high nut yields." },
+        "safety": { "question": "Is it safe for beneficial insects?", "answer": "Yes, EZ3+ works via physical and repellent mechanisms without broad-spectrum chemical toxicity." },
+        "water": { "question": "What water should be used for dilution?", "answer": "Fresh well or stream water is recommended. Avoid chlorinated tap water where possible." }
+      }
+    }
+  },
+  "ez3Cardamom": {
+    "meta": {
+      "title": "EcoAgta EZ3+ Cardamom Crop Treatment — Insect & Disease Shield",
+      "description": "Recommended organic treatment for Cardamom plantations. Protects against thrips, aphids, whiteflies, mosaic virus vector, and soil nematodes."
+    },
+    "name": "EcoAgta EZ3+ Cardamom Crop Treatment",
+    "kicker": "Cardamom Sap-Sucker & Vector Shield",
+    "tagline": "Protects Cardamom plantations from Thrips, Aphids & Virus Vectors.",
+    "intro": "EZ3+ Cardamom Crop Treatment offers targeted protection against destructive sap-sucking insects in Cardamom plantations including Thrips, Aphids, Mealybugs, Spider Mites, and Banana Aphids (vector for Mosaic Virus).",
+    "benefits": {
+      "heading": "Cardamom Specific Protection",
+      "items": {
+        "suckers": { "title": "Controls Sap-Sucking Pests", "description": "Repels Thrips, Aphids, Mealybugs, Soft Scales, and Spider Mites." },
+        "virus": { "title": "Prevents Virus Transmission", "description": "Prevents Mosaic Virus by controlling vector insects such as Pentalonia nigronervosa." },
+        "nematodes": { "title": "Deters Soil Nematodes", "description": "Helps suppress harmful nematode populations around Cardamom root zones." },
+        "photosynthesis": { "title": "Enhances Canopy Photosynthesis", "description": "Improves plant chlorophyll activity in shaded hill-slopes and under tree shade." },
+        "biodegradable": { "title": "100% Readily Biodegradable", "description": "Leaves no chemical residues on harvested cardamom pods." }
+      }
+    },
+    "dilution": {
+      "heading": "Dosage & Application Instructions",
+      "description": "Dilute with fresh non-chlorinated well or stream water.",
+      "startingDose": "1 : 400 (Starting First Spray)",
+      "continuingDose": "1 : 400 (Continuing Spray)",
+      "timing": "Apply symptomatically when insects are spotted. Spray 3 times per growing season."
+    },
+    "faq": {
+      "heading": "Cardamom Treatment FAQ",
+      "items": {
+        "thrips": { "question": "Does EZ3+ control Cardamom Thrips?", "answer": "Yes, EZ3+ repels thrips and prevents feeding damage on cardamom shoots and pods." },
+        "dosage": { "question": "What is the recommended dilution ratio for Cardamom?", "answer": "Dilute 1:400 in fresh water (e.g. 250 mL in 100 Liters of water)." },
+        "combination": { "question": "Can it be combined with Myco Spectra?", "answer": "Yes! EZ3+ handles insect pests while Myco Spectra controls cardamom fungal diseases like Phytophthora and Pythium." },
+        "residue": { "question": "Will EZ3+ affect the flavor or aroma of Cardamom pods?", "answer": "No. EZ3+ is completely organic and readily biodegradable, leaving zero chemical residue." },
+        "safety": { "question": "Is it safe for hill-station ecosystems?", "answer": "Yes, zero harm to mountain streams, soil micro-fauna, or wildlife." }
+      }
     }
   },
   "blumennStrong": {
     "meta": {
       "title": "EcoAgta Blumenn Strong Super Concentrate — Premature Fruit Drop Prevention",
-      "description": "Blumenn Strong Super Concentrate prevents premature fruit drop, increases yield, and provides systemic protection & insect repellency. Made with Green Chemistry principles."
+      "description": "Blumenn Strong Super Concentrate prevents premature fruit drop, increases yield, and provides systemic protection & insect repellency."
     },
     "name": "EcoAgta Blumenn Strong Super Concentrate",
     "kicker": "For Preventing Premature Fruit Drop & Increasing Yield",
     "tagline": "Systemic Protection, Immunity & Yield Enhancement for Fruit & Plantation Crops.",
-    "intro": "EcoAgta Blumenn Strong Super Concentrate is formulated using IUPAC Green Chemistry principles to address both internal and external root causes of premature fruit drop. It increases viable fruit, enhances plant immunity, and repels insects & fungal pathogens while causing ZERO harm to air, water, soil, and the food chain.",
-
+    "intro": "EcoAgta Blumenn Strong Super Concentrate addresses both internal physiological stress and external pest pressures that cause premature fruit drop in guava, mango, citrus, coconut, and tapioca.",
     "benefits": {
       "heading": "Key Benefits",
       "items": {
-        "drop": {
-          "title": "Prevents Premature Fruit Drop",
-          "description": "Addresses abscission layer formation, ovule degeneration, and fruitlet competition to retain viable fruit."
-        },
-        "yield": {
-          "title": "Increases Farm Yield & Savings",
-          "description": "Saves farming costs over longer protection periods and significantly boosts usable harvest volume."
-        },
-        "immunity": {
-          "title": "Provides Systemic Protection",
-          "description": "Strengthens internal plant immunity against fungal pathogens like Powdery Mildew and Anthracnose."
-        },
-        "decay": {
-          "title": "Insect & Fungal Repellency",
-          "description": "Deters sap-sucking insects like Leaf Hoppers and Mealybugs alongside fungal infections."
-        },
-        "safety": {
-          "title": "100% Non-toxic & Readily Biodegradable",
-          "description": "Safe for applicators, livestock, wildlife, and natural water bodies."
-        }
+        "drop": { "title": "Prevents Premature Fruit Drop", "description": "Prevents abscission layer formation and ovule degeneration to retain viable fruit." },
+        "yield": { "title": "Increases Farm Yield & Savings", "description": "Boosts usable harvest yields and saves farming input costs over long protection periods." },
+        "immunity": { "title": "Provides Systemic Immunity", "description": "Strengthens internal plant immunity against Powdery Mildew, Anthracnose, and rot." },
+        "decay": { "title": "Repels Sap-Sucking Insects", "description": "Deters Leaf Hoppers and Mealybugs from infesting fruit clusters." },
+        "safety": { "title": "100% Non-toxic & Safe", "description": "Zero harm to air, water, soil, applicators, or the food chain." }
       }
     },
-
     "causes": {
       "heading": "Underlying Causes Addressed",
-      "sub": "Blumenn Strong works on both internal physiological stress and external pest/disease pressure.",
+      "sub": "Blumenn Strong tackles physiological causes and pest pressures simultaneously.",
       "internalTitle": "Internal Physiological Causes",
       "externalTitle": "External Pest & Disease Pressures",
       "internal": {
@@ -172,54 +181,141 @@
         "soil": "Poor Soil Conditions",
         "flowers": "Defective Flowers",
         "ovules": "Degeneration of Ovules",
-        "competition": "Competition between developing Fruitlets",
+        "competition": "Fruitlet Competition",
         "climate": "Climatic Stresses",
-        "abscission": "Formation of abscission layer at fruit attachment point"
+        "abscission": "Abscission Layer Formation"
       },
       "external": {
-        "fungal": "High incidence of fungal diseases (Powdery Mildew, Anthracnose)",
-        "suckers": "High incidence of Leaf Hoppers and Mealybugs (Sap Suckers)"
+        "fungal": "Fungal Diseases (Powdery Mildew, Anthracnose)",
+        "suckers": "Sap Suckers (Leaf Hoppers, Mealybugs)"
       }
     },
-
     "dilution": {
       "heading": "Dilution & Spray Recommendations",
-      "description": "Follow recommended dilution rates using clean fresh well or stream water for best efficacy.",
+      "description": "Follow dilution guidelines using clean fresh well or stream water.",
       "ratioTitle": "Dilution Ratio for Tree & Plantation Crops",
-      "ratioExample": "1 : 2000 (Example: 100 mL in 200 Liters of fresh non-chlorinated water)",
-      "waterType": "Mix thoroughly for 10 minutes in a clean drum. Wash and rinse all contents into the mixing drum."
+      "ratioExample": "1 : 2000 (Example: 100 mL in 200 Liters of water)",
+      "waterType": "Mix thoroughly for 10 minutes in a clean mixing drum."
     },
-
     "usage": {
       "timingTitle": "Spraying Directions & Timing",
-      "timingBody": "Preferably spray between 6:00 AM – 10:30 AM or 3:30 PM – 6:30 PM for optimal foliar absorption.",
-      "coverage": "Spray thoroughly to cover all leaves and plant parts. Apply symptomatically at first sight of insects or fungi."
+      "timingBody": "Spray from 6:00 AM to 10:30 AM or 3:30 PM to 6:30 PM.",
+      "coverage": "Ensure thorough coverage on all leaves and developing fruitlets."
     },
-
     "safety": {
       "heading": "Safety & Eco-Compatibility",
-      "notice": "Non-poisonous, non-fuming, non-irritating to persons and animals. Readily biodegradable with zero environmental burden. Always wash hands after handling."
+      "notice": "Non-poisonous, non-fuming, non-irritating to applicators and animals."
     },
-
     "faq": {
       "heading": "Frequently Asked Questions",
       "items": {
-        "purpose": {
-          "question": "What is the primary function of Blumenn Strong Super Concentrate?",
-          "answer": "Blumenn Strong is specifically formulated to prevent premature fruit drop, increase viable fruit retention, and boost overall harvest yield."
-        },
-        "crops": {
-          "question": "Which crops benefit most from Blumenn Strong?",
-          "answer": "It is ideal for Tree and Plantation crops such as Guava, Mango, Coconut, Lemon, Lime, and Tapioca."
-        },
-        "dilution": {
-          "question": "What is the recommended dosage and dilution?",
-          "answer": "The recommended dilution is 1:2000 (e.g., 100 mL in 200 Liters of water). Ensure thorough mixing in non-chlorinated fresh water."
-        },
-        "safety": {
-          "question": "Is Blumenn Strong safe for animals and the environment?",
-          "answer": "Yes. It is made according to IUPAC Green Chemistry principles, completely non-toxic, readily biodegradable, and leaves ZERO harmful residues in air, water, soil, or the food chain."
-        }
+        "purpose": { "question": "What is the main purpose of Blumenn Strong?", "answer": "Blumenn Strong prevents premature fruit drop and increases harvest yields across tree and plantation crops." },
+        "crops": { "question": "Which crops benefit most?", "answer": "Guava, Mango, Coconut, Lemon, Lime, Orange, and Tapioca." },
+        "dilution": { "question": "What is the dilution ratio?", "answer": "Dilute 1:2000 in fresh water (100 mL in 200 Liters of water)." },
+        "safety": { "question": "Is it safe for wildlife and water bodies?", "answer": "Yes, 100% readily biodegradable with zero environmental toxicity." }
+      }
+    }
+  },
+  "mycoSpectra": {
+    "meta": {
+      "title": "EcoAgta Myco Spectra Fungicide — Broad-Spectrum Organic Pathogen Control",
+      "description": "Organic broad-spectrum fungicide engineered for Cardamom, plantation, and horticulture crops. Controls Colletotrichum, Phytophthora, Pythium, Alternaria, and Root Rot."
+    },
+    "name": "EcoAgta Myco Spectra Fungicide",
+    "kicker": "Advanced Organic Fungal & Pathogen Control",
+    "tagline": "Up to 6 months systemic protection against major plant fungi.",
+    "intro": "EcoAgta Myco Spectra is an advanced organic fungicide formulated to suppress and prevent common destructive agricultural fungi. It provides bioavailable plant nutrition and systemic protection for up to 6 months.",
+    "benefits": {
+      "heading": "Key Benefits",
+      "items": {
+        "fungiControl": { "title": "Controls Major Fungal Pathogens", "description": "Suppresses Colletotrichum, Phytophthora, Pythium, Phyllosticta elettariae, Alternaria, and Root Rot." },
+        "duration": { "title": "Up to 6 Months Protection", "description": "Provides long-lasting systemic immunity against repeat fungal blights." },
+        "bioavailable": { "title": "Bioavailable Plant Nutrition", "description": "Delivers essential bioavailable nutrients that strengthen cell wall resistance." },
+        "yieldSupport": { "title": "Prevents Crop & Pod Loss", "description": "Protects Cardamom capsules, fruits, and roots from fungal decay." },
+        "greenSafety": { "title": "100% Eco-Safe Formulation", "description": "Zero chemical residues, non-toxic, and safe for soil microorganisms." }
+      }
+    },
+    "targets": {
+      "heading": "Target Fungal Pathogens",
+      "items": {
+        "colletotrichum": "Colletotrichum (Anthracnose / Leaf Spot)",
+        "phytophthora": "Phytophthora (Rot & Blight)",
+        "pythium": "Pythium (Damping Off & Root Decay)",
+        "phyllosticta": "Phyllosticta elettariae (Cardamom Leaf Blight)",
+        "alternaria": "Alternaria (Target Spot)",
+        "rootRot": "Complex Root Rot Pathogens"
+      }
+    },
+    "dilution": {
+      "heading": "Dosage & Application",
+      "startingDose": "1 : 400 (Starting First Spray)",
+      "continuingDose": "1 : 400 (Continuing Spray)",
+      "directions": "Mix thoroughly in clean well or stream water. Spray symptomatically at first sign of fungal spots or preventatively during high-humidity seasons."
+    },
+    "faq": {
+      "heading": "Myco Spectra FAQ",
+      "items": {
+        "fungi": { "question": "Which fungal diseases does Myco Spectra control?", "answer": "It controls Colletotrichum, Phytophthora, Pythium, Phyllosticta elettariae, Alternaria, and Root Rot." },
+        "cardamom": { "question": "Is Myco Spectra effective on Cardamom plantations?", "answer": "Yes, it is specifically recommended for Cardamom to prevent Capsule Rot, Clump Rot, and Leaf Blight." },
+        "dilution": { "question": "What is the recommended dosage?", "answer": "Use a 1:400 dilution ratio in fresh water for both starting and continuing sprays." },
+        "mixing": { "question": "Can it be applied together with EZ3+?", "answer": "Yes, combining EZ3+ and Myco Spectra provides complete dual protection against both insects and fungal diseases." }
+      }
+    }
+  },
+  "soilAmend": {
+    "meta": {
+      "title": "CraftDyne Soil Amend (EcoPop) — Organic Plant-Based Soil Conditioner",
+      "description": "Pure organic plant-based soil amendment block. High Carbon-to-Nitrogen ratio with Terpenoid and Limonoid content for water retention, aeration, and nematode protection."
+    },
+    "name": "CraftDyne Soil Amend (EcoPop)",
+    "kicker": "Pure Organic Plant-Based Soil Amendment",
+    "tagline": "High Terpenoid & Limonoid content for soil health, root oxygenation & water retention.",
+    "intro": "CraftDyne Soil Amend (EcoPop) is a 100% plant-based organic soil conditioner compressed into 5kg blocks. It features a high Carbon-to-Nitrogen ratio, rich Terpenoid & Limonoid content, and essential micro-nutrients to rebuild depleted agricultural soils.",
+    "benefits": {
+      "heading": "Key Benefits & Advantages",
+      "items": {
+        "porosity": { "title": "Excellent Air Porosity & Water Retention", "description": "Retains 14 to 15 Liters of water per kg while maintaining root aeration in heavy soils." },
+        "nematode": { "title": "Deters Soil-Borne Nematodes", "description": "Naturally resistant to bacteria and fungi, effectively preventing root-knot nematodes." },
+        "durability": { "title": "Serves for up to 4 Years", "description": "Provides long-term soil structure improvement and boosts earthworm activity." },
+        "cec": { "title": "High Cation Exchange Capacity", "description": "Bonds fertilizer ions and releases plant nutrients gradually as demanded by roots." },
+        "usda": { "title": "USDA NOP Compliant", "description": "Permitted under USDA Title 7 CFR 205.203.C3 for organic crop fertilizer and soil amendment." }
+      }
+    },
+    "specs": {
+      "heading": "Technical Specifications",
+      "dimensions": "30 cm x 30 cm x 10 cm block",
+      "weight": "5.0 kg (+/- 0.2 kg)",
+      "particle": "All particles pass 6 mm Mesh (Fines removed)",
+      "compression": "1 : 5 (Pressed volume to loose filled)",
+      "waterCapacity": "14 - 15 Liters per 1 Kilogram",
+      "ph": "6.30",
+      "ec": "0.40 Micromhos/cm (Low Electrical Conductivity)"
+    },
+    "minerals": {
+      "heading": "Average Mineral Profile",
+      "n": "0.40%",
+      "p": "0.80%",
+      "k": "1.30%",
+      "ca": "0.20%",
+      "mg": "0.30%",
+      "fe": "23 ppm",
+      "zn": "22 ppm",
+      "mn": "17 ppm",
+      "cu": "5 ppm"
+    },
+    "usage": {
+      "heading": "Usage & Hydration Instructions",
+      "hydration": "Hydrate the block with fresh water to expand and break it apart into loose organic material.",
+      "nursery": "Seeds or seedlings may be directly planted into pure Soil Amend or blended into potting soil.",
+      "field": "Till and mix hydrated Soil Amend blocks into plant beds, field rows, or mound root spread areas."
+    },
+    "faq": {
+      "heading": "Soil Amend FAQ",
+      "items": {
+        "water": { "question": "How much water does one 5kg block retain?", "answer": "One 5kg block holds between 70 to 75 Liters of water, releasing it slowly to plant roots." },
+        "duration": { "question": "How long does Soil Amend last in the soil?", "answer": "A single application continues to improve soil porosity and nutrient retention for up to 4 years." },
+        "nematodes": { "question": "How does it protect against nematodes?", "answer": "Its natural Limonoid and Terpenoid content creates an inhospitable environment for parasitic soil nematodes." },
+        "organic": { "question": "Is it certified organic?", "answer": "Yes, CraftDyne Soil Amend is permitted per USDA NOP rule Title 7 CFR 205.203.C3 as crop fertilizer & soil amendment." }
       }
     }
   }
