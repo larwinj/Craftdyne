@@ -33,7 +33,7 @@ export const MAIN_NAV = [
       { key: 'myco-spectra', path: 'products/ecoagta-myco-spectra', labelKey: 'nav.sub.mycoSpectra', fallbackLabel: 'Myco Spectra Fungicide' },
       { key: 'myco-delta', path: 'products/ecoagta-myco-delta', labelKey: 'nav.sub.mycoDelta', fallbackLabel: 'EcoAgta Myco Delta' },
       { key: 'myco-siga', path: 'products/ecoagta-myco-siga', labelKey: 'nav.sub.mycoSiga', fallbackLabel: 'EcoAgta Myco Siga' },
-      { key: 'soil-amend', path: 'products/craftdyne-soil-amend', labelKey: 'nav.sub.soilAmend', fallbackLabel: 'CraftDyne Soil Amend (EcoPop)' },
+      { key: 'soil-amend', path: 'products/craftdyne-soil-amend', labelKey: 'nav.sub.soilAmend', fallbackLabel: 'CraftDyne Soil Amend' },
     ],
   },
   {

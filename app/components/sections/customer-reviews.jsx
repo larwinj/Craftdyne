@@ -84,7 +84,7 @@ export const REVIEWS_DATA = [
     outcome: 'Zero Nematode Damage & High Water Retention',
     headline: 'Transformed clay soil porosity and retained soil moisture through dry weeks',
     quote:
-      'CraftDyne Soil Amend blocks (EcoPop) built outstanding air porosity in our clay soil. Each 5kg block retains immense moisture so we water less often, and nematode damage in root zones has been completely eliminated.',
+      'CraftDyne Soil Amend blocks built outstanding air porosity in our clay soil. Each 5kg block retains immense moisture so we water less often, and nematode damage in root zones has been completely eliminated.',
   },
   {
     id: 'rev-6',

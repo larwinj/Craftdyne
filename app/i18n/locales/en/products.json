@@ -264,13 +264,13 @@
   },
   "soilAmend": {
     "meta": {
-      "title": "CraftDyne Soil Amend (EcoPop) — Organic Plant-Based Soil Conditioner",
+      "title": "CraftDyne Soil Amend — Organic Plant-Based Soil Conditioner",
       "description": "Pure organic plant-based soil amendment block. High Carbon-to-Nitrogen ratio with Terpenoid and Limonoid content for water retention, aeration, and nematode protection."
     },
-    "name": "CraftDyne Soil Amend (EcoPop)",
+    "name": "CraftDyne Soil Amend",
     "kicker": "Pure Organic Plant-Based Soil Amendment",
     "tagline": "High Terpenoid & Limonoid content for soil health, root oxygenation & water retention.",
-    "intro": "CraftDyne Soil Amend (EcoPop) is a 100% plant-based organic soil conditioner compressed into 5kg blocks. It features a high Carbon-to-Nitrogen ratio, rich Terpenoid & Limonoid content, and essential micro-nutrients to rebuild depleted agricultural soils.",
+    "intro": "CraftDyne Soil Amend is a 100% plant-based organic soil conditioner compressed into 5kg blocks. It features a high Carbon-to-Nitrogen ratio, rich Terpenoid & Limonoid content, and essential micro-nutrients to rebuild depleted agricultural soils.",
     "benefits": {
       "heading": "Key Benefits & Advantages",
       "items": {
