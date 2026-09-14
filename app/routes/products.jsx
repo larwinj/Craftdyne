@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { Link, useOutletContext } from 'react-router';
-import { ArrowRight, Check, Download } from 'lucide-react';
+import { ArrowRight, Check, Download, Package } from 'lucide-react';
 
 import { CtaBand } from '../components/sections/cta-band.jsx';
 import { PageHero } from '../components/sections/page-hero.jsx';
@@ -15,10 +15,10 @@ import { breadcrumbSchema, buildMeta } from '../lib/seo.js';
 
 const BENEFITS_MAP = {
   ez3plus: ['whiteflies', 'sootyMold', 'growth', 'productivity'],
-  ez3Coconut: ['rsw', 'sooty', 'stress', 'pathogens'],
-  ez3Cardamom: ['suckers', 'virus', 'nematodes', 'photosynthesis'],
   blumennStrong: ['drop', 'yield', 'immunity', 'decay'],
   mycoSpectra: ['fungiControl', 'duration', 'bioavailable', 'yieldSupport'],
+  mycoDelta: ['fungiControl', 'duration', 'bioavailable'],
+  mycoSiga: ['fungiControl', 'duration', 'bioavailable'],
   soilAmend: ['porosity', 'nematode', 'durability', 'cec'],
 };
 
@@ -49,14 +49,13 @@ export default function Products() {
       />
 
       <Section tone="white">
-        <ul className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+        <ul className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {PRODUCTS.map((product) => {
             const benefits = BENEFITS_MAP[product.id] || BENEFITS_MAP.ez3plus;
             return (
               <li key={product.id} className="flex">
-                <article className="bg-mist ring-brand-100 hover:border-brand-300 flex w-full flex-col justify-between overflow-hidden rounded-2xl p-4 sm:p-5 ring-1 transition-all hover:shadow-lg">
+                <article className="bg-mist ring-brand-100 hover:border-brand-300 flex w-full flex-col justify-between overflow-hidden rounded-2xl p-5 ring-1 transition-all hover:shadow-lg">
                   <div>
-                    {/* Compact Card Header: Bottle icon on left + Title & Kicker on right */}
                     <div className="flex items-start gap-3">
                       <div className="bg-white/90 shrink-0 rounded-xl p-1.5 ring-1 ring-slate-200/60 shadow-xs flex items-center justify-center w-16 h-20 overflow-hidden">
                         <ProductBottle className="max-w-[3.2rem]" />
@@ -64,7 +63,7 @@ export default function Products() {
 
                       <div className="min-w-0 flex-1">
                         <span className="bg-brand-600 font-display inline-block rounded-full px-2.5 py-0.5 text-[0.6875rem] font-bold text-white leading-tight">
-                          {t(`${product.id}.kicker`)}
+                          {t(`${product.id}.kicker`, product.brand)}
                         </span>
 
                         <h2 className="text-base font-bold leading-snug mt-1.5 text-navy-900">
@@ -79,30 +78,46 @@ export default function Products() {
                                   EcoAgta EZ3+<sub className="text-[0.65rem] font-medium font-sans">concentrate</sub>
                                 </span>
                               ) : (
-                                t(`${product.id}.name`)
+                                t(`${product.id}.name`, product.name)
                               )}
                             </span>
                           </Link>
                         </h2>
 
                         <p className="mt-1 text-xs text-slate-600 line-clamp-2 leading-tight">
-                          {t(`${product.id}.tagline`)}
+                          {t(`${product.id}.tagline`, 'Proactive Green Chemistry Solution')}
                         </p>
                       </div>
                     </div>
 
+                    {/* Quantities / Packages Badges (Ref PDF Offerings) */}
+                    {product.packages && product.packages.length > 0 ? (
+                      <div className="mt-3.5 flex flex-wrap items-center gap-1.5 border-t border-slate-200/60 pt-2.5">
+                        <span className="text-[0.6875rem] font-bold text-slate-500 uppercase tracking-wider flex items-center gap-1">
+                          <Package className="size-3 text-brand-600" /> Packages:
+                        </span>
+                        {product.packages.map((pkg) => (
+                          <span
+                            key={pkg}
+                            className="inline-block rounded-md bg-white px-2 py-0.5 text-[0.6875rem] font-semibold text-navy-800 border border-slate-200 shadow-2xs"
+                          >
+                            {pkg}
+                          </span>
+                        ))}
+                      </div>
+                    ) : null}
+
                     {/* Compact Key Benefits Checklist */}
-                    <ul className="mt-3.5 flex flex-col gap-1.5 border-t border-slate-200/60 pt-3">
+                    <ul className="mt-3 flex flex-col gap-1.5 border-t border-slate-200/60 pt-3">
                       {benefits.slice(0, 3).map((id) => (
                         <li key={id} className="flex items-center gap-2 text-xs text-slate-700">
                           <Check className="text-brand-600 size-3 shrink-0" aria-hidden="true" />
-                          <span className="truncate">{t(`${product.id}.benefits.items.${id}.title`)}</span>
+                          <span className="truncate">{t(`${product.id}.benefits.items.${id}.title`, id)}</span>
                         </li>
                       ))}
                     </ul>
                   </div>
 
-                  {/* Compact Side-by-Side Action Buttons */}
                   <div className="mt-4 grid grid-cols-2 gap-2 border-t border-slate-200/60 pt-3">
                     <Button to={localePath(lang, product.slug)} size="sm" className="w-full justify-center text-xs px-2 py-1.5 min-h-9">
                       {t('common:actions.viewProduct')}

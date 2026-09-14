@@ -1,7 +1,7 @@
-import { useCallback, useRef } from 'react';
+import { useCallback, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { NavLink } from 'react-router';
-import { Mail, MessageCircle, Phone, X } from 'lucide-react';
+import { NavLink, Link } from 'react-router';
+import { ChevronDown, Mail, MessageCircle, Phone, X } from 'lucide-react';
 
 import { MAIN_NAV } from '../../config/nav.js';
 import { CONTACT } from '../../config/contact.js';
@@ -12,32 +12,27 @@ import { localePath, mailtoHref, telHref, whatsappHref } from '../../lib/links.j
 import { BrandMark } from './brand-mark.jsx';
 import { LanguageSwitcher } from './language-switcher.jsx';
 
-/**
- * Full-screen navigation drawer for phones and tablets.
- *
- * Deliberately full-screen rather than a narrow slide-over: at 320px a partial
- * panel leaves nav items cramped, and Tamil/Hindi labels are longer than their
- * English equivalents.
- */
 export function MobileNav({ open, onClose, lang }) {
   const { t } = useTranslation();
   const panelRef = useRef(null);
+  const [expandedKeys, setExpandedKeys] = useState({});
   const close = useCallback(() => onClose(), [onClose]);
 
   useFocusTrap(panelRef, open, close);
   useLockBodyScroll(open);
 
+  function toggleExpand(key, e) {
+    e.preventDefault();
+    e.stopPropagation();
+    setExpandedKeys((prev) => ({ ...prev, [key]: !prev[key] }));
+  }
+
   return (
     <div
       className={cn(
-        // overflow-hidden matters: the panel parks off-screen via translate-x-full
-        // when closed, and `overflow-x: hidden` on body does NOT clip fixed-position
-        // descendants — so without this the closed drawer widens the document.
         'fixed inset-0 z-50 overflow-hidden xl:hidden',
         open ? 'pointer-events-auto' : 'pointer-events-none',
       )}
-      // `inert` removes the closed drawer from both the tab order and the
-      // accessibility tree without affecting the slide transition.
       inert={!open}
     >
       <div
@@ -75,17 +70,56 @@ export function MobileNav({ open, onClose, lang }) {
         <nav className="flex-1 overflow-y-auto overscroll-contain px-3 py-4">
           <ul className="flex flex-col gap-1">
             <li>
-              <DrawerLink to={localePath(lang)} end onClick={close}>
+              <DrawerLink to={localePath(lang)} end onClick={close} isTamil={lang === 'ta'}>
                 {t('nav.home')}
               </DrawerLink>
             </li>
-            {MAIN_NAV.map((item) => (
-              <li key={item.key}>
-                <DrawerLink to={localePath(lang, item.path)} onClick={close}>
-                  {t(item.labelKey)}
-                </DrawerLink>
-              </li>
-            ))}
+            {MAIN_NAV.map((item) => {
+              const hasChildren = item.children && item.children.length > 0;
+              const isExpanded = !!expandedKeys[item.key];
+              const isTamil = lang === 'ta';
+
+              return (
+                <li key={item.key} className="flex flex-col">
+                  <div className="flex items-center justify-between">
+                    <DrawerLink to={localePath(lang, item.path)} onClick={close} isTamil={isTamil} className="flex-1">
+                      {t(item.labelKey, item.key)}
+                    </DrawerLink>
+                    {hasChildren ? (
+                      <button
+                        type="button"
+                        onClick={(e) => toggleExpand(item.key, e)}
+                        className="inline-flex size-11 items-center justify-center rounded-lg text-slate-500 hover:bg-slate-100"
+                        aria-label="Toggle section menu"
+                      >
+                        <ChevronDown
+                          className={cn('size-5 transition-transform duration-200', isExpanded && 'rotate-180 text-brand-600')}
+                        />
+                      </button>
+                    ) : null}
+                  </div>
+
+                  {hasChildren && isExpanded ? (
+                    <ul className="my-1 ml-4 flex flex-col gap-1 border-l-2 border-brand-100 pl-3">
+                      {item.children.map((sub) => (
+                        <li key={sub.key}>
+                          <Link
+                            to={localePath(lang, sub.path)}
+                            onClick={close}
+                            className={cn(
+                              "flex min-h-10 items-center rounded-lg px-3 font-medium text-slate-600 transition-colors hover:bg-emerald-50 hover:text-brand-700",
+                              isTamil ? "text-xs" : "text-sm"
+                            )}
+                          >
+                            {t(sub.labelKey, sub.fallbackLabel)}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  ) : null}
+                </li>
+              );
+            })}
           </ul>
 
           <div className="mt-6 border-t border-slate-100 pt-5">
@@ -118,7 +152,7 @@ export function MobileNav({ open, onClose, lang }) {
   );
 }
 
-function DrawerLink({ to, end, onClick, children }) {
+function DrawerLink({ to, end, onClick, className, children, isTamil }) {
   return (
     <NavLink
       to={to}
@@ -126,8 +160,10 @@ function DrawerLink({ to, end, onClick, children }) {
       onClick={onClick}
       className={({ isActive }) =>
         cn(
-          'font-display text-fluid-lg flex min-h-12 items-center rounded-lg px-4 font-semibold transition-colors',
+          'font-display flex min-h-12 items-center rounded-lg px-4 font-semibold transition-colors',
+          isTamil ? 'text-sm sm:text-base' : 'text-fluid-lg',
           isActive ? 'bg-brand-50 text-brand-800' : 'text-navy-700 hover:bg-slate-50',
+          className,
         )
       }
     >

@@ -161,8 +161,8 @@
         "examples": "Tomato, brinjal, okra, chilli, gourds and leafy vegetables",
         "note": "High-value, short-cycle crops where whitefly pressure and cosmetic downgrading from sooty mold hit margins hardest."
       },
-      "commercial": {
-        "title": "Commercial Crops",
+      "cash": {
+        "title": "Cash Crops",
         "examples": "Cotton, sugarcane, maize, pulses and groundnut",
         "note": "Large areas where whitefly and pest outbreaks can move quickly and input cost per acre is under constant pressure."
       },

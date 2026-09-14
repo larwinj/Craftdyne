@@ -9,13 +9,41 @@
   "nav": {
     "home": "Home",
     "about": "About Us",
-    "ecoChemistry": "Eco-Chemistry",
+    "ecoChemistry": "Green Chemistry",
     "greenChemistry": "Green Chemistry",
     "products": "Products",
     "applications": "Applications",
     "sustainability": "Sustainability",
     "customerReviews": "Customer Reviews",
-    "contact": "Contact"
+    "blogs": "Blogs",
+    "contact": "Contact",
+    "sub": {
+      "overview": "Who We Are",
+      "mission": "Our Mission",
+      "facts": "CraftDyne at a Glance",
+      "greenIntro": "Designed Green",
+      "principles": "12 IUPAC Principles",
+      "farmMeaning": "What it Means on Farm",
+      "ez3plus": "EcoAgta EZ3+ Concentrate",
+      "blumenn": "Blumenn Strong Super Concentrate",
+      "mycoSpectra": "Myco Spectra Fungicide",
+      "mycoDelta": "EcoAgta Myco Delta",
+      "mycoSiga": "EcoAgta Myco Siga",
+      "soilAmend": "CraftDyne Soil Amend (EcoPop)",
+      "cashCrops": "Cash Crops",
+      "plantationCrops": "Plantation Crops",
+      "fruitCrops": "Fruit Crops",
+      "vegetableCrops": "Vegetable Crops",
+      "mulberryCrops": "Mulberry Crops",
+      "coconutApp": "Coconut Trees Application (EZ3+)",
+      "cardamomApp": "Cardamom Crop Treatment (EZ3+)",
+      "testimonials": "Farmer Testimonials",
+      "results": "Field Results & Evaluation",
+      "allBlogs": "Latest Articles",
+      "farmingGuides": "Farming & Crop Guides",
+      "enquiryForm": "Send Enquiry",
+      "officeInfo": "Office Location & Contact"
+    }
   },
   "actions": {
     "enquire": "Enquire Now",
@@ -47,7 +75,8 @@
     "terms": "Terms of Use",
     "followUs": "Follow us",
     "rights": "All rights reserved.",
-    "registeredOffice": "Registered office"
+    "registeredOffice": "Registered office",
+    "visitors": "Website Visitors"
   },
   "labels": {
     "featuredProduct": "Featured Product",

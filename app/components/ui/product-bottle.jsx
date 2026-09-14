@@ -64,14 +64,11 @@ export function ProductBottle({ className }) {
           </div>
 
           <div className="mt-3 rounded-lg bg-white px-3 py-4 text-center shadow-sm ring-1 ring-slate-200">
-            <div className="mx-auto w-fit rounded border border-slate-300 px-3 py-2">
-              <EcoAgtaLeaf className="text-eco-green mx-auto size-8" />
-              <p className="font-display mt-1 text-xs font-bold">
-                <span className="text-eco-green">Eco</span>
-                <span className="text-eco-blue">Agta</span>
-              </p>
-              <p className="text-[0.5rem] font-medium tracking-wide text-slate-500">Proactive, Naturally</p>
-            </div>
+            <img
+              src="/brand/ecoagta-logo.png"
+              alt="EcoAgta — Proactive, Naturally"
+              className="mx-auto h-16 w-auto object-contain rounded-sm"
+            />
 
             <p className="font-display mt-3 text-2xl font-extrabold tracking-tight text-[#E8590C]">EZ3+</p>
             <p className="font-display text-navy-700 text-[0.6875rem] font-bold">CraftDyne Private Limited</p>

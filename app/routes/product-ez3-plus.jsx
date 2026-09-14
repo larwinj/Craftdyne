@@ -1,11 +1,12 @@
 import { useTranslation } from 'react-i18next';
 import { useOutletContext } from 'react-router';
-import { Check, Download, Info } from 'lucide-react';
+import { Check, Download, Info, ShieldCheck, TreePalm, Sprout, Package, Sparkles, FileText, HelpCircle } from 'lucide-react';
 
 import { CtaBand } from '../components/sections/cta-band.jsx';
 import { PageHero } from '../components/sections/page-hero.jsx';
+import { PackageCards } from '../components/ui/package-cards.jsx';
+import { ProductSubNav } from '../components/ui/product-sub-nav.jsx';
 import { Accordion } from '../components/ui/accordion.jsx';
-import { Container } from '../components/ui/container.jsx';
 import { JsonLd } from '../components/ui/json-ld.jsx';
 import { ProductBottle } from '../components/ui/product-bottle.jsx';
 import { Reveal } from '../components/ui/reveal.jsx';
@@ -18,6 +19,15 @@ const BENEFITS = ['whiteflies', 'sootyMold', 'growth', 'productivity', 'safety']
 const STEPS = ['deter', 'prevent', 'promote'];
 const PROPERTIES = ['type', 'targets', 'crops', 'toxicity', 'biodegradability', 'basis', 'foodChain', 'residue'];
 const FAQS = ['howLong', 'organic', 'safety', 'crops', 'mixing', 'buy'];
+
+const EZ3_SECTIONS = [
+  { id: 'overview', label: 'Overview', icon: Info },
+  { id: 'packages', label: 'Package Sizes', icon: Package },
+  { id: 'applications', label: 'Applications', icon: TreePalm },
+  { id: 'how-it-works', label: 'Three-Step Action', icon: Sparkles },
+  { id: 'specifications', label: 'Specifications', icon: FileText },
+  { id: 'faq', label: 'FAQ', icon: HelpCircle },
+];
 
 export function meta({ params }) {
   const t = getI18n(params.lang).getFixedT(params.lang, 'products');
@@ -72,8 +82,10 @@ export default function ProductEz3Plus() {
         ]}
       />
 
+      <ProductSubNav sections={EZ3_SECTIONS} />
+
       {/* Overview */}
-      <Section tone="white">
+      <Section id="overview" tone="white">
         <div className="grid gap-10 lg:grid-cols-12 lg:items-start lg:gap-14">
           <Reveal className="lg:col-span-5">
             <div className="flex flex-col items-center">
@@ -96,6 +108,11 @@ export default function ProductEz3Plus() {
           <div className="lg:col-span-7">
             <p className="text-fluid-lg text-pretty text-slate-600">{t('ez3plus.intro')}</p>
 
+            {/* Product Packages / Quantities as Cards */}
+            <div id="packages">
+              <PackageCards productId="ez3plus" />
+            </div>
+
             <h2 className="text-fluid-2xl mt-10">{t('ez3plus.benefits.heading')}</h2>
             <ul className="mt-5 flex flex-col gap-4">
               {BENEFITS.map((id) => (
@@ -114,8 +131,83 @@ export default function ProductEz3Plus() {
         </div>
       </Section>
 
+      {/* Specialized Crop Applications of EZ3+ Concentrate */}
+      <Section id="applications" tone="mist">
+        <SectionHeading
+          eyebrow="Targeted Applications"
+          title="Specialized Applications of EcoAgta EZ3+ Concentrate"
+          description="Detailed spray protocols and specialized application guidelines for high-value plantation crops."
+        />
+
+        <div className="mt-10 grid gap-8 lg:grid-cols-2">
+          {/* Coconut Trees Application */}
+          <div id="coconut" className="flex flex-col justify-between rounded-3xl bg-white p-8 shadow-lg border border-emerald-100 ring-1 ring-slate-900/5">
+            <div>
+              <div className="flex items-center gap-3">
+                <span className="flex size-12 items-center justify-center rounded-2xl bg-emerald-100 text-emerald-800">
+                  <TreePalm className="size-6" />
+                </span>
+                <div>
+                  <span className="text-xs font-bold uppercase tracking-wider text-emerald-700">Specialized Crop Application</span>
+                  <h3 className="font-display text-xl font-bold text-navy-900">Coconut Trees Treatment</h3>
+                </div>
+              </div>
+              <p className="mt-4 text-sm text-slate-600">
+                Targeted organic treatment for Coconut Palms against Rugose Spiraling Whitefly (RSW - Aleurodicus rugioperculatus), sooty mold fungus (Capnodium), and sap-sucking insects.
+              </p>
+              <ul className="mt-4 space-y-2 text-xs text-slate-700">
+                <li className="flex items-center gap-2">
+                  <ShieldCheck className="size-4 text-brand-600" />
+                  <span><strong>Starting Spray Dilution:</strong> 1 : 300 (Initial Treatment)</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <ShieldCheck className="size-4 text-brand-600" />
+                  <span><strong>Continuing Spray Dilution:</strong> 1 : 400 (Follow-up Spray)</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <ShieldCheck className="size-4 text-brand-600" />
+                  <span>Clears black sooty mold film from fronds, restoring photosynthesis within weeks.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Cardamom Crop Treatment Application */}
+          <div id="cardamom" className="flex flex-col justify-between rounded-3xl bg-white p-8 shadow-lg border border-emerald-100 ring-1 ring-slate-900/5">
+            <div>
+              <div className="flex items-center gap-3">
+                <span className="flex size-12 items-center justify-center rounded-2xl bg-emerald-100 text-emerald-800">
+                  <Sprout className="size-6" />
+                </span>
+                <div>
+                  <span className="text-xs font-bold uppercase tracking-wider text-emerald-700">Specialized Crop Application</span>
+                  <h3 className="font-display text-xl font-bold text-navy-900">Cardamom Crop Treatment</h3>
+                </div>
+              </div>
+              <p className="mt-4 text-sm text-slate-600">
+                Recommended organic treatment for Cardamom plantations. Protects against Thrips, Aphids, Mealybugs, Spider Mites, and Mosaic Virus vector insects.
+              </p>
+              <ul className="mt-4 space-y-2 text-xs text-slate-700">
+                <li className="flex items-center gap-2">
+                  <ShieldCheck className="size-4 text-brand-600" />
+                  <span><strong>Recommended Dilution:</strong> 1 : 400 in fresh water (250 mL in 100L water)</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <ShieldCheck className="size-4 text-brand-600" />
+                  <span><strong>Application Schedule:</strong> 3 sprays per season during insect spotting</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <ShieldCheck className="size-4 text-brand-600" />
+                  <span>Zero chemical residue on harvested cardamom capsules; safe for mountain stream ecosystems.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </Section>
+
       {/* Triple action */}
-      <Section tone="mist">
+      <Section id="how-it-works" tone="white">
         <SectionHeading
           eyebrow={t('ez3plus.kicker')}
           title={t('ez3plus.howItWorks.heading')}
@@ -136,8 +228,8 @@ export default function ProductEz3Plus() {
         </ol>
       </Section>
 
-      {/* Properties — a table on desktop, stacked cards on phones */}
-      <Section tone="white">
+      {/* Properties */}
+      <Section id="specifications" tone="mist">
         <SectionHeading align="left" title={t('ez3plus.properties.heading')} />
         <dl className="mt-8 grid gap-px overflow-hidden rounded-2xl bg-slate-200 ring-1 ring-slate-200 sm:grid-cols-2">
           {PROPERTIES.map((id) => (
@@ -168,7 +260,7 @@ export default function ProductEz3Plus() {
       </Section>
 
       {/* FAQ */}
-      <Section tone="white">
+      <Section id="faq" tone="white">
         <div className="mx-auto max-w-3xl">
           <h2 className="text-fluid-2xl">{t('ez3plus.faq.heading')}</h2>
           <Accordion className="mt-8" items={faqItems} />

@@ -8,6 +8,7 @@ import { Container } from '../ui/container.jsx';
 import { FacebookIcon, InstagramIcon, LinkedInIcon, XIcon } from '../ui/social-icons.jsx';
 import { localePath, mailtoHref, telHref, whatsappHref } from '../../lib/links.js';
 import { BrandMark } from './brand-mark.jsx';
+import { VisitorCounter } from '../ui/visitor-counter.jsx';
 
 const SOCIAL_ICONS = { linkedin: LinkedInIcon, instagram: InstagramIcon, facebook: FacebookIcon, x: XIcon };
 
@@ -35,6 +36,7 @@ export function Footer({ lang }) {
                 <ul className="mt-3 flex items-center gap-2">
                   {socials.map((social) => {
                     const Icon = SOCIAL_ICONS[social.key];
+                    if (!Icon) return null;
                     return (
                       <li key={social.key}>
                         <a
@@ -42,7 +44,7 @@ export function Footer({ lang }) {
                           target="_blank"
                           rel="noopener noreferrer"
                           aria-label={social.label}
-                          className="inline-flex size-11 items-center justify-center rounded-full bg-white/10 text-white transition-colors hover:bg-white/20"
+                          className="inline-flex size-11 items-center justify-center rounded-full bg-white/10 text-white transition-colors hover:bg-emerald-600"
                         >
                           <Icon className="size-5" aria-hidden="true" />
                         </a>
@@ -52,6 +54,10 @@ export function Footer({ lang }) {
                 </ul>
               </div>
             ) : null}
+
+            <div className="mt-6">
+              <VisitorCounter />
+            </div>
           </div>
 
           <nav aria-label="Footer" className="lg:col-span-3">
@@ -107,9 +113,22 @@ export function Footer({ lang }) {
         <div className="mt-12 border-t border-white/10 pt-6">
           <p className="text-xs text-white/70">{t('disclaimer.short')}</p>
           <div className="mt-5 flex flex-col-reverse gap-4 sm:flex-row sm:items-center sm:justify-between">
-            <p className="text-fluid-sm text-white/75">
-              © {year} {COMPANY.legalName}. {t('footer.rights')}
-            </p>
+            <div className="flex flex-col gap-1">
+              <p className="text-fluid-sm text-white/75">
+                © {year} {COMPANY.legalName}. {t('footer.rights')}
+              </p>
+              <p className="text-xs text-white/60">
+                Website Developed by{' '}
+                <a
+                  href="https://passkilabs.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-medium text-emerald-400 underline underline-offset-2 transition-colors hover:text-emerald-300"
+                >
+                  Passkilabs.com
+                </a>
+              </p>
+            </div>
             <ul className="flex flex-wrap items-center gap-x-1">
               {FOOTER_LEGAL_NAV.map((item) => (
                 <li key={item.key}>

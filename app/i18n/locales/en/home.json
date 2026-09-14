@@ -88,7 +88,8 @@
       "plantation": { "title": "Plantation Crops", "description": "Coconut, oil palm, areca nut, tea and coffee." },
       "fruit": { "title": "Fruit Crops", "description": "Mango, guava, citrus, banana and pomegranate." },
       "vegetable": { "title": "Vegetable Crops", "description": "Tomato, brinjal, okra, chilli and gourds." },
-      "commercial": { "title": "Commercial Crops", "description": "Cotton, sugarcane, maize, pulses and groundnut." },
+      "cash": { "title": "Cash Crops", "description": "High-value commercial field crops such as cotton, sugarcane, maize, groundnut, and pulses." },
+      "commercial": { "title": "Cash Crops", "description": "High-value commercial field crops such as cotton, sugarcane, maize, groundnut, and pulses." },
       "mulberry": { "title": "Mulberry Crops", "description": "Mulberry leaves for sericulture and silkworms." }
     },
     "cta": "View all applications"

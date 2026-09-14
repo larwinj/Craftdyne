@@ -1,9 +1,9 @@
-import { useTranslation } from 'react-i18next';
-import { useOutletContext } from 'react-router';
-import { Check, Download, Info, ShieldCheck, Sprout } from 'lucide-react';
+import { Check, Download, Info, ShieldCheck, Sprout, Package, Sparkles, HelpCircle } from 'lucide-react';
 
 import { CtaBand } from '../components/sections/cta-band.jsx';
 import { PageHero } from '../components/sections/page-hero.jsx';
+import { PackageCards } from '../components/ui/package-cards.jsx';
+import { ProductSubNav } from '../components/ui/product-sub-nav.jsx';
 import { Accordion } from '../components/ui/accordion.jsx';
 import { Button } from '../components/ui/button.jsx';
 import { JsonLd } from '../components/ui/json-ld.jsx';
@@ -32,6 +32,14 @@ const EXTERNAL_CAUSES = [
 ];
 
 const FAQS = ['purpose', 'crops', 'dilution', 'safety'];
+
+const BLUMENN_SECTIONS = [
+  { id: 'overview', label: 'Overview', icon: Info },
+  { id: 'packages', label: 'Package Sizes', icon: Package },
+  { id: 'causes', label: 'Flower Drop Solved', icon: ShieldCheck },
+  { id: 'mode-of-action', label: 'Dilution & Spray', icon: Sparkles },
+  { id: 'faq', label: 'FAQ', icon: HelpCircle },
+];
 
 export function meta({ params }) {
   const t = getI18n(params.lang).getFixedT(params.lang, 'products');
@@ -82,8 +90,10 @@ export default function ProductBlumennStrong() {
         ]}
       />
 
+      <ProductSubNav sections={BLUMENN_SECTIONS} />
+
       {/* Product Overview */}
-      <Section tone="white">
+      <Section id="overview" tone="white">
         <div className="grid gap-10 lg:grid-cols-12 lg:items-start lg:gap-14">
           <Reveal className="lg:col-span-5">
             <div className="flex flex-col items-center">
@@ -106,7 +116,11 @@ export default function ProductBlumennStrong() {
           <div className="lg:col-span-7">
             <p className="text-fluid-lg text-pretty text-slate-600">{t('blumennStrong.intro')}</p>
 
-            <div className="mt-8 rounded-2xl bg-brand-50/60 p-6 ring-1 ring-brand-100">
+            <div id="packages">
+              <PackageCards productId="blumennStrong" />
+            </div>
+
+            <div id="causes" className="mt-8 rounded-2xl bg-brand-50/60 p-6 ring-1 ring-brand-100">
               <h3 className="font-display text-fluid-lg font-bold text-navy-800">
                 {t('blumennStrong.causes.heading')}
               </h3>
@@ -147,7 +161,7 @@ export default function ProductBlumennStrong() {
       </Section>
 
       {/* Dilution & Usage */}
-      <Section tone="mist">
+      <Section id="mode-of-action" tone="mist">
         <SectionHeading
           title={t('blumennStrong.dilution.heading')}
           description={t('blumennStrong.dilution.description')}
@@ -188,7 +202,7 @@ export default function ProductBlumennStrong() {
       </Section>
 
       {/* FAQ */}
-      <Section tone="white">
+      <Section id="faq" tone="white">
         <div className="mx-auto max-w-3xl">
           <h2 className="text-fluid-2xl">{t('blumennStrong.faq.heading')}</h2>
           <Accordion className="mt-8" items={faqItems} />

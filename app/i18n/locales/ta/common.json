@@ -9,13 +9,41 @@
   "nav": {
     "home": "முகப்பு",
     "about": "எங்களைப் பற்றி",
-    "ecoChemistry": "சுற்றுச்சூழல் வேதியியல்",
+    "ecoChemistry": "பசுமை வேதியியல்",
     "greenChemistry": "பசுமை வேதியியல்",
     "products": "தயாரிப்புகள்",
     "applications": "பயன்பாடுகள்",
     "sustainability": "நிலைத்தன்மை",
     "customerReviews": "வாடிக்கையாளர் விமர்சனங்கள்",
-    "contact": "தொடர்பு"
+    "blogs": "வலைப்பதிவுகள்",
+    "contact": "தொடர்பு",
+    "sub": {
+      "overview": "நாங்கள் யார்",
+      "mission": "எங்கள் நோக்கம்",
+      "facts": "CraftDyne ஒரு பார்வையில்",
+      "greenIntro": "பசுமையாக வடிவமைக்கப்பட்டது",
+      "principles": "12 IUPAC கோட்பாடுகள்",
+      "farmMeaning": "விவசாயத்தில் இதன் பயன்",
+      "ez3plus": "EcoAgta EZ3+ அடர் திரவம்",
+      "blumenn": "Blumenn Strong சூப்பர் கான்சென்ட்ரேட்",
+      "mycoSpectra": "Myco Spectra பூஞ்சைக் கொல்லி",
+      "mycoDelta": "EcoAgta Myco Delta",
+      "mycoSiga": "EcoAgta Myco Siga",
+      "soilAmend": "CraftDyne Soil Amend (EcoPop)",
+      "cashCrops": "பணப்பயிர்கள்",
+      "plantationCrops": "தோட்டப் பயிர்கள்",
+      "fruitCrops": "பழப் பயிர்கள்",
+      "vegetableCrops": "காய்கறிப் பயிர்கள்",
+      "mulberryCrops": "மல்பரி பயிர்கள்",
+      "coconutApp": "தென்னை மரங்கள் பயன்பாடு (EZ3+)",
+      "cardamomApp": "ஏலக்காய் பயிர் சிகிச்சை (EZ3+)",
+      "testimonials": "விவசாயிகளின் சான்றுகள்",
+      "results": "புல முடிவுகள் & மதிப்பீடு",
+      "allBlogs": "சமீபத்திய கட்டுரைகள்",
+      "farmingGuides": "விவசாய வழிகாட்டிகள்",
+      "enquiryForm": "விசாரணை அனுப்பவும்",
+      "officeInfo": "அலுவலக இடம் & தொடர்பு"
+    }
   },
   "actions": {
     "enquire": "இப்போது விசாரிக்கவும்",
@@ -47,7 +75,8 @@
     "terms": "பயன்பாட்டு விதிமுறைகள்",
     "followUs": "எங்களைப் பின்தொடருங்கள்",
     "rights": "அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை.",
-    "registeredOffice": "பதிவு அலுவலகம்"
+    "registeredOffice": "பதிவு அலுவலகம்",
+    "visitors": "இணையதள பார்வையாளர்கள்"
   },
   "labels": {
     "featuredProduct": "சிறப்புத் தயாரிப்பு",

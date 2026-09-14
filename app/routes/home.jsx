@@ -6,7 +6,6 @@ import { CtaBand } from '../components/sections/cta-band.jsx';
 import { Hero } from '../components/sections/hero.jsx';
 import { Intro, PromiseStrip } from '../components/sections/intro.jsx';
 import { Offerings, Pillars } from '../components/sections/pillars.jsx';
-import { ProductSpotlight } from '../components/sections/product-spotlight.jsx';
 import { JsonLd } from '../components/ui/json-ld.jsx';
 import { getI18n } from '../i18n/index.js';
 import { buildMeta, organizationSchema } from '../lib/seo.js';
@@ -29,7 +28,6 @@ export default function Home() {
       <JsonLd schema={organizationSchema(lang)} />
       <Hero lang={lang} />
       <Intro lang={lang} />
-      <ProductSpotlight lang={lang} />
       <Offerings />
       <CropApplications lang={lang} />
       <CustomerReviews lang={lang} limit={3} showFilters={false} />

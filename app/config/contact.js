@@ -27,6 +27,7 @@ export const CONTACT = {
 };
 
 export const SOCIAL = [
+  { key: 'linkedin', label: 'LinkedIn', href: 'https://www.linkedin.com/company/craftdyne-private-limited/' },
   { key: 'x', label: 'X', href: 'https://x.com/CraftDyne' },
   { key: 'facebook', label: 'Facebook', href: 'https://www.facebook.com/people/CraftDyne-Private-Limite/61593103934818/' },
   { key: 'instagram', label: 'Instagram', href: 'https://www.instagram.com/_craftdyne_/?hl=en' },

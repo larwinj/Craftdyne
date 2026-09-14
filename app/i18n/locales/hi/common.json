@@ -9,13 +9,41 @@
   "nav": {
     "home": "होम",
     "about": "हमारे बारे में",
-    "ecoChemistry": "इको-केमिस्ट्री",
+    "ecoChemistry": "ग्रीन केमिस्ट्री",
     "greenChemistry": "ग्रीन केमिस्ट्री",
     "products": "उत्पाद",
     "applications": "अनुप्रयोग",
     "sustainability": "स्थिरता",
     "customerReviews": "ग्राहक समीक्षाएं",
-    "contact": "संपर्क"
+    "blogs": "ब्लॉग",
+    "contact": "संपर्क",
+    "sub": {
+      "overview": "हम कौन हैं",
+      "mission": "हमारा उद्देश्य",
+      "facts": "CraftDyne एक नज़र में",
+      "greenIntro": "ग्रीन डिज़ाइन",
+      "principles": "12 IUPAC सिद्धांत",
+      "farmMeaning": "खेत में इसका अर्थ",
+      "ez3plus": "EcoAgta EZ3+ कंसंट्रेट",
+      "blumenn": "Blumenn Strong सुपर कंसंट्रेट",
+      "mycoSpectra": "Myco Spectra कवकनाशी",
+      "mycoDelta": "EcoAgta Myco Delta",
+      "mycoSiga": "EcoAgta Myco Siga",
+      "soilAmend": "CraftDyne Soil Amend (EcoPop)",
+      "cashCrops": "नगदी फसलें",
+      "plantationCrops": "बागवानी फसलें",
+      "fruitCrops": "फल फसलें",
+      "vegetableCrops": "सब्जी फसलें",
+      "mulberryCrops": "शहतूत फसलें",
+      "coconutApp": "नारियल वृक्ष अनुप्रयोग (EZ3+)",
+      "cardamomApp": "इलायची फसल उपचार (EZ3+)",
+      "testimonials": "किसानों के अनुभव",
+      "results": "मैदानी परिणाम और मूल्यांकन",
+      "allBlogs": "नवीनतम लेख",
+      "farmingGuides": "कृषि मार्गदर्शन",
+      "enquiryForm": "पूछताछ भेजें",
+      "officeInfo": "कार्यालय स्थान और संपर्क"
+    }
   },
   "actions": {
     "enquire": "पूछताछ करें",
@@ -47,7 +75,8 @@
     "terms": "उपयोग की शर्तें",
     "followUs": "हमें फ़ॉलो करें",
     "rights": "सर्वाधिकार सुरक्षित।",
-    "registeredOffice": "पंजीकृत कार्यालय"
+    "registeredOffice": "पंजीकृत कार्यालय",
+    "visitors": "वेबसाइट आगंतुक"
   },
   "labels": {
     "featuredProduct": "विशेष उत्पाद",
