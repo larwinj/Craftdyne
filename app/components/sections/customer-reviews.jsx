@@ -13,93 +13,48 @@ import { SectionHeading } from '../ui/section.jsx';
 export const REVIEWS_DATA = [
   {
     id: 'rev-1',
-    productId: 'ez3Cardamom',
-    name: 'R. Murugan',
-    role: 'Cardamom & Pepper Planter',
-    location: 'Idukki, Kerala',
-    crop: 'Cardamom',
+    productId: 'ez3plus',
+    name: 'Mr. T. Naidu',
+    role: 'Farm Owner',
+    location: 'Amaravathi, Thiruppur District, Tamil Nadu',
+    crop: 'Coconut',
     rating: 5,
-    date: 'August 2026',
+    date: '2023',
     verified: true,
-    outcome: '6 Months Whitefly & Thrips Protection',
-    headline: 'Drastic reduction in thrips and whiteflies with zero chemical residue',
+    outcome: 'Whiteflies & Sooty Mold Fungus Controlled',
+    headline: 'Quickly improved the grade and quantity of coconut yield',
     quote:
-      'We were dealing with severe whitefly infestation and mosaic virus risk in our hill-slope cardamom plot. Applying EZ3+ Cardamom Formula repelled sap suckers completely and kept fronds vibrant green without any chemical residue on harvested pods.',
+      'EZ3+ completed repelled and controlled Spiraling Whiteflies from our coconut trees in a few days and completely removed the Sooty Mold Fungus [Capnodium) quickly improving the grade and quantity of the yield.',
   },
   {
     id: 'rev-2',
-    productId: 'blumennStrong',
-    name: 'S. Jayaraman',
-    role: 'Guava & Coconut Grower',
-    location: 'Pollachi, Tamil Nadu',
-    crop: 'Coconut & Guava',
+    productId: 'ez3plus',
+    name: 'Mr. T. R. Thyaharajan',
+    role: 'Farm Owner',
+    location: 'Shenbaga Thoppu, Srivilliputtur, Tamil Nadu',
+    crop: 'Mango & Coconut',
     rating: 5,
-    date: 'July 2026',
+    date: '2024',
     verified: true,
-    outcome: '+28% Harvest Yield Increase',
-    headline: 'Cut premature fruit drop significantly and boosted harvest yield',
+    outcome: 'Eradicated Whiteflies & Reduced Fungus',
+    headline: 'Fruits are much bigger and better after spraying EcoAgta EZ3+',
     quote:
-      'Premature fruit drop was wasting almost 30% of our guava and coconut crop every season. After using Blumenn Strong Super Concentrate at 1:2000 dilution, fruit drop stopped almost completely and our harvest yield increased by 28%.',
+      'After spraying EcoAgta EZ3 + in our mango and Coconut farm twice in a year, we have completed eradicated whiteflies and other sap sucking insects. The problem of fungus during the fruit season have also reduced substantially. The fruits are much bigger and better.',
   },
   {
     id: 'rev-3',
-    productId: 'ez3Coconut',
-    name: 'K. Ananthakrishnan',
-    role: 'Coconut Estate Manager',
-    location: 'Coimbatore, Tamil Nadu',
-    crop: 'Coconut Palms',
-    rating: 5,
-    date: 'August 2026',
-    verified: true,
-    outcome: 'Sooty Mold Eradicated in 40 Days',
-    headline: 'Rugose Spiraling Whitefly & black mold cleared from coconut canopy',
-    quote:
-      'Our coconut palm fronds were covered in black sooty mold caused by Rugose Spiraling Whitefly. Within 40 days of spraying EZ3+ Coconut Formula, the black film cleared, palms regained lush green canopy, and nut formation improved noticeably.',
-  },
-  {
-    id: 'rev-4',
-    productId: 'mycoSpectra',
-    name: 'M. Varghese',
-    role: 'Spices & Horticulture Planter',
-    location: 'Wayanad, Kerala',
-    crop: 'Cardamom & Pepper',
-    rating: 5,
-    date: 'June 2026',
-    verified: true,
-    outcome: 'Complete Protection against Capsule Rot',
-    headline: 'Myco Spectra controlled Phytophthora & Pythium during heavy monsoon',
-    quote:
-      'Fungal rot during monsoons used to wipe out our cardamom capsules. Myco Spectra gave us 6 months of systemic fungal control against Colletotrichum and Phytophthora. Our pods remained healthy and free of rot throughout the wet season.',
-  },
-  {
-    id: 'rev-5',
-    productId: 'soilAmend',
-    name: 'P. Sundaram',
-    role: 'Organic Farming Specialist',
-    location: 'Dindigul, Tamil Nadu',
-    crop: 'Vegetables & Nursery',
-    rating: 5,
-    date: 'May 2026',
-    verified: true,
-    outcome: 'Zero Nematode Damage & High Water Retention',
-    headline: 'Transformed clay soil porosity and retained soil moisture through dry weeks',
-    quote:
-      'CraftDyne Soil Amend blocks built outstanding air porosity in our clay soil. Each 5kg block retains immense moisture so we water less often, and nematode damage in root zones has been completely eliminated.',
-  },
-  {
-    id: 'rev-6',
     productId: 'ez3plus',
-    name: 'Sunita & Ramesh Patel',
-    role: 'Commercial Vegetable Growers',
-    location: 'Nashik, Maharashtra',
-    crop: 'Tomato & Chilli',
+    name: 'Farm Manager',
+    role: 'C Thai Silk',
+    location: 'Petchabun, Thailand',
+    crop: 'Mulberry & Silk',
     rating: 5,
-    date: 'July 2026',
+    date: '2022 & 2023',
     verified: true,
-    outcome: 'Safe for Workers & Zero Harvest Wait',
-    headline: '100% Non-toxic green chemistry with instant worker field re-entry',
+    outcome: 'Reduced Withholding Period from 20 to 10 Days',
+    headline: 'Silkworms produce 0.012g of silk per cocoon with healthy leaves',
     quote:
-      'As commercial growers supplying retail markets, we needed effective pest control without chemical residues or worker safety hazards. EZ3+ Multi-Crop Concentrate deters whiteflies and aphids while being completely safe and eco-friendly.',
+      'EZ3 + completely repelled and controlled Whiteflies and Aphids in our Mulberry bushes and completely controlled the fungal attack in a week’s time. The use EZ3+ has reduced the withholding period from 20 days to 10; this increases our productivity. The silk worms which feed on the leaves treated with EZ3 + are healthy and produces 0.012 grams of silk per cocoon',
   },
 ];
 
@@ -163,11 +118,10 @@ export function CustomerReviews({ lang, limit, showFilters = true, id = 'custome
             <button
               type="button"
               onClick={() => setSelectedProduct('all')}
-              className={`rounded-full px-4 py-1.5 text-sm font-semibold transition-all ${
-                selectedProduct === 'all'
+              className={`rounded-full px-4 py-1.5 text-sm font-semibold transition-all ${selectedProduct === 'all'
                   ? 'bg-brand-600 text-white shadow'
                   : 'bg-white text-slate-700 hover:bg-slate-100 ring-1 ring-slate-200'
-              }`}
+                }`}
             >
               All Products ({REVIEWS_DATA.length})
             </button>
@@ -179,11 +133,10 @@ export function CustomerReviews({ lang, limit, showFilters = true, id = 'custome
                   key={p.id}
                   type="button"
                   onClick={() => setSelectedProduct(p.id)}
-                  className={`rounded-full px-4 py-1.5 text-sm font-semibold transition-all ${
-                    selectedProduct === p.id
+                  className={`rounded-full px-4 py-1.5 text-sm font-semibold transition-all ${selectedProduct === p.id
                       ? 'bg-brand-600 text-white shadow'
                       : 'bg-white text-slate-700 hover:bg-slate-100 ring-1 ring-slate-200'
-                  }`}
+                    }`}
                 >
                   {p.name} ({count})
                 </button>

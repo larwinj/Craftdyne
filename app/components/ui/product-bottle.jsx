@@ -29,8 +29,24 @@ export function EcoAgtaLeaf({ className }) {
  * Swap for the retouched photograph when it arrives; the surrounding layout
  * needs no changes.
  */
-export function ProductBottle({ className }) {
+export function ProductBottle({ image, alt, className }) {
   const { t } = useTranslation(['products', 'home']);
+
+  if (image) {
+    return (
+      <div className={cn('relative flex items-center justify-center p-2', className)}>
+        <div
+          aria-hidden="true"
+          className="bg-navy-900/10 pointer-events-none absolute inset-x-6 top-10 bottom-0 rounded-[50%] blur-2xl"
+        />
+        <img
+          src={image}
+          alt={alt || t('ez3plus.name', { ns: 'products', defaultValue: 'EcoAgta Product' })}
+          className="relative max-h-[480px] w-auto max-w-full object-contain drop-shadow-xl rounded-2xl transition-transform duration-300 hover:scale-[1.02]"
+        />
+      </div>
+    );
+  }
 
   return (
     <div className={cn('relative', className)}>

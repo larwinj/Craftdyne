@@ -1,3 +1,5 @@
+import { useTranslation } from 'react-i18next';
+import { useOutletContext } from 'react-router';
 import { Check, Download, Info, ShieldCheck, Sprout, Package, Sparkles, HelpCircle } from 'lucide-react';
 
 import { CtaBand } from '../components/sections/cta-band.jsx';
@@ -97,7 +99,7 @@ export default function ProductBlumennStrong() {
         <div className="grid gap-10 lg:grid-cols-12 lg:items-start lg:gap-14">
           <Reveal className="lg:col-span-5">
             <div className="flex flex-col items-center">
-              <ProductBottle className="mx-auto max-w-xs sm:max-w-sm" />
+              <ProductBottle image={PRODUCT.image} alt={PRODUCT.name} className="mx-auto max-w-xs sm:max-w-sm" />
               {PRODUCT.brochureUrl && (
                 <a
                   href={PRODUCT.brochureUrl}

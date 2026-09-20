@@ -24,6 +24,10 @@ export const CONTACT = {
     'CRAFTDYNE PRIVATE LIMITED',
     '1003/5, Saraswathi Nagar Collecterate post, Silapadi, Dindigul, Tamil Nadu, 624005.',
   ],
+
+  mapsUrl: 'https://maps.app.goo.gl/LFHY4kycUT3e8r4h6?g_st=aw',
+  mapsEmbedUrl:
+    'https://maps.google.com/maps?q=1003%2F5%2C%20Saraswathi%20Nagar%20Collecterate%20post%2C%20Silapadi%2C%20Dindigul%2C%20Tamil%20Nadu%2C%20624005&t=&z=15&ie=UTF8&iwloc=&output=embed',
 };
 
 export const SOCIAL = [

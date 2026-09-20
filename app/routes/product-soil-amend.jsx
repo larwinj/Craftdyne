@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { useOutletContext } from 'react-router';
-import { Check, Download, Info, Layers, Leaf, ShieldCheck, Package, Sparkles, HelpCircle, FileText } from 'lucide-react';
+import { Check, Download, Info, Layers, Leaf, ShieldCheck, Package, Sparkles, HelpCircle, FileText, ShieldAlert, HeartPulse } from 'lucide-react';
 
 import { CtaBand } from '../components/sections/cta-band.jsx';
 import { PageHero } from '../components/sections/page-hero.jsx';
@@ -17,7 +17,6 @@ import { breadcrumbSchema, buildMeta, faqSchema, productSchema } from '../lib/se
 
 const PRODUCT = PRODUCTS.find((p) => p.id === 'soilAmend') ?? PRODUCTS[5];
 const BENEFITS = ['porosity', 'nematode', 'durability', 'cec', 'usda'];
-const MINERALS = ['n', 'p', 'k', 'ca', 'mg', 'fe', 'zn', 'mn', 'cu'];
 const FAQS = ['water', 'duration', 'nematodes', 'organic'];
 
 const SOIL_AMEND_SECTIONS = [
@@ -26,7 +25,22 @@ const SOIL_AMEND_SECTIONS = [
   { id: 'benefits', label: 'Benefits & Features', icon: ShieldCheck },
   { id: 'specifications', label: 'Physical Specs & Minerals', icon: FileText },
   { id: 'how-to-use', label: 'Hydration & Application', icon: Sparkles },
+  { id: 'safety', label: 'Safety & Eco-Health', icon: HeartPulse },
   { id: 'faq', label: 'FAQ', icon: HelpCircle },
+];
+
+const MINERAL_VALUES = [
+  { symbol: 'pH', value: '6.30', unit: '' },
+  { symbol: 'Elec C.*', value: '0.40', unit: 'Micromhos/cm' },
+  { symbol: 'N', value: '0.40%', unit: 'Nitrogen' },
+  { symbol: 'P', value: '0.80%', unit: 'Phosphorus' },
+  { symbol: 'K', value: '1.30%', unit: 'Potassium' },
+  { symbol: 'Ca', value: '0.20%', unit: 'Calcium' },
+  { symbol: 'Mg', value: '0.30%', unit: 'Magnesium' },
+  { symbol: 'Fe', value: '23.00 ppm', unit: 'Iron' },
+  { symbol: 'Zn', value: '22.00 ppm', unit: 'Zinc' },
+  { symbol: 'Mn', value: '17.00 ppm', unit: 'Manganese' },
+  { symbol: 'Cu', value: '5.00 ppm', unit: 'Copper' },
 ];
 
 export function meta({ params }) {
@@ -34,8 +48,9 @@ export function meta({ params }) {
   return buildMeta({
     lang: params.lang,
     path: PRODUCT.slug,
-    title: t('soilAmend.meta.title'),
-    description: t('soilAmend.meta.description'),
+    title: 'CraftDyne Soil Amend — Pure Organic Plant-Based Soil Conditioner',
+    description:
+      'CraftDyne Soil Amend is a pure organic plant-based soil conditioner with high Carbon-to-Nitrogen ratio, rich Terpenoids & Limonoids, water retention (14-15L/kg), and USDA NOP compliance.',
   });
 }
 
@@ -54,8 +69,9 @@ export default function ProductSoilAmend() {
       <JsonLd
         schema={productSchema({
           lang,
-          name: t('soilAmend.name'),
-          description: t('soilAmend.meta.description'),
+          name: 'CraftDyne Soil Amend',
+          description:
+            'CraftDyne Soil Amend organic plant-based soil conditioner block with high Carbon-to-Nitrogen ratio and micro-nutrients.',
           slug: PRODUCT.slug,
         })}
       />
@@ -63,18 +79,18 @@ export default function ProductSoilAmend() {
       <JsonLd
         schema={breadcrumbSchema(lang, [
           { name: t('common:nav.products'), path: 'products' },
-          { name: t('soilAmend.name'), path: PRODUCT.slug },
+          { name: 'CraftDyne Soil Amend', path: PRODUCT.slug },
         ])}
       />
 
       <PageHero
         lang={lang}
-        eyebrow={t('soilAmend.kicker')}
-        title={t('soilAmend.name')}
-        description={t('soilAmend.tagline')}
+        eyebrow="Pure Organic Plant-Based Material"
+        title="CraftDyne Soil Amend"
+        description="High Carbon to Nitrogen Ratio with High Terpenoid & Limonoid Content and Micro-Nutrients."
         crumbs={[
           { label: t('common:nav.products'), path: 'products' },
-          { label: t('soilAmend.name'), path: PRODUCT.slug },
+          { label: 'CraftDyne Soil Amend', path: PRODUCT.slug },
         ]}
       />
 
@@ -95,14 +111,25 @@ export default function ProductSoilAmend() {
                   className="mt-6 inline-flex items-center gap-2 rounded-xl bg-brand-600 px-6 py-3 font-semibold text-white shadow-md transition-all hover:bg-brand-700 hover:shadow-lg"
                 >
                   <Download className="size-5" />
-                  {t('common:actions.downloadBrochure')}
+                  Download Technical & Usage PDF
                 </a>
               )}
             </div>
           </Reveal>
 
           <div className="lg:col-span-7">
-            <p className="text-fluid-lg text-pretty text-slate-600">{t('soilAmend.intro')}</p>
+            <div className="inline-flex items-center gap-2 rounded-full bg-emerald-50 px-3.5 py-1 text-xs font-bold text-emerald-800 ring-1 ring-emerald-200">
+              <Leaf className="size-4 text-emerald-600" />
+              USDA NOP Permitted • Serves up to 4 Years • 100% Plant Based
+            </div>
+
+            <h2 className="font-display text-fluid-2xl mt-4 font-bold text-navy-900">
+              Organic Soil Amendment & Root Zone Enhancer
+            </h2>
+
+            <p className="text-fluid-lg mt-3 text-pretty text-slate-600">
+              CraftDyne Soil Amend is a pure organic plant-based material compressed into 5kg blocks. It features a high Carbon-to-Nitrogen ratio, rich Terpenoid & Limonoid content, and essential micro-nutrients to build excellent air porosity, retain soil moisture, and protect crops against soil-borne pathogens & nematodes.
+            </p>
 
             <div id="packages">
               <PackageCards productId="soilAmend" />
@@ -128,61 +155,76 @@ export default function ProductSoilAmend() {
         </div>
       </Section>
 
-      {/* Specifications & Mineral Profile */}
+      {/* Specifications & USDA Mineral Profile */}
       <Section id="specifications" tone="mist">
         <SectionHeading
-          title={t('soilAmend.specs.heading')}
-          description="Technical specifications and lab-verified mineral content per block."
+          title="Technical Specifications & Lab Analysis"
+          description="USDA NOP compliance details, mineral values, and block physical specs."
         />
 
-        <div className="mt-8 grid gap-6 md:grid-cols-2">
-          {/* Spec cards */}
-          <div className="rounded-2xl bg-white p-6 shadow-card ring-1 ring-slate-100">
+        {/* USDA Banner */}
+        <div className="mt-6 rounded-2xl border border-emerald-200 bg-emerald-50/80 p-6 text-emerald-950">
+          <div className="flex items-start gap-3">
+            <Leaf className="size-6 text-emerald-700 shrink-0 mt-0.5" />
+            <div>
+              <h3 className="font-display text-lg font-bold">Organic Statement (USDA NOP)</h3>
+              <p className="mt-1 text-sm text-emerald-900 leading-relaxed">
+                <strong>CRAFTDYNE Soil Amend</strong> is Permitted per the USDA National Organic Program (NOP) Rule:
+                <em> Title 7: CFR Agriculture, Part 205.203.C3 Un-composted, National Organic Program allowed as Crop Fertilizer & Soil Amendment.</em>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-8 grid gap-6 lg:grid-cols-12">
+          {/* Physical specs */}
+          <div className="lg:col-span-5 rounded-2xl bg-white p-6 shadow-card ring-1 ring-slate-200">
             <h3 className="font-display text-fluid-lg flex items-center gap-2 font-bold text-navy-800">
               <Layers className="size-5 text-brand-600" /> Physical Specifications
             </h3>
             <dl className="mt-4 flex flex-col gap-3 text-sm">
               <div className="flex justify-between border-b border-slate-100 pb-2">
                 <dt className="text-slate-500">Dimensions</dt>
-                <dd className="font-semibold text-slate-800">{t('soilAmend.specs.dimensions')}</dd>
+                <dd className="font-semibold text-slate-800">30 cm x 30 cm x 10 cm</dd>
               </div>
               <div className="flex justify-between border-b border-slate-100 pb-2">
                 <dt className="text-slate-500">Block Weight</dt>
-                <dd className="font-semibold text-slate-800">{t('soilAmend.specs.weight')}</dd>
+                <dd className="font-semibold text-slate-800">5.0 (+/- 0.2) Kgs</dd>
               </div>
               <div className="flex justify-between border-b border-slate-100 pb-2">
-                <dt className="text-slate-500">Water Hold Capacity</dt>
-                <dd className="font-semibold text-brand-600">{t('soilAmend.specs.waterCapacity')}</dd>
+                <dt className="text-slate-500">Particle Size</dt>
+                <dd className="font-semibold text-slate-800">Passes 6 mm Mesh (Fines removed)</dd>
               </div>
               <div className="flex justify-between border-b border-slate-100 pb-2">
                 <dt className="text-slate-500">Compression Ratio</dt>
-                <dd className="font-semibold text-slate-800">{t('soilAmend.specs.compression')}</dd>
+                <dd className="font-semibold text-slate-800">1 : 5 (Pressed volume to loose filled)</dd>
+              </div>
+              <div className="flex justify-between border-b border-slate-100 pb-2">
+                <dt className="text-slate-500">Water Hold Capacity</dt>
+                <dd className="font-semibold text-brand-600">14 – 15 Liters per 1 Kg Block</dd>
               </div>
               <div className="flex justify-between">
-                <dt className="text-slate-500">pH / Electrical Cond. (EC)</dt>
-                <dd className="font-semibold text-slate-800">
-                  pH {t('soilAmend.specs.ph')} | EC {t('soilAmend.specs.ec')}
-                </dd>
+                <dt className="text-slate-500">Soil Durability</dt>
+                <dd className="font-semibold text-emerald-700">Serves for up to 4 Years</dd>
               </div>
             </dl>
           </div>
 
-          {/* USDA & Mineral Profile */}
-          <div className="rounded-2xl bg-white p-6 shadow-card ring-1 ring-slate-100">
+          {/* Average Property & Mineral Profile */}
+          <div className="lg:col-span-7 rounded-2xl bg-white p-6 shadow-card ring-1 ring-slate-200">
             <h3 className="font-display text-fluid-lg flex items-center gap-2 font-bold text-navy-800">
-              <Leaf className="size-5 text-emerald-600" /> USDA NOP Mineral Profile
+              <Sparkles className="size-5 text-brand-600" /> Average Property & Mineral Values
             </h3>
-            <p className="mt-2 text-xs text-slate-500">
-              Permitted per USDA Title 7 CFR 205.203.C3 for organic crop fertilization.
+            <p className="mt-1 text-xs text-slate-500">
+              * Electrical Conductivity (EC): 0.40 Micromhos per cM (Low Conductivity).
             </p>
 
-            <div className="mt-4 grid grid-cols-3 gap-3">
-              {MINERALS.map((m) => (
-                <div key={m} className="rounded-xl bg-slate-50 p-3 text-center ring-1 ring-slate-200/60">
-                  <span className="font-display text-xs font-bold uppercase text-slate-500">{m}</span>
-                  <p className="font-display mt-1 text-base font-extrabold text-navy-900">
-                    {t(`soilAmend.minerals.${m}`)}
-                  </p>
+            <div className="mt-4 grid grid-cols-2 sm:grid-cols-4 gap-3">
+              {MINERAL_VALUES.map((m) => (
+                <div key={m.symbol} className="rounded-xl bg-slate-50 p-3 text-center ring-1 ring-slate-200/60">
+                  <span className="font-display text-xs font-bold uppercase text-slate-500">{m.symbol}</span>
+                  <p className="font-display mt-1 text-base font-extrabold text-navy-900">{m.value}</p>
+                  {m.unit && <span className="text-[0.6875rem] text-slate-500 block">{m.unit}</span>}
                 </div>
               ))}
             </div>
@@ -192,40 +234,55 @@ export default function ProductSoilAmend() {
 
       {/* Usage Instructions */}
       <Section id="how-to-use" tone="white">
-        <SectionHeading title={t('soilAmend.usage.heading')} />
+        <SectionHeading title="Usage & Hydration Instructions" description="Steps for hydration, nursery potting, and open field soil amendment." />
         <div className="mt-8 grid gap-6 md:grid-cols-3">
           <div className="rounded-2xl bg-slate-50 p-6 ring-1 ring-slate-200/70">
             <span className="bg-brand-600 font-display inline-flex size-9 items-center justify-center rounded-full font-bold text-white">
               1
             </span>
             <h3 className="font-display text-fluid-base mt-4 font-bold text-navy-900">Hydration & Mixing</h3>
-            <p className="mt-2 text-sm text-slate-600">{t('soilAmend.usage.hydration')}</p>
+            <p className="mt-2 text-sm text-slate-600">
+              Hydrate the block using fresh water (well, stream, or irrigation). The block will expand and break apart. Loosen and mix thoroughly before applying.
+            </p>
           </div>
           <div className="rounded-2xl bg-slate-50 p-6 ring-1 ring-slate-200/70">
             <span className="bg-brand-600 font-display inline-flex size-9 items-center justify-center rounded-full font-bold text-white">
               2
             </span>
-            <h3 className="font-display text-fluid-base mt-4 font-bold text-navy-900">Nursery & Potting</h3>
-            <p className="mt-2 text-sm text-slate-600">{t('soilAmend.usage.nursery')}</p>
+            <h3 className="font-display text-fluid-base mt-4 font-bold text-navy-900">Nursery & Plant Potting</h3>
+            <p className="mt-2 text-sm text-slate-600">
+              Seeds or seedlings may be directly planted in a bed of hydrated Soil Amend, or blended with existing potting soil according to soil conditions.
+            </p>
           </div>
           <div className="rounded-2xl bg-slate-50 p-6 ring-1 ring-slate-200/70">
             <span className="bg-brand-600 font-display inline-flex size-9 items-center justify-center rounded-full font-bold text-white">
               3
             </span>
-            <h3 className="font-display text-fluid-base mt-4 font-bold text-navy-900">Plant Beds & Fields</h3>
-            <p className="mt-2 text-sm text-slate-600">{t('soilAmend.usage.field')}</p>
+            <h3 className="font-display text-fluid-base mt-4 font-bold text-navy-900">Plant Beds & Open Fields</h3>
+            <p className="mt-2 text-sm text-slate-600">
+              Spread blocks over field rows or plant mounds. Water blocks to loosen and break. Till and mix into soil bed around areas of root spread.
+            </p>
           </div>
         </div>
       </Section>
 
-      {/* Safety Notice */}
-      <Section tone="sand">
-        <div className="mx-auto max-w-3xl">
-          <div className="border-brand-500 shadow-card flex gap-4 rounded-2xl border-l-4 bg-white p-5">
-            <Info className="text-brand-700 mt-0.5 size-6 shrink-0" aria-hidden="true" />
-            <div className="min-w-0">
-              <h3 className="font-display text-fluid-base font-bold">{t('common:disclaimer.heading')}</h3>
-              <p className="text-fluid-sm mt-1.5 text-slate-600">{t('common:disclaimer.short')}</p>
+      {/* Safety & Environmental Health */}
+      <Section id="safety" tone="sand">
+        <div className="mx-auto max-w-4xl">
+          <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
+            <div className="flex items-center gap-2 border-b border-slate-200 pb-3">
+              <HeartPulse className="size-5 text-emerald-600" />
+              <h3 className="font-display text-lg font-bold text-navy-900">Environmental Health & Safety</h3>
+            </div>
+            <div className="mt-4 grid gap-4 sm:grid-cols-2 text-sm text-slate-700">
+              <div>
+                <h4 className="font-bold text-navy-900">Handling Safety:</h4>
+                <p className="mt-1 text-xs text-slate-600">Wear dust mask and gloves while handling. Wash hands thoroughly after handling. Follow SDS safety guidelines.</p>
+              </div>
+              <div>
+                <h4 className="font-bold text-navy-900">Environmental Safety:</h4>
+                <p className="mt-1 text-xs text-slate-600">NON-polluting and SAFE to air, soil, and water. NON-toxic to humans and animals. NON-hazardous and safe for farm usage.</p>
+              </div>
             </div>
           </div>
         </div>

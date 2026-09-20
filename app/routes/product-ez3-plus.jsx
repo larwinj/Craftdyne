@@ -89,7 +89,7 @@ export default function ProductEz3Plus() {
         <div className="grid gap-10 lg:grid-cols-12 lg:items-start lg:gap-14">
           <Reveal className="lg:col-span-5">
             <div className="flex flex-col items-center">
-              <ProductBottle className="mx-auto max-w-xs sm:max-w-sm" />
+              <ProductBottle image={FEATURED_PRODUCT.image} alt={FEATURED_PRODUCT.name} className="mx-auto max-w-xs sm:max-w-sm" />
               {FEATURED_PRODUCT.brochureUrl && (
                 <a
                   href={FEATURED_PRODUCT.brochureUrl}

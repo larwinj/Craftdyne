@@ -55,7 +55,7 @@ export function Hero({ lang }) {
           </div>
 
           <div className="lg:col-span-5">
-            <ProductBottle className="mx-auto max-w-xs sm:max-w-sm lg:max-w-none" />
+            <ProductBottle image={FEATURED_PRODUCT.image} alt={FEATURED_PRODUCT.name} className="mx-auto max-w-xs sm:max-w-sm lg:max-w-none" />
           </div>
         </div>
       </Container>

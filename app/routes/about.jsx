@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { useOutletContext } from 'react-router';
-import { Leaf, ShieldCheck, Sprout } from 'lucide-react';
+import { CheckCircle2, FlaskConical, Leaf, ShieldCheck, Sprout } from 'lucide-react';
 
 import { CtaBand } from '../components/sections/cta-band.jsx';
 import { PageHero } from '../components/sections/page-hero.jsx';
@@ -16,6 +16,33 @@ const MISSION = [
   { id: 'lasting', icon: Leaf },
 ];
 const FACTS = ['founded', 'based', 'industry', 'focus', 'brand', 'reach'];
+
+const SCIENTIFIC_TESTIMONIALS = [
+  {
+    id: 1,
+    quote:
+      'EZ3+ completed repelled and controlled Spiraling Whiteflies from our coconut trees in a few days and completely removed the Sooty Mold Fungus [Capnodium) quickly improving the grade and quantity of the yield.',
+    author: 'Mr. T. Naidu',
+    location: 'Farm, Amaravathi, Thiruppur District, Tamilnadu',
+    year: '2023',
+  },
+  {
+    id: 2,
+    quote:
+      'After spraying EcoAgta EZ3 + in our mango and Coconut farm twice in a year, we have completed eradicated whiteflies and other sap sucking insects. The problem of fungus during the fruit season have also reduced substantially. The fruits are much bigger and better.',
+    author: 'Mr. T. R. Thyaharajan.',
+    location: 'Shenbaga Thoppu, Srivilliputtur, Tamilnadu',
+    year: '2024',
+  },
+  {
+    id: 3,
+    quote:
+      'EZ3 + completely repelled and controlled Whiteflies and Aphids in our Mulberry bushes and completely controlled the fungal attack in a week’s time. The use EZ3 + has reduced the withholding period from 20 days to 10; this increases our productivity. The silk worms which feed on the leaves treated with EZ3 + are healthy and produces 0.012 grams of silk per cocoon',
+    author: 'Farm Manager',
+    location: 'C Thai Silk, Petchabun, Thailand.',
+    year: '2022 & 2023.',
+  },
+];
 
 export function meta({ params }) {
   const t = getI18n(params.lang).getFixedT(params.lang, 'pages');
@@ -73,7 +100,48 @@ export default function About() {
         </div>
       </Section>
 
+      {/* Scientifically Tested & Proven Testimonials Section */}
       <Section tone="mist">
+        <div className="mx-auto max-w-4xl text-center">
+          <span className="bg-emerald-100 text-emerald-800 inline-flex items-center gap-1.5 rounded-full px-3.5 py-1 text-xs font-bold uppercase tracking-wider">
+            <FlaskConical className="size-4 text-emerald-700" /> Proven Results
+          </span>
+          <h2 className="font-display text-fluid-2xl mt-4 font-bold text-navy-900">
+            Tested & Proven Field Results
+          </h2>
+          <p className="text-fluid-lg mt-3 font-semibold text-slate-700">
+            The EcoAgta products have been tested scientifically and proven to work as claimed.
+          </p>
+        </div>
+
+        <div className="mt-12 grid gap-6 md:grid-cols-3">
+          {SCIENTIFIC_TESTIMONIALS.map((item, idx) => (
+            <Reveal key={item.id} delay={idx * 0.08}>
+              <div className="shadow-card flex h-full flex-col justify-between rounded-2xl border border-slate-200/80 bg-white p-6 transition-all duration-200 hover:-translate-y-1 hover:shadow-lg">
+                <div>
+                  <div className="flex items-center justify-between border-b border-slate-100 pb-3">
+                    <span className="bg-brand-50 text-brand-700 font-display rounded-md px-2.5 py-0.5 text-xs font-bold uppercase tracking-wider">
+                      Testimonial {item.id}
+                    </span>
+                    <CheckCircle2 className="size-5 text-emerald-600" />
+                  </div>
+                  <p className="mt-4 text-sm leading-relaxed text-slate-700 italic">
+                    "{item.quote}"
+                  </p>
+                </div>
+
+                <div className="mt-6 border-t border-slate-100 pt-4">
+                  <h3 className="font-display font-bold text-navy-900">{item.author}</h3>
+                  <p className="text-xs text-slate-600">{item.location}</p>
+                  <p className="mt-1 text-[0.75rem] font-semibold text-brand-700">{item.year}</p>
+                </div>
+              </div>
+            </Reveal>
+          ))}
+        </div>
+      </Section>
+
+      <Section tone="white">
         <SectionHeading title={t('about.mission.heading')} />
         <ul className="mt-12 grid gap-5 md:grid-cols-3">
           {MISSION.map((item, index) => {

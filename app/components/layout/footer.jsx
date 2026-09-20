@@ -98,13 +98,25 @@ export function Footer({ lang }) {
               </li>
               <li className="text-fluid-sm flex items-start gap-3 px-3 py-2.5 text-white/70">
                 <MapPin className="text-brand-300 mt-0.5 size-5 shrink-0" aria-hidden="true" />
-                <address className="not-italic">
-                  {CONTACT.addressLines.map((line) => (
-                    <span key={line} className="block">
-                      {line}
-                    </span>
-                  ))}
-                </address>
+                <div className="not-italic">
+                  <address className="not-italic">
+                    {CONTACT.addressLines.map((line) => (
+                      <span key={line} className="block">
+                        {line}
+                      </span>
+                    ))}
+                  </address>
+                  {CONTACT.mapsUrl && (
+                    <a
+                      href={CONTACT.mapsUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-brand-300 hover:text-brand-200 mt-2 inline-flex items-center gap-1 text-xs font-semibold underline underline-offset-2 transition-colors"
+                    >
+                      View on Google Maps →
+                    </a>
+                  )}
+                </div>
               </li>
             </ul>
           </div>

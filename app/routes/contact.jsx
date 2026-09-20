@@ -83,21 +83,34 @@ export default function Contact() {
                 );
               })}
 
-              <li className="flex gap-4 rounded-2xl border border-slate-200 p-5">
-                <span className="bg-navy-700 inline-flex size-11 shrink-0 items-center justify-center rounded-full text-white">
-                  <MapPin className="size-5" aria-hidden="true" />
-                </span>
-                <span className="min-w-0">
-                  <span className="font-display text-navy-700 block font-bold">{t('channels.office.title')}</span>
-                  <address className="text-fluid-sm mt-1 text-slate-600 not-italic">
-                    <span className="block">{t('channels.office.description')}</span>
-                    {CONTACT.addressLines.map((line) => (
-                      <span key={line} className="block">
-                        {line}
-                      </span>
-                    ))}
-                  </address>
-                </span>
+              <li className="rounded-2xl border border-slate-200 p-5">
+                <div className="flex gap-4">
+                  <span className="bg-navy-700 inline-flex size-11 shrink-0 items-center justify-center rounded-full text-white">
+                    <MapPin className="size-5" aria-hidden="true" />
+                  </span>
+                  <span className="min-w-0">
+                    <span className="font-display text-navy-700 block font-bold">{t('channels.office.title')}</span>
+                    <address className="text-fluid-sm mt-1 text-slate-600 not-italic">
+                      <span className="block">{t('channels.office.description')}</span>
+                      {CONTACT.addressLines.map((line) => (
+                        <span key={line} className="block">
+                          {line}
+                        </span>
+                      ))}
+                    </address>
+                    {CONTACT.mapsUrl && (
+                      <a
+                        href={CONTACT.mapsUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-brand-700 hover:text-brand-800 mt-3 inline-flex items-center gap-1 text-sm font-semibold hover:underline"
+                      >
+                        <MapPin className="size-4 text-brand-600" />
+                        Open Registered Office in Google Maps →
+                      </a>
+                    )}
+                  </span>
+                </div>
               </li>
             </ul>
           </div>
@@ -109,6 +122,45 @@ export default function Contact() {
               <ContactForm lang={lang} />
             </div>
           </div>
+        </div>
+      </Section>
+
+      {/* Embedded Google Map Section */}
+      <Section tone="mist">
+        <div className="mx-auto max-w-5xl text-center">
+          <span className="bg-brand-100 text-brand-800 inline-flex items-center gap-1.5 rounded-full px-3.5 py-1 text-xs font-bold uppercase tracking-wider">
+            <MapPin className="size-4 text-brand-600" /> Office Location
+          </span>
+          <h2 className="text-fluid-2xl mt-3 font-bold text-navy-900">Find Us on Google Maps</h2>
+          <p className="mt-2 text-slate-600">
+            Registered Office: 1003/5, Saraswathi Nagar Collecterate post, Silapadi, Dindigul, Tamil Nadu, 624005.
+          </p>
+        </div>
+
+        <div className="mt-8 overflow-hidden rounded-3xl border border-slate-200 shadow-md">
+          <iframe
+            title="CraftDyne Registered Office Location Map"
+            src={CONTACT.mapsEmbedUrl}
+            width="100%"
+            height="400"
+            style={{ border: 0 }}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            className="w-full bg-slate-100"
+          ></iframe>
+        </div>
+
+        <div className="mt-6 text-center">
+          <a
+            href={CONTACT.mapsUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-xl bg-brand-600 px-6 py-3 text-sm font-bold text-white shadow-md transition-all hover:bg-brand-700 hover:shadow-lg"
+          >
+            <MapPin className="size-4" />
+            Open Location in Google Maps App
+          </a>
         </div>
       </Section>
     </>
