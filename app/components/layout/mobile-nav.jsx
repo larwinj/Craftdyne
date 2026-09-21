@@ -153,6 +153,24 @@ export function MobileNav({ open, onClose, lang }) {
 }
 
 function DrawerLink({ to, end, onClick, className, children, isTamil }) {
+  const isExternal = typeof to === 'string' && (to.startsWith('http://') || to.startsWith('https://'));
+  if (isExternal) {
+    return (
+      <a
+        href={to}
+        target="_blank"
+        rel="noopener noreferrer"
+        onClick={onClick}
+        className={cn(
+          'font-display flex min-h-12 items-center rounded-lg px-4 font-semibold transition-colors text-navy-700 hover:bg-slate-50',
+          isTamil ? 'text-sm sm:text-base' : 'text-fluid-lg',
+          className,
+        )}
+      >
+        {children}
+      </a>
+    );
+  }
   return (
     <NavLink
       to={to}

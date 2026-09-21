@@ -9,6 +9,9 @@ import { DEFAULT_LOCALE, LOCALES, SITE_URL } from '../config/site.js';
  * @param {string} [path] path without a leading slash, e.g. "products/ecoagta-ez3-plus"
  */
 export function localePath(lang, path = '') {
+  if (typeof path === 'string' && (path.startsWith('http://') || path.startsWith('https://'))) {
+    return path;
+  }
   const safeLang = LOCALES.includes(lang) ? lang : DEFAULT_LOCALE;
   const clean = path.replace(/^\/+/, '');
   return clean ? `/${safeLang}/${clean}` : `/${safeLang}`;

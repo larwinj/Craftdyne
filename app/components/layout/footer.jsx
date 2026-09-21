@@ -161,6 +161,19 @@ export function Footer({ lang }) {
 }
 
 function FooterLink({ to, children }) {
+  const isExternal = typeof to === 'string' && (to.startsWith('http://') || to.startsWith('https://'));
+  if (isExternal) {
+    return (
+      <a
+        href={to}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-fluid-sm inline-flex min-h-11 items-center rounded px-3 text-white/70 transition-colors hover:text-white"
+      >
+        {children}
+      </a>
+    );
+  }
   return (
     <Link
       to={to}

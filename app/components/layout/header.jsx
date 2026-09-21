@@ -99,32 +99,49 @@ export function Header({ lang }) {
                       onMouseLeave={() => hasChildren && setActiveDropdown(null)}
                     >
                       <div className="flex items-center">
-                        <NavLink
-                          to={localePath(lang, item.path)}
-                          className={({ isActive }) =>
-                            cn(
+                        {item.external || (typeof item.path === 'string' && item.path.startsWith('http')) ? (
+                          <a
+                            href={item.path}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={cn(
                               'font-display relative inline-flex min-h-11 items-center gap-0.5 rounded-xl py-1 text-center font-extrabold transition-colors',
                               isTamil
                                 ? 'px-1 xl:px-1.5 2xl:px-2.5 text-[0.625rem] xl:text-[0.6875rem] 2xl:text-[0.75rem]'
                                 : 'px-1.5 xl:px-2.5 2xl:px-3 text-xs xl:text-[0.8125rem] 2xl:text-sm',
-                              'after:absolute after:inset-x-2 after:-bottom-0.5 after:h-0.5 after:rounded-full after:transition-colors',
-                              isActive
-                                ? 'text-brand-700 after:bg-brand-600'
-                                : 'text-navy-900 hover:text-brand-700 after:bg-transparent',
-                            )
-                          }
-                        >
-                          <FormattedNavLabel text={labelText} isTamil={isTamil} />
-                          {hasChildren ? (
-                            <ChevronDown
-                              className={cn(
-                                'size-3.5 opacity-60 transition-transform duration-200 shrink-0 ml-0.5',
-                                isOpen && 'rotate-180 opacity-100 text-brand-600',
-                              )}
-                              aria-hidden="true"
-                            />
-                          ) : null}
-                        </NavLink>
+                              'text-navy-900 hover:text-brand-700',
+                            )}
+                          >
+                            <FormattedNavLabel text={labelText} isTamil={isTamil} />
+                          </a>
+                        ) : (
+                          <NavLink
+                            to={localePath(lang, item.path)}
+                            className={({ isActive }) =>
+                              cn(
+                                'font-display relative inline-flex min-h-11 items-center gap-0.5 rounded-xl py-1 text-center font-extrabold transition-colors',
+                                isTamil
+                                  ? 'px-1 xl:px-1.5 2xl:px-2.5 text-[0.625rem] xl:text-[0.6875rem] 2xl:text-[0.75rem]'
+                                  : 'px-1.5 xl:px-2.5 2xl:px-3 text-xs xl:text-[0.8125rem] 2xl:text-sm',
+                                'after:absolute after:inset-x-2 after:-bottom-0.5 after:h-0.5 after:rounded-full after:transition-colors',
+                                isActive
+                                  ? 'text-brand-700 after:bg-brand-600'
+                                  : 'text-navy-900 hover:text-brand-700 after:bg-transparent',
+                              )
+                            }
+                          >
+                            <FormattedNavLabel text={labelText} isTamil={isTamil} />
+                            {hasChildren ? (
+                              <ChevronDown
+                                className={cn(
+                                  'size-3.5 opacity-60 transition-transform duration-200 shrink-0 ml-0.5',
+                                  isOpen && 'rotate-180 opacity-100 text-brand-600',
+                                )}
+                                aria-hidden="true"
+                              />
+                            ) : null}
+                          </NavLink>
+                        )}
                       </div>
 
                       {hasChildren ? (

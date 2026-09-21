@@ -6,7 +6,7 @@ import { Link } from 'react-router';
 import { AlertCircle, CheckCircle2, Send } from 'lucide-react';
 import { z } from 'zod';
 
-import { COMPANY } from '../../config/contact.js';
+import { COMPANY, CONTACT } from '../../config/contact.js';
 import { cn } from '../../lib/cn.js';
 import { localePath } from '../../lib/links.js';
 import { Button } from '../ui/button.jsx';
@@ -55,33 +55,61 @@ export function ContactForm({ lang }) {
 
   async function onSubmit(values) {
     if (values.website) return; // honeypot tripped — silently drop
-    if (!ACCESS_KEY) {
-      setStatus('error');
-      return;
-    }
 
     setStatus('submitting');
-    try {
-      const response = await fetch('https://api.web3forms.com/submit', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-        body: JSON.stringify({
-          access_key: ACCESS_KEY,
-          subject: `Website enquiry — ${values.enquiryType} — ${values.name}`,
-          from_name: `${COMPANY.shortName} website`,
-          name: values.name,
-          email: values.email,
-          phone: values.phone,
-          location: values.location || '—',
-          enquiry_type: values.enquiryType,
-          crop: values.crop || '—',
-          message: values.message,
-          language: lang,
-        }),
-      });
 
-      const result = await response.json();
-      if (!response.ok || !result.success) throw new Error(result.message ?? 'Submission failed');
+    // 1. Try Web3Forms API if access key is present
+    if (ACCESS_KEY) {
+      try {
+        const response = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+          body: JSON.stringify({
+            access_key: ACCESS_KEY,
+            subject: `Website enquiry — ${values.enquiryType} — ${values.name}`,
+            from_name: `${COMPANY.shortName} website`,
+            name: values.name,
+            email: values.email,
+            phone: values.phone,
+            location: values.location || '—',
+            enquiry_type: values.enquiryType,
+            crop: values.crop || '—',
+            message: values.message,
+            language: lang,
+          }),
+        });
+
+        const result = await response.json();
+        if (response.ok && result.success) {
+          setStatus('success');
+          reset();
+          return;
+        }
+      } catch (err) {
+        console.warn('Web3Forms submit error, using mailto fallback:', err);
+      }
+    }
+
+    // 2. Direct mailto fallback targeting specified email (raone2805@gmail.com / customercare@craftdyne.net)
+    try {
+      const targetEmail = CONTACT.enquiryEmail || CONTACT.email;
+      const subject = encodeURIComponent(`Website enquiry — ${values.enquiryType} — ${values.name}`);
+      const bodyLines = [
+        `Website Enquiry Details`,
+        `----------------------`,
+        `Name: ${values.name}`,
+        `Email: ${values.email}`,
+        `Phone: ${values.phone}`,
+        `Location: ${values.location || 'N/A'}`,
+        `Enquiry Type: ${values.enquiryType}`,
+        `Crop / Application: ${values.crop || 'N/A'}`,
+        ``,
+        `Message:`,
+        `${values.message}`,
+      ].join('\n');
+
+      const mailtoUrl = `mailto:${targetEmail}?subject=${subject}&body=${encodeURIComponent(bodyLines)}`;
+      window.location.href = mailtoUrl;
 
       setStatus('success');
       reset();
@@ -194,7 +222,7 @@ export function ContactForm({ lang }) {
       {status === 'error' ? (
         <p role="alert" className="text-fluid-sm flex items-start gap-2.5 rounded-lg bg-red-50 p-4 text-red-800">
           <AlertCircle className="mt-0.5 size-5 shrink-0" aria-hidden="true" />
-          <span>{ACCESS_KEY ? t('form.errors.submit') : t('form.errors.notConfigured')}</span>
+          <span>{t('form.errors.submit')}</span>
         </p>
       ) : null}
 

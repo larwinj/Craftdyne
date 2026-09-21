@@ -46,27 +46,18 @@ export const MAIN_NAV = [
       { key: 'fruit-crops', path: 'applications#fruit', labelKey: 'nav.sub.fruitCrops', fallbackLabel: 'Fruit Crops' },
       { key: 'vegetable-crops', path: 'applications#vegetable', labelKey: 'nav.sub.vegetableCrops', fallbackLabel: 'Vegetable Crops' },
       { key: 'mulberry-crops', path: 'applications#mulberry', labelKey: 'nav.sub.mulberryCrops', fallbackLabel: 'Mulberry Crops' },
-      { key: 'coconut-app', path: 'products/ecoagta-ez3-plus#coconut', labelKey: 'nav.sub.coconutApp', fallbackLabel: 'Coconut Trees Treatment (EZ3+)' },
-      { key: 'cardamom-app', path: 'products/ecoagta-ez3-plus#cardamom', labelKey: 'nav.sub.cardamomApp', fallbackLabel: 'Cardamom Crop Treatment (EZ3+)' },
     ],
   },
   {
     key: 'reviews',
     path: 'reviews',
     labelKey: 'nav.customerReviews',
-    children: [
-      { key: 'testimonials', path: 'reviews#testimonials', labelKey: 'nav.sub.testimonials', fallbackLabel: 'Farmer Testimonials' },
-      { key: 'case-studies', path: 'reviews#results', labelKey: 'nav.sub.results', fallbackLabel: 'Field Results & Evaluation' },
-    ],
   },
   {
     key: 'blogs',
-    path: 'blogs',
+    path: 'https://craftdyne.blogspot.com/',
     labelKey: 'nav.blogs',
-    children: [
-      { key: 'articles', path: 'blogs', labelKey: 'nav.sub.allBlogs', fallbackLabel: 'Latest Articles' },
-      { key: 'guides', path: 'blogs?tag=guide', labelKey: 'nav.sub.farmingGuides', fallbackLabel: 'Farming & Agronomy Guides' },
-    ],
+    external: true,
   },
   {
     key: 'contact',
@@ -75,6 +66,7 @@ export const MAIN_NAV = [
     children: [
       { key: 'enquiry', path: 'contact#enquiry-form', labelKey: 'nav.sub.enquiryForm', fallbackLabel: 'Send Enquiry' },
       { key: 'office', path: 'contact#office-info', labelKey: 'nav.sub.officeInfo', fallbackLabel: 'Office Location & Contact' },
+      { key: 'map', path: 'contact#location-map', labelKey: 'nav.sub.locationMap', fallbackLabel: 'Office Location Map' },
     ],
   },
 ];

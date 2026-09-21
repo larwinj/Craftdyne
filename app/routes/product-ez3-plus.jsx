@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { useOutletContext } from 'react-router';
-import { Check, Download, Info, ShieldCheck, TreePalm, Sprout, Package, Sparkles, FileText, HelpCircle } from 'lucide-react';
+import { Check, Download, Info, ShieldCheck, Package, Sparkles, FileText, HelpCircle } from 'lucide-react';
 
 import { CtaBand } from '../components/sections/cta-band.jsx';
 import { PageHero } from '../components/sections/page-hero.jsx';
@@ -23,7 +23,6 @@ const FAQS = ['howLong', 'organic', 'safety', 'crops', 'mixing', 'buy'];
 const EZ3_SECTIONS = [
   { id: 'overview', label: 'Overview', icon: Info },
   { id: 'packages', label: 'Package Sizes', icon: Package },
-  { id: 'applications', label: 'Applications', icon: TreePalm },
   { id: 'how-it-works', label: 'Three-Step Action', icon: Sparkles },
   { id: 'specifications', label: 'Specifications', icon: FileText },
   { id: 'faq', label: 'FAQ', icon: HelpCircle },
@@ -127,81 +126,6 @@ export default function ProductEz3Plus() {
                 </li>
               ))}
             </ul>
-          </div>
-        </div>
-      </Section>
-
-      {/* Specialized Crop Applications of EZ3+ Concentrate */}
-      <Section id="applications" tone="mist">
-        <SectionHeading
-          eyebrow="Targeted Applications"
-          title="Specialized Applications of EcoAgta EZ3+ Concentrate"
-          description="Detailed spray protocols and specialized application guidelines for high-value plantation crops."
-        />
-
-        <div className="mt-10 grid gap-8 lg:grid-cols-2">
-          {/* Coconut Trees Application */}
-          <div id="coconut" className="flex flex-col justify-between rounded-3xl bg-white p-8 shadow-lg border border-emerald-100 ring-1 ring-slate-900/5">
-            <div>
-              <div className="flex items-center gap-3">
-                <span className="flex size-12 items-center justify-center rounded-2xl bg-emerald-100 text-emerald-800">
-                  <TreePalm className="size-6" />
-                </span>
-                <div>
-                  <span className="text-xs font-bold uppercase tracking-wider text-emerald-700">Specialized Crop Application</span>
-                  <h3 className="font-display text-xl font-bold text-navy-900">Coconut Trees Treatment</h3>
-                </div>
-              </div>
-              <p className="mt-4 text-sm text-slate-600">
-                Targeted organic treatment for Coconut Palms against Rugose Spiraling Whitefly (RSW - Aleurodicus rugioperculatus), sooty mold fungus (Capnodium), and sap-sucking insects.
-              </p>
-              <ul className="mt-4 space-y-2 text-xs text-slate-700">
-                <li className="flex items-center gap-2">
-                  <ShieldCheck className="size-4 text-brand-600" />
-                  <span><strong>Starting Spray Dilution:</strong> 1 : 300 (Initial Treatment)</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <ShieldCheck className="size-4 text-brand-600" />
-                  <span><strong>Continuing Spray Dilution:</strong> 1 : 400 (Follow-up Spray)</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <ShieldCheck className="size-4 text-brand-600" />
-                  <span>Clears black sooty mold film from fronds, restoring photosynthesis within weeks.</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Cardamom Crop Treatment Application */}
-          <div id="cardamom" className="flex flex-col justify-between rounded-3xl bg-white p-8 shadow-lg border border-emerald-100 ring-1 ring-slate-900/5">
-            <div>
-              <div className="flex items-center gap-3">
-                <span className="flex size-12 items-center justify-center rounded-2xl bg-emerald-100 text-emerald-800">
-                  <Sprout className="size-6" />
-                </span>
-                <div>
-                  <span className="text-xs font-bold uppercase tracking-wider text-emerald-700">Specialized Crop Application</span>
-                  <h3 className="font-display text-xl font-bold text-navy-900">Cardamom Crop Treatment</h3>
-                </div>
-              </div>
-              <p className="mt-4 text-sm text-slate-600">
-                Recommended organic treatment for Cardamom plantations. Protects against Thrips, Aphids, Mealybugs, Spider Mites, and Mosaic Virus vector insects.
-              </p>
-              <ul className="mt-4 space-y-2 text-xs text-slate-700">
-                <li className="flex items-center gap-2">
-                  <ShieldCheck className="size-4 text-brand-600" />
-                  <span><strong>Recommended Dilution:</strong> 1 : 400 in fresh water (250 mL in 100L water)</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <ShieldCheck className="size-4 text-brand-600" />
-                  <span><strong>Application Schedule:</strong> 3 sprays per season during insect spotting</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <ShieldCheck className="size-4 text-brand-600" />
-                  <span>Zero chemical residue on harvested cardamom capsules; safe for mountain stream ecosystems.</span>
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
       </Section>
