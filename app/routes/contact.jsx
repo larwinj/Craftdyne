@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useLocation, useOutletContext } from 'react-router';
-import { ExternalLink, Mail, MapPin, MessageCircle, Navigation, Phone } from 'lucide-react';
+import { Mail, MapPin, MessageCircle, Phone } from 'lucide-react';
 
 import { ContactForm } from '../components/sections/contact-form.jsx';
 import { PageHero } from '../components/sections/page-hero.jsx';
@@ -138,66 +138,6 @@ export default function Contact() {
         </div>
       </Section>
 
-      {/* Embedded Interactive Location Map Section */}
-      <Section id="location-map" tone="mist" className="scroll-mt-28">
-        <div className="mx-auto max-w-5xl text-center">
-          <span className="bg-brand-100 text-brand-800 inline-flex items-center gap-1.5 rounded-full px-3.5 py-1 text-xs font-bold uppercase tracking-wider">
-            <MapPin className="size-4 text-brand-600" /> Office Location
-          </span>
-          <h2 className="text-fluid-2xl mt-3 font-bold text-navy-900">Find Us on Google Maps</h2>
-          <p className="mt-2 text-slate-600">
-            Registered Office: 1003/5, Saraswathi Nagar Collecterate post, Silapadi, Dindigul, Tamil Nadu, 624005.
-          </p>
-        </div>
-
-        <div className="relative mt-8 min-h-[440px] overflow-hidden rounded-3xl border border-slate-200 shadow-xl bg-slate-100">
-          {/* Interactive Map Frame */}
-          <iframe
-            title="CraftDyne Registered Office Precise Location Map"
-            src={CONTACT.mapsEmbedUrl}
-            width="100%"
-            height="440"
-            style={{ border: 0 }}
-            allowFullScreen=""
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            className="w-full h-[440px] border-0"
-          ></iframe>
-
-          {/* Floating Location Information Badge */}
-          <div className="absolute top-4 left-4 z-10 hidden sm:flex items-center gap-2.5 rounded-2xl bg-white/95 backdrop-blur-md px-4 py-2.5 shadow-lg border border-slate-200/80">
-            <div className="bg-brand-600 rounded-xl p-2 text-white shadow-xs">
-              <MapPin className="size-4" />
-            </div>
-            <div>
-              <p className="text-xs font-bold text-navy-900">CraftDyne Private Limited</p>
-              <p className="text-[0.6875rem] text-slate-500 font-mono">10.383085° N, 77.977175° E (Silapadi, Dindigul)</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
-          <a
-            href={CONTACT.mapsUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-xl bg-brand-600 px-6 py-3 text-sm font-bold text-white shadow-md transition-all hover:bg-brand-700 hover:shadow-lg"
-          >
-            <MapPin className="size-4" />
-            Open Location in Google Maps App
-            <ExternalLink className="size-3.5 opacity-80" />
-          </a>
-          <a
-            href={CONTACT.directionsUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-xl border border-slate-300 bg-white px-6 py-3 text-sm font-bold text-slate-700 shadow-2xs transition-all hover:bg-slate-50 hover:border-slate-400"
-          >
-            <Navigation className="size-4 text-brand-600" />
-            Get Driving Directions
-          </a>
-        </div>
-      </Section>
     </>
   );
 }

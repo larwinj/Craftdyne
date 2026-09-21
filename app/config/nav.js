@@ -66,7 +66,6 @@ export const MAIN_NAV = [
     children: [
       { key: 'enquiry', path: 'contact#enquiry-form', labelKey: 'nav.sub.enquiryForm', fallbackLabel: 'Send Enquiry' },
       { key: 'office', path: 'contact#office-info', labelKey: 'nav.sub.officeInfo', fallbackLabel: 'Office Location & Contact' },
-      { key: 'map', path: 'contact#location-map', labelKey: 'nav.sub.locationMap', fallbackLabel: 'Office Location Map' },
     ],
   },
 ];
