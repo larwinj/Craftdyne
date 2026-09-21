@@ -7,8 +7,8 @@
 
 export const CONTACT = {
   email: 'customercare@craftdyne.net',
-  /** Target email for contact form enquiries (currently set for user testing, change to customercare@craftdyne.net for production) */
-  enquiryEmail: 'raone2805@gmail.com',
+  /** Target email for contact form enquiries */
+  enquiryEmail: 'customercare@craftdyne.net',
 
   /** E.164, used for tel: and wa.me links. Displayed separately below. */
   phoneE164: '+919944429101',
