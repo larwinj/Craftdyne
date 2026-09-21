@@ -34,9 +34,9 @@ export const CONTACT = {
   mapsUrl: 'https://maps.app.goo.gl/LFHY4kycUT3e8r4h6?g_st=aw',
   directionsUrl: 'https://www.google.com/maps/dir/?api=1&destination=10.383085,77.977175',
   mapsEmbedUrl:
-    'https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1962.4!2d77.9771751!3d10.3830849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTDCsDIyJzffLjEiTiA3N8KwNTgnMzcuOCJF!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin',
+    'https://maps.google.com/maps?q=10.383085,77.977175&hl=en&z=16&output=embed',
   googleMapsEmbedUrl:
-    'https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1962.4!2d77.9771751!3d10.3830849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTDCsDIyJzffLjEiTiA3N8KwNTgnMzcuOCJF!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin',
+    'https://maps.google.com/maps?q=10.383085,77.977175&hl=en&z=16&output=embed',
 };
 
 export const SOCIAL = [
