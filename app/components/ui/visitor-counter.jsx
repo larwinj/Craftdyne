@@ -34,18 +34,16 @@ export function VisitorCounter({ className = '' }) {
         const hasVisited = localStorage.getItem('craftdyne_has_visited');
         
         if (!hasVisited) {
-          // New visitor! Increment the count
+          // New visitor! Mark as visited immediately to prevent race conditions on reload
+          localStorage.setItem('craftdyne_has_visited', 'true');
           currentCount += 1;
           
-          // Update the API
-          await fetch(MOCK_API_URL, {
+          // Update the API (don't block the UI waiting for it)
+          fetch(MOCK_API_URL, {
             method: 'PUT',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ count: currentCount })
-          });
-          
-          // Set local storage so we don't count them again
-          localStorage.setItem('craftdyne_has_visited', 'true');
+          }).catch(err => console.warn('Failed to update MockAPI count:', err));
         }
 
         if (isMounted) {
@@ -54,13 +52,19 @@ export function VisitorCounter({ className = '' }) {
         }
       } catch (err) {
         console.warn('Real visitor count fetch fallback:', err);
-        // Fallback: track unique sessions locally if network is restricted or Mock API fails
+        // Fallback: track unique sessions locally if network is restricted or Mock API fails (e.g. AdBlock)
         if (isMounted) {
+          const hasVisited = localStorage.getItem('craftdyne_has_visited');
           const stored = localStorage.getItem('craftdyne_real_visitors');
-          const base = stored ? parseInt(stored, 10) : 1;
-          const updated = base + 1;
-          localStorage.setItem('craftdyne_real_visitors', updated.toString());
-          setVisitorCount(updated);
+          let currentCount = stored ? parseInt(stored, 10) : 1;
+          
+          if (!hasVisited) {
+            localStorage.setItem('craftdyne_has_visited', 'true');
+            currentCount += 1;
+          }
+          
+          localStorage.setItem('craftdyne_real_visitors', currentCount.toString());
+          setVisitorCount(currentCount);
           setLoading(false);
         }
       }
