@@ -5,6 +5,10 @@
 [build.environment]
   NODE_VERSION = "22"
 
+# /api/visitors (the footer visitor counter) — see server/visitors.js.
+[functions]
+  directory = "netlify/functions"
+
 # "/" is a language gateway. 302 (not 301) because the choice of default locale
 # may change, and a cached permanent redirect would be painful to undo.
 [[redirects]]

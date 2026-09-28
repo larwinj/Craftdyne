@@ -191,10 +191,29 @@ immutable caching for fingerprinted assets.
 | Build command | `npm run build` |
 | Publish directory | `build/client` |
 | Node version | 22 |
-| Environment variable | `VITE_WEB3FORMS_KEY` |
+| Environment variables | `VITE_WEB3FORMS_KEY`, `UPSTASH_REDIS_REST_URL`, `UPSTASH_REDIS_REST_TOKEN` |
 
 `/` 302-redirects to `/en` at the host. A client-side language gateway is also
 prerendered as a fallback for hosts without redirect rules.
+
+### Website visitor counter
+
+The footer badge shows the number of unique visitors, served by `/api/visitors` on the
+site's own origin (so the CSP stays `'self'`). The logic lives in `server/visitors.js`;
+`netlify/functions/visitors.mjs` and `api/visitors.js` are thin adapters for each host,
+and `vite dev`/`vite preview` serve the same handler (in-memory unless Upstash is set).
+
+- Each browser gets a random anonymous ID; the count is the number of distinct IDs in a
+  Redis set, recorded by one atomic script — concurrent visitors can't lose updates, and
+  reloads, tabs or retries can't inflate it.
+- Crawlers and automated browsers (including the audits below) read but aren't counted.
+- An IP can add at most 60 new visitors per hour, blunting scripted inflation.
+- If the counter is unreachable or unconfigured, the badge is hidden — it never shows an
+  invented number.
+
+Setup: create a free Redis database at [Upstash](https://console.upstash.com) and set
+`UPSTASH_REDIS_REST_URL` and `UPSTASH_REDIS_REST_TOKEN` in the Netlify/Vercel dashboard
+(on Vercel, the Upstash marketplace integration's `KV_REST_API_*` variables also work).
 
 ### Pointing craftdyne.net at it
 

@@ -21,6 +21,13 @@ phone or email instead — it never fails silently.
 3. `cp .env.example .env` and set `VITE_WEB3FORMS_KEY=your-key-here`.
 4. Add the same variable in the Netlify/Vercel dashboard under environment variables.
 
+### Visitor counter database — the footer badge stays hidden without it
+
+1. Create a free Redis database at [console.upstash.com](https://console.upstash.com).
+2. From its **REST API** section copy the URL and token.
+3. Add `UPSTASH_REDIS_REST_URL` and `UPSTASH_REDIS_REST_TOKEN` in the Netlify/Vercel
+   dashboard under environment variables (and optionally in `.env` for local testing).
+
 ### Registered address, CIN and GST
 
 Currently the footer and legal pages show only "Dindigul, Tamil Nadu, India".
