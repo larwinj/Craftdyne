@@ -5,7 +5,7 @@
  * a language to LOCALES updates the sitemap automatically — a hand-written one
  * drifts out of date the first time someone forgets.
  */
-import { readdir, writeFile } from 'node:fs/promises';
+import { copyFile, readdir, writeFile } from 'node:fs/promises';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -54,6 +54,10 @@ Sitemap: ${new URL('/sitemap.xml', SITE_URL).toString()}
 
 await writeFile(join(outDir, 'sitemap.xml'), sitemap, 'utf8');
 await writeFile(join(outDir, 'robots.txt'), robots, 'utf8');
+
+// Vercel serves 404.html (with a real 404 status) for unmatched URLs; the SPA
+// shell then renders the app's own not-found page. Netlify uses a redirect rule.
+await copyFile(join(outDir, '__spa-fallback.html'), join(outDir, '404.html'));
 
 // Guard against a silent SSG regression: if the prerenderer ever falls back to
 // shipping an empty shell, every page would still "build" but contain nothing.
