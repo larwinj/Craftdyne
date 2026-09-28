@@ -12,37 +12,57 @@ export function VisitorCounter({ className = '' }) {
 
     async function fetchVisitorCount() {
       try {
-        // Track real persistent hits via public real visitor counter service
-        const pageId = 'craftdyne.official_live_visitors';
-        const res = await fetch(`https://visitor-badge.laobi.icu/badge?page_id=${pageId}`);
-        if (res.ok) {
-          const svgText = await res.text();
-          // Extract count integer from returned SVG badge text
-          const matches = svgText.match(/<text[^>]*>(\d+)<\/text>/g);
-          if (matches && matches.length > 0) {
-            const lastMatch = matches[matches.length - 1];
-            const numStr = lastMatch.replace(/<[^>]+>/g, '').trim();
-            const countVal = parseInt(numStr, 10);
-            if (!isNaN(countVal) && isMounted) {
-              setVisitorCount(countVal);
-              localStorage.setItem('craftdyne_real_visitors', countVal.toString());
-              setLoading(false);
-              return;
-            }
-          }
+        // Replace this with your actual mockapi.io endpoint URL 
+        // 1. Go to mockapi.io and create a new project
+        // 2. Create a 'visitors' resource with a 'count' field (Number)
+        // 3. Add one item to the endpoint with count: 0
+        const MOCK_API_URL = 'https://6aba9ce95b549d818d628b8f.mockapi.io/visitors/1';
+        
+        // Fetch current count
+        const res = await fetch(MOCK_API_URL);
+        if (!res.ok) {
+          throw new Error('Failed to fetch from Mock API');
+        }
+        
+        const data = await res.json();
+        let currentCount = parseInt(data.count, 10);
+        
+        if (isNaN(currentCount)) {
+            currentCount = 1;
+        }
+
+        const hasVisited = localStorage.getItem('craftdyne_has_visited');
+        
+        if (!hasVisited) {
+          // New visitor! Increment the count
+          currentCount += 1;
+          
+          // Update the API
+          await fetch(MOCK_API_URL, {
+            method: 'PUT',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ count: currentCount })
+          });
+          
+          // Set local storage so we don't count them again
+          localStorage.setItem('craftdyne_has_visited', 'true');
+        }
+
+        if (isMounted) {
+          setVisitorCount(currentCount);
+          setLoading(false);
         }
       } catch (err) {
         console.warn('Real visitor count fetch fallback:', err);
-      }
-
-      // Fallback: track unique sessions locally if network is restricted
-      if (isMounted) {
-        const stored = localStorage.getItem('craftdyne_real_visitors');
-        const base = stored ? parseInt(stored, 10) : 1;
-        const updated = base + 1;
-        localStorage.setItem('craftdyne_real_visitors', updated.toString());
-        setVisitorCount(updated);
-        setLoading(false);
+        // Fallback: track unique sessions locally if network is restricted or Mock API fails
+        if (isMounted) {
+          const stored = localStorage.getItem('craftdyne_real_visitors');
+          const base = stored ? parseInt(stored, 10) : 1;
+          const updated = base + 1;
+          localStorage.setItem('craftdyne_real_visitors', updated.toString());
+          setVisitorCount(updated);
+          setLoading(false);
+        }
       }
     }
 
