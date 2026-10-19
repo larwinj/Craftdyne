@@ -82,6 +82,10 @@ try {
     check('Myco Delta image is visible', await deltaCardImg.first().isVisible());
     check('Myco Siga image is visible', await sigaCardImg.first().isVisible());
 
+    const productsBody = await page.locator('main').innerText();
+    check('Myco Delta has specific kicker', productsBody.includes('Targeted Banana Fusarium Wilt Treatment'));
+    check('Myco Siga has specific kicker', productsBody.includes('Targeted Banana Yellow Sigatoka Defense'));
+
     await page.close();
   }
 

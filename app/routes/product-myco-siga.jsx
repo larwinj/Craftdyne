@@ -89,7 +89,7 @@ export default function ProductMycoSiga() {
 
       <PageHero
         lang={lang}
-        eyebrow="Targeted Banana Fungal Defense"
+        eyebrow={t('mycoSiga.kicker', 'Targeted Banana Yellow Sigatoka Defense')}
         title="EcoAgta Myco Siga"
         description="Quick, Economic & Effective Treatment for Yellow Sigatoka Fungal Disease (Manjal Vaadal Noi) in Banana Trees."
         crumbs={[

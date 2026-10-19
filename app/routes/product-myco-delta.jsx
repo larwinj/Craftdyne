@@ -89,7 +89,7 @@ export default function ProductMycoDelta() {
 
       <PageHero
         lang={lang}
-        eyebrow="Targeted Systemic Fungi Treatment"
+        eyebrow={t('mycoDelta.kicker', 'Targeted Banana Fusarium Wilt Treatment')}
         title="EcoAgta Myco Delta"
         description="Quick, Economic & Effective Treatment for Vedi Vaalzhai Noi – Fusarium Wilt (Panama Wilt) in Banana Trees."
         crumbs={[

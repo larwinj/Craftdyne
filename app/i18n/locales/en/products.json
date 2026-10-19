@@ -501,5 +501,15 @@
         }
       }
     }
+  },
+  "mycoDelta": {
+    "name": "EcoAgta Myco Delta",
+    "kicker": "Targeted Banana Fusarium Wilt Treatment",
+    "tagline": "Quick & effective 2-part treatment for Panama Wilt (Vedi Vaalzhai Noi) in bananas."
+  },
+  "mycoSiga": {
+    "name": "EcoAgta Myco Siga",
+    "kicker": "Targeted Banana Yellow Sigatoka Defense",
+    "tagline": "Economic & proven foliar treatment for Yellow Sigatoka (Manjal Vaadal Noi) in bananas."
   }
 }
