@@ -220,17 +220,33 @@ export function CustomerReviews({ lang, limit, showFilters = true, id = 'custome
 
                   {/* Footer details: Farmer info & Product link */}
                   <div className="mt-6 border-t border-slate-100 pt-4">
-                    <div className="flex items-start justify-between gap-2">
-                      <div>
-                        <h4 className="font-display font-bold text-slate-900">{review.name}</h4>
-                        <p className="mt-0.5 text-xs text-slate-500">
-                          {review.role} • 📍 {review.location}
-                        </p>
-                      </div>
-                      <span className="shrink-0 rounded bg-slate-100 px-2 py-0.5 text-[0.75rem] font-medium text-slate-600">
-                        🌱 {review.crop}
-                      </span>
+                    <div>
+                      <h4 className="font-display font-bold text-slate-900">{review.name}</h4>
+                      <p className="mt-0.5 text-xs text-slate-500">
+                        {review.role} • 📍 {review.location}
+                      </p>
                     </div>
+
+                    {/* Crop tags */}
+                    {review.crop && (
+                      <div className="mt-2.5 flex flex-wrap items-center gap-1.5">
+                        <span className="text-xs text-slate-400">🌱</span>
+                        {review.crop.includes(',') ? (
+                          review.crop.split(',').map((c, i) => (
+                            <span
+                              key={i}
+                              className="rounded bg-slate-100 px-2 py-0.5 text-[0.75rem] font-medium text-slate-600"
+                            >
+                              {c.trim()}
+                            </span>
+                          ))
+                        ) : (
+                          <span className="rounded bg-slate-100 px-2 py-0.5 text-[0.75rem] font-medium text-slate-600">
+                            {review.crop}
+                          </span>
+                        )}
+                      </div>
+                    )}
 
                     {/* Product Link & Brochure Download */}
                     {product && (
