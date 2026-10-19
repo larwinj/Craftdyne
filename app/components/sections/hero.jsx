@@ -35,9 +35,7 @@ export function Hero({ lang }) {
           {/* The brochure's headline claim, given the same prominence here. */}
           <div className="bg-brand-600 shadow-card mt-7 inline-flex flex-wrap items-baseline gap-x-2 gap-y-1 rounded-2xl px-5 py-3.5 text-white">
             <span className="font-display text-fluid-lg font-semibold">{t('hero.claimLead')}</span>
-            <span className="font-display text-fluid-xl font-extrabold tracking-tight">
-              {t('hero.claimHighlight')}
-            </span>
+            <span className="font-display text-fluid-xl font-extrabold tracking-tight">{t('hero.claimHighlight')}</span>
           </div>
 
           <div className="xs:flex-row xs:flex-wrap mt-8 flex flex-col gap-3">

@@ -14,8 +14,10 @@ export function meta({ params }) {
     lang: params.lang,
     path: 'reviews',
     title: `${t('nav.customerReviews')} | CraftDyne`,
-    description:
+    description: t(
+      'reviews.description',
       'Read verified farmer reviews, case studies, and field feedback on CraftDyne EcoAgta Green Chemistry products across India.',
+    ),
   });
 }
 
@@ -25,15 +27,16 @@ export default function ReviewsPage() {
 
   return (
     <>
-      <JsonLd
-        schema={breadcrumbSchema(lang, [{ name: t('nav.customerReviews'), path: 'reviews' }])}
-      />
+      <JsonLd schema={breadcrumbSchema(lang, [{ name: t('nav.customerReviews'), path: 'reviews' }])} />
 
       <PageHero
         lang={lang}
         eyebrow={t('nav.customerReviews')}
         title={t('nav.customerReviews')}
-        description="See how CraftDyne Green Chemistry products enhance harvest yields, eradicate whiteflies, control fungal rots, and restore soil health."
+        description={t(
+          'reviews.pageHeroDescription',
+          'See how CraftDyne Green Chemistry products enhance harvest yields, eradicate whiteflies, control fungal rots, and restore soil health.',
+        )}
         crumbs={[{ label: t('nav.customerReviews'), path: 'reviews' }]}
       />
 

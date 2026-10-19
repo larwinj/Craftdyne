@@ -93,22 +93,25 @@ export function MobileNav({ open, onClose, lang }) {
                         aria-label="Toggle section menu"
                       >
                         <ChevronDown
-                          className={cn('size-5 transition-transform duration-200', isExpanded && 'rotate-180 text-brand-600')}
+                          className={cn(
+                            'size-5 transition-transform duration-200',
+                            isExpanded && 'text-brand-600 rotate-180',
+                          )}
                         />
                       </button>
                     ) : null}
                   </div>
 
                   {hasChildren && isExpanded ? (
-                    <ul className="my-1 ml-4 flex flex-col gap-1 border-l-2 border-brand-100 pl-3">
+                    <ul className="border-brand-100 my-1 ml-4 flex flex-col gap-1 border-l-2 pl-3">
                       {item.children.map((sub) => (
                         <li key={sub.key}>
                           <Link
                             to={localePath(lang, sub.path)}
                             onClick={close}
                             className={cn(
-                              "flex min-h-10 items-center rounded-lg px-3 font-medium text-slate-600 transition-colors hover:bg-emerald-50 hover:text-brand-700",
-                              isTamil ? "text-xs" : "text-sm"
+                              'hover:text-brand-700 flex min-h-10 items-center rounded-lg px-3 font-medium text-slate-600 transition-colors hover:bg-emerald-50',
+                              isTamil ? 'text-xs' : 'text-sm',
                             )}
                           >
                             {t(sub.labelKey, sub.fallbackLabel)}
@@ -162,7 +165,7 @@ function DrawerLink({ to, end, onClick, className, children, isTamil }) {
         rel="noopener noreferrer"
         onClick={onClick}
         className={cn(
-          'font-display flex min-h-12 items-center rounded-lg px-4 font-semibold transition-colors text-navy-700 hover:bg-slate-50',
+          'font-display text-navy-700 flex min-h-12 items-center rounded-lg px-4 font-semibold transition-colors hover:bg-slate-50',
           isTamil ? 'text-sm sm:text-base' : 'text-fluid-lg',
           className,
         )}

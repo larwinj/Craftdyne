@@ -71,7 +71,7 @@ export default function ProductEz3Plus() {
         eyebrow={t('ez3plus.kicker')}
         title={
           <span>
-            EcoAgta EZ3+<sub className="text-base font-medium font-sans">concentrate</sub>
+            EcoAgta EZ3+<sub className="font-sans text-base font-medium">concentrate</sub>
           </span>
         }
         description={t('ez3plus.tagline')}
@@ -88,14 +88,18 @@ export default function ProductEz3Plus() {
         <div className="grid gap-10 lg:grid-cols-12 lg:items-start lg:gap-14">
           <Reveal className="lg:col-span-5">
             <div className="flex flex-col items-center">
-              <ProductBottle image={FEATURED_PRODUCT.image} alt={FEATURED_PRODUCT.name} className="mx-auto max-w-xs sm:max-w-sm" />
+              <ProductBottle
+                image={FEATURED_PRODUCT.image}
+                alt={FEATURED_PRODUCT.name}
+                className="mx-auto max-w-xs sm:max-w-sm"
+              />
               {FEATURED_PRODUCT.brochureUrl && (
                 <a
                   href={FEATURED_PRODUCT.brochureUrl}
                   download
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-6 inline-flex items-center gap-2 rounded-xl bg-brand-600 px-6 py-3 font-semibold text-white shadow-md transition-all hover:bg-brand-700 hover:shadow-lg"
+                  className="bg-brand-600 hover:bg-brand-700 mt-6 inline-flex items-center gap-2 rounded-xl px-6 py-3 font-semibold text-white shadow-md transition-all hover:shadow-lg"
                 >
                   <Download className="size-5" />
                   {t('common:actions.downloadBrochure')}

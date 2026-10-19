@@ -1,6 +1,18 @@
 import { useTranslation } from 'react-i18next';
 import { useOutletContext } from 'react-router';
-import { Check, Download, Info, ShieldAlert, Package, Sparkles, HelpCircle, Leaf, ShieldCheck, DollarSign, Activity } from 'lucide-react';
+import {
+  Check,
+  Download,
+  Info,
+  ShieldAlert,
+  Package,
+  Sparkles,
+  HelpCircle,
+  Leaf,
+  ShieldCheck,
+  DollarSign,
+  Activity,
+} from 'lucide-react';
 
 import { CtaBand } from '../components/sections/cta-band.jsx';
 import { PageHero } from '../components/sections/page-hero.jsx';
@@ -110,7 +122,7 @@ export default function ProductMycoSpectra() {
                   download
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-6 inline-flex items-center gap-2 rounded-xl bg-brand-600 px-6 py-3 font-semibold text-white shadow-md transition-all hover:bg-brand-700 hover:shadow-lg"
+                  className="bg-brand-600 hover:bg-brand-700 mt-6 inline-flex items-center gap-2 rounded-xl px-6 py-3 font-semibold text-white shadow-md transition-all hover:shadow-lg"
                 >
                   <Download className="size-5" />
                   Download Official PDF Brochure
@@ -125,12 +137,14 @@ export default function ProductMycoSpectra() {
               100% Readily Biodegradable • Non-Toxic • Made with Green Chemistry
             </div>
 
-            <h2 className="font-display text-fluid-2xl mt-4 font-bold text-navy-900">
+            <h2 className="font-display text-fluid-2xl text-navy-900 mt-4 font-bold">
               Organic, Water-Based Broad Spectrum Fungal Suppressant
             </h2>
 
             <p className="text-fluid-lg mt-3 text-pretty text-slate-600">
-              EcoAgta Myco Spectra provides foliar spray treatment and systemic control against major plant fungi. Formulated on IUPAC Green Chemistry principles, it is non-toxic, non-poisonous, and completely readily biodegradable with zero harm to air, water, soil, or the food chain.
+              EcoAgta Myco Spectra provides foliar spray treatment and systemic control against major plant fungi.
+              Formulated on IUPAC Green Chemistry principles, it is non-toxic, non-poisonous, and completely readily
+              biodegradable with zero harm to air, water, soil, or the food chain.
             </p>
 
             <div id="packages">
@@ -147,7 +161,9 @@ export default function ProductMycoSpectra() {
                     </span>
                     <div className="min-w-0">
                       <h3 className="text-fluid-base font-semibold">{t(`mycoSpectra.benefits.items.${id}.title`)}</h3>
-                      <p className="text-fluid-sm mt-1 text-slate-600">{t(`mycoSpectra.benefits.items.${id}.description`)}</p>
+                      <p className="text-fluid-sm mt-1 text-slate-600">
+                        {t(`mycoSpectra.benefits.items.${id}.description`)}
+                      </p>
                     </div>
                   </li>
                 ))}
@@ -160,49 +176,57 @@ export default function ProductMycoSpectra() {
       {/* 4 Pillars Section */}
       <Section id="pillars" tone="mist">
         <div className="mx-auto max-w-4xl text-center">
-          <span className="bg-brand-100 text-brand-800 inline-flex items-center gap-1.5 rounded-full px-3.5 py-1 text-xs font-bold uppercase tracking-wider">
-            <ShieldCheck className="size-4 text-brand-600" /> Core Design Pillars
+          <span className="bg-brand-100 text-brand-800 inline-flex items-center gap-1.5 rounded-full px-3.5 py-1 text-xs font-bold tracking-wider uppercase">
+            <ShieldCheck className="text-brand-600 size-4" /> Core Design Pillars
           </span>
-          <h2 className="font-display text-fluid-2xl mt-3 font-bold text-navy-900">
+          <h2 className="font-display text-fluid-2xl text-navy-900 mt-3 font-bold">
             Economics, Performance, Safety & Sustainability
           </h2>
         </div>
 
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
-            <span className="bg-emerald-50 text-emerald-700 inline-flex size-10 items-center justify-center rounded-xl">
+          <div className="shadow-card rounded-2xl border border-slate-200 bg-white p-6">
+            <span className="inline-flex size-10 items-center justify-center rounded-xl bg-emerald-50 text-emerald-700">
               <DollarSign className="size-5" />
             </span>
-            <h3 className="font-display text-lg font-bold text-navy-900 mt-4">Economics</h3>
-            <p className="mt-2 text-xs leading-relaxed text-slate-600">Multiple benefits for longer periods. Saves farming costs.</p>
-            <p className="mt-3 font-display text-xs font-bold text-emerald-700">→ Increases Yield</p>
+            <h3 className="font-display text-navy-900 mt-4 text-lg font-bold">Economics</h3>
+            <p className="mt-2 text-xs leading-relaxed text-slate-600">
+              Multiple benefits for longer periods. Saves farming costs.
+            </p>
+            <p className="font-display mt-3 text-xs font-bold text-emerald-700">→ Increases Yield</p>
           </div>
 
-          <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
+          <div className="shadow-card rounded-2xl border border-slate-200 bg-white p-6">
             <span className="bg-brand-50 text-brand-700 inline-flex size-10 items-center justify-center rounded-xl">
               <Activity className="size-5" />
             </span>
-            <h3 className="font-display text-lg font-bold text-navy-900 mt-4">Performance</h3>
-            <p className="mt-2 text-xs leading-relaxed text-slate-600">Effective in preventing a wide range of destructive fungi.</p>
-            <p className="mt-3 font-display text-xs font-bold text-brand-700">→ Systemic Immunity</p>
+            <h3 className="font-display text-navy-900 mt-4 text-lg font-bold">Performance</h3>
+            <p className="mt-2 text-xs leading-relaxed text-slate-600">
+              Effective in preventing a wide range of destructive fungi.
+            </p>
+            <p className="font-display text-brand-700 mt-3 text-xs font-bold">→ Systemic Immunity</p>
           </div>
 
-          <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
-            <span className="bg-sky-50 text-sky-700 inline-flex size-10 items-center justify-center rounded-xl">
+          <div className="shadow-card rounded-2xl border border-slate-200 bg-white p-6">
+            <span className="inline-flex size-10 items-center justify-center rounded-xl bg-sky-50 text-sky-700">
               <ShieldCheck className="size-5" />
             </span>
-            <h3 className="font-display text-lg font-bold text-navy-900 mt-4">Safety</h3>
-            <p className="mt-2 text-xs leading-relaxed text-slate-600">Non-poisonous, non-toxic, non-fuming, non-irritating.</p>
-            <p className="mt-3 font-display text-xs font-bold text-sky-700">→ Safe for Persons & Animals</p>
+            <h3 className="font-display text-navy-900 mt-4 text-lg font-bold">Safety</h3>
+            <p className="mt-2 text-xs leading-relaxed text-slate-600">
+              Non-poisonous, non-toxic, non-fuming, non-irritating.
+            </p>
+            <p className="font-display mt-3 text-xs font-bold text-sky-700">→ Safe for Persons & Animals</p>
           </div>
 
-          <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
-            <span className="bg-emerald-50 text-emerald-800 inline-flex size-10 items-center justify-center rounded-xl">
+          <div className="shadow-card rounded-2xl border border-slate-200 bg-white p-6">
+            <span className="inline-flex size-10 items-center justify-center rounded-xl bg-emerald-50 text-emerald-800">
               <Leaf className="size-5" />
             </span>
-            <h3 className="font-display text-lg font-bold text-navy-900 mt-4">Sustainability</h3>
-            <p className="mt-2 text-xs leading-relaxed text-slate-600">Readily biodegradable, efficient, reduces resources.</p>
-            <p className="mt-3 font-display text-xs font-bold text-emerald-800">→ ZERO Harm to Environment</p>
+            <h3 className="font-display text-navy-900 mt-4 text-lg font-bold">Sustainability</h3>
+            <p className="mt-2 text-xs leading-relaxed text-slate-600">
+              Readily biodegradable, efficient, reduces resources.
+            </p>
+            <p className="font-display mt-3 text-xs font-bold text-emerald-800">→ ZERO Harm to Environment</p>
           </div>
         </div>
       </Section>
@@ -219,11 +243,11 @@ export default function ProductMycoSpectra() {
             <Reveal key={mode.title} delay={idx * 0.08}>
               <div className="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-slate-50 p-6 shadow-xs">
                 <div>
-                  <span className="bg-brand-600 text-white font-display inline-block rounded-md px-2.5 py-0.5 text-xs font-bold">
+                  <span className="bg-brand-600 font-display inline-block rounded-md px-2.5 py-0.5 text-xs font-bold text-white">
                     Mode {idx + 1}
                   </span>
-                  <h3 className="font-display text-lg font-bold text-navy-900 mt-3">{mode.title}</h3>
-                  <p className="mt-2 text-xs font-semibold text-brand-700">{mode.targets}</p>
+                  <h3 className="font-display text-navy-900 mt-3 text-lg font-bold">{mode.title}</h3>
+                  <p className="text-brand-700 mt-2 text-xs font-semibold">{mode.targets}</p>
                   <p className="mt-3 text-sm text-slate-600">{mode.desc}</p>
                 </div>
               </div>
@@ -232,23 +256,26 @@ export default function ProductMycoSpectra() {
         </div>
 
         {/* Dilution box */}
-        <div className="mt-10 rounded-2xl bg-white p-6 shadow-card ring-1 ring-slate-200">
-          <h3 className="font-display text-fluid-lg font-bold text-navy-800">
-            Dilution & Spraying Recommendations
-          </h3>
+        <div className="shadow-card mt-10 rounded-2xl bg-white p-6 ring-1 ring-slate-200">
+          <h3 className="font-display text-fluid-lg text-navy-800 font-bold">Dilution & Spraying Recommendations</h3>
           <p className="mt-2 text-sm text-slate-600">
-            For Tree & Plantation Crops (Guava, Mango, Coconut, Lemon, Lime, Tapioca, Banana) and Soft Leaf Plants (Tomatoes, Chiles, Cucumber, Groundnuts):
+            For Tree & Plantation Crops (Guava, Mango, Coconut, Lemon, Lime, Tapioca, Banana) and Soft Leaf Plants
+            (Tomatoes, Chiles, Cucumber, Groundnuts):
           </p>
           <div className="mt-4 grid gap-6 sm:grid-cols-2">
             <div className="rounded-xl border border-slate-200 bg-slate-50 p-4">
-              <p className="text-xs font-bold uppercase tracking-wider text-slate-500">Dilution Ratio</p>
-              <p className="mt-1 font-display text-2xl font-extrabold text-brand-600">1 : 200</p>
-              <p className="mt-1 text-xs text-slate-600">1000 mL poured into 200 Liters fresh non-chlorinated water (mix 5 mins).</p>
+              <p className="text-xs font-bold tracking-wider text-slate-500 uppercase">Dilution Ratio</p>
+              <p className="font-display text-brand-600 mt-1 text-2xl font-extrabold">1 : 200</p>
+              <p className="mt-1 text-xs text-slate-600">
+                1000 mL poured into 200 Liters fresh non-chlorinated water (mix 5 mins).
+              </p>
             </div>
             <div className="rounded-xl border border-slate-200 bg-slate-50 p-4">
-              <p className="text-xs font-bold uppercase tracking-wider text-slate-500">Spray Timing & Frequency</p>
-              <p className="mt-1 font-display text-lg font-bold text-navy-900">6:00 - 10:30 AM or 3:30 - 6:30 PM</p>
-              <p className="mt-1 text-xs text-slate-600">Spray symptomatically ~3 times during growing season, covering all plant parts.</p>
+              <p className="text-xs font-bold tracking-wider text-slate-500 uppercase">Spray Timing & Frequency</p>
+              <p className="font-display text-navy-900 mt-1 text-lg font-bold">6:00 - 10:30 AM or 3:30 - 6:30 PM</p>
+              <p className="mt-1 text-xs text-slate-600">
+                Spray symptomatically ~3 times during growing season, covering all plant parts.
+              </p>
             </div>
           </div>
         </div>

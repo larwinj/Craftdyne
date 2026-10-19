@@ -7,19 +7,13 @@ export const PRODUCT_PACKAGES = {
     { size: '500 mL', label: 'Standard Spray Pack', popular: false, icon: 'bottle' },
     { size: '100 mL', label: 'Trial & Small Farm Pack', popular: false, icon: 'bottle' },
   ],
-  blumennStrong: [
-    { size: '100 mL', label: 'Super Concentrate Pack', popular: false, icon: 'bottle' },
-  ],
-  mycoSpectra: [
-    { size: '1 Liter', label: 'Fungicide Protection Pack', popular: false, icon: 'bottle' },
-  ],
+  blumennStrong: [{ size: '100 mL', label: 'Super Concentrate Pack', popular: false, icon: 'bottle' }],
+  mycoSpectra: [{ size: '1 Liter', label: 'Fungicide Protection Pack', popular: false, icon: 'bottle' }],
   mycoDelta: [
     { size: '50 mL', label: 'Liquid Concentrate Package', popular: false, icon: 'bottle' },
     { size: 'Granules', label: 'Soil Granules Package', popular: false, icon: 'box' },
   ],
-  mycoSiga: [
-    { size: '50 mL', label: 'Liquid Concentrate Package', popular: false, icon: 'bottle' },
-  ],
+  mycoSiga: [{ size: '50 mL', label: 'Liquid Concentrate Package', popular: false, icon: 'bottle' }],
   soilAmend: [
     { size: '5 kg Block', label: 'Compressed Organic Block (Expands 75L)', popular: false, icon: 'box' },
     { size: 'Granules', label: 'Soil Conditioning Granules Package', popular: false, icon: 'box' },
@@ -35,8 +29,8 @@ export function PackageCards({ productId, className = '' }) {
   return (
     <div className={`mt-8 space-y-4 ${className}`}>
       <div className="flex items-center gap-2">
-        <Package className="size-5 text-brand-600" aria-hidden="true" />
-        <h3 className="font-display text-base font-bold text-navy-900 sm:text-lg">
+        <Package className="text-brand-600 size-5" aria-hidden="true" />
+        <h3 className="font-display text-navy-900 text-base font-bold sm:text-lg">
           {t('products.packagesTitle', 'Available Package Sizes & Quantities')}
         </h3>
       </div>
@@ -45,17 +39,17 @@ export function PackageCards({ productId, className = '' }) {
         {packages.map((pkg, idx) => (
           <div
             key={idx}
-            className="group relative flex flex-col justify-between rounded-xl border border-slate-200 bg-white p-4 transition-all duration-200 hover:-translate-y-0.5 hover:border-brand-300 hover:shadow-md"
+            className="group hover:border-brand-300 relative flex flex-col justify-between rounded-xl border border-slate-200 bg-white p-4 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md"
           >
             <div>
               <div className="flex items-center gap-2 text-slate-500">
-                <Package className="size-4 text-brand-600 group-hover:scale-110 transition-transform" />
-                <span className="text-xs font-semibold uppercase tracking-wider text-slate-500">{pkg.label}</span>
+                <Package className="text-brand-600 size-4 transition-transform group-hover:scale-110" />
+                <span className="text-xs font-semibold tracking-wider text-slate-500 uppercase">{pkg.label}</span>
               </div>
-              <p className="font-display mt-2 text-xl font-extrabold text-navy-900">{pkg.size}</p>
+              <p className="font-display text-navy-900 mt-2 text-xl font-extrabold">{pkg.size}</p>
             </div>
 
-            <div className="mt-4 flex items-center gap-1.5 text-xs text-emerald-700 font-medium">
+            <div className="mt-4 flex items-center gap-1.5 text-xs font-medium text-emerald-700">
               <ShieldCheck className="size-3.5" />
               <span>Sealed EcoAgta Pack</span>
             </div>

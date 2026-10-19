@@ -15,13 +15,12 @@ export function meta({ params }) {
 export default function BlogsPage() {
   return (
     <main id="main-content">
-      <Section tone="light" className="py-20 sm:py-32 min-h-[60vh] flex items-center justify-center">
+      <Section tone="light" className="flex min-h-[60vh] items-center justify-center py-20 sm:py-32">
         <Container size="normal" className="text-center">
-          <h1 className="font-display text-fluid-3xl font-extrabold text-navy-900 mb-6">
-            Blog Preview
-          </h1>
-          <p className="text-fluid-lg max-w-2xl mx-auto text-slate-600 leading-relaxed">
-            This is a sample page showcasing the Blog section. Once the Blog link is provided, it will be integrated and displayed here.
+          <h1 className="font-display text-fluid-3xl text-navy-900 mb-6 font-extrabold">Blog Preview</h1>
+          <p className="text-fluid-lg mx-auto max-w-2xl leading-relaxed text-slate-600">
+            This is a sample page showcasing the Blog section. Once the Blog link is provided, it will be integrated and
+            displayed here.
           </p>
         </Container>
       </Section>

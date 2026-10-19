@@ -1,6 +1,19 @@
 import { useTranslation } from 'react-i18next';
 import { useOutletContext } from 'react-router';
-import { Check, Download, Info, Layers, Leaf, ShieldCheck, Package, Sparkles, HelpCircle, FileText, ShieldAlert, HeartPulse } from 'lucide-react';
+import {
+  Check,
+  Download,
+  Info,
+  Layers,
+  Leaf,
+  ShieldCheck,
+  Package,
+  Sparkles,
+  HelpCircle,
+  FileText,
+  ShieldAlert,
+  HeartPulse,
+} from 'lucide-react';
 
 import { CtaBand } from '../components/sections/cta-band.jsx';
 import { PageHero } from '../components/sections/page-hero.jsx';
@@ -108,7 +121,7 @@ export default function ProductSoilAmend() {
                   download
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-6 inline-flex items-center gap-2 rounded-xl bg-brand-600 px-6 py-3 font-semibold text-white shadow-md transition-all hover:bg-brand-700 hover:shadow-lg"
+                  className="bg-brand-600 hover:bg-brand-700 mt-6 inline-flex items-center gap-2 rounded-xl px-6 py-3 font-semibold text-white shadow-md transition-all hover:shadow-lg"
                 >
                   <Download className="size-5" />
                   Download Technical & Usage PDF
@@ -123,12 +136,14 @@ export default function ProductSoilAmend() {
               USDA NOP Permitted • Serves up to 4 Years • 100% Plant Based
             </div>
 
-            <h2 className="font-display text-fluid-2xl mt-4 font-bold text-navy-900">
+            <h2 className="font-display text-fluid-2xl text-navy-900 mt-4 font-bold">
               Organic Soil Amendment & Root Zone Enhancer
             </h2>
 
             <p className="text-fluid-lg mt-3 text-pretty text-slate-600">
-              CraftDyne Soil Amend is a pure organic plant-based material compressed into 5kg blocks. It features a high Carbon-to-Nitrogen ratio, rich Terpenoid & Limonoid content, and essential micro-nutrients to build excellent air porosity, retain soil moisture, and protect crops against soil-borne pathogens & nematodes.
+              CraftDyne Soil Amend is a pure organic plant-based material compressed into 5kg blocks. It features a high
+              Carbon-to-Nitrogen ratio, rich Terpenoid & Limonoid content, and essential micro-nutrients to build
+              excellent air porosity, retain soil moisture, and protect crops against soil-borne pathogens & nematodes.
             </p>
 
             <div id="packages">
@@ -145,7 +160,9 @@ export default function ProductSoilAmend() {
                     </span>
                     <div className="min-w-0">
                       <h3 className="text-fluid-base font-semibold">{t(`soilAmend.benefits.items.${id}.title`)}</h3>
-                      <p className="text-fluid-sm mt-1 text-slate-600">{t(`soilAmend.benefits.items.${id}.description`)}</p>
+                      <p className="text-fluid-sm mt-1 text-slate-600">
+                        {t(`soilAmend.benefits.items.${id}.description`)}
+                      </p>
                     </div>
                   </li>
                 ))}
@@ -165,12 +182,16 @@ export default function ProductSoilAmend() {
         {/* USDA Banner */}
         <div className="mt-6 rounded-2xl border border-emerald-200 bg-emerald-50/80 p-6 text-emerald-950">
           <div className="flex items-start gap-3">
-            <Leaf className="size-6 text-emerald-700 shrink-0 mt-0.5" />
+            <Leaf className="mt-0.5 size-6 shrink-0 text-emerald-700" />
             <div>
               <h3 className="font-display text-lg font-bold">Organic Statement (USDA NOP)</h3>
-              <p className="mt-1 text-sm text-emerald-900 leading-relaxed">
+              <p className="mt-1 text-sm leading-relaxed text-emerald-900">
                 <strong>CRAFTDYNE Soil Amend</strong> is Permitted per the USDA National Organic Program (NOP) Rule:
-                <em> Title 7: CFR Agriculture, Part 205.203.C3 Un-composted, National Organic Program allowed as Crop Fertilizer & Soil Amendment.</em>
+                <em>
+                  {' '}
+                  Title 7: CFR Agriculture, Part 205.203.C3 Un-composted, National Organic Program allowed as Crop
+                  Fertilizer & Soil Amendment.
+                </em>
               </p>
             </div>
           </div>
@@ -178,9 +199,9 @@ export default function ProductSoilAmend() {
 
         <div className="mt-8 grid gap-6 lg:grid-cols-12">
           {/* Physical specs */}
-          <div className="lg:col-span-5 rounded-2xl bg-white p-6 shadow-card ring-1 ring-slate-200">
-            <h3 className="font-display text-fluid-lg flex items-center gap-2 font-bold text-navy-800">
-              <Layers className="size-5 text-brand-600" /> Physical Specifications
+          <div className="shadow-card rounded-2xl bg-white p-6 ring-1 ring-slate-200 lg:col-span-5">
+            <h3 className="font-display text-fluid-lg text-navy-800 flex items-center gap-2 font-bold">
+              <Layers className="text-brand-600 size-5" /> Physical Specifications
             </h3>
             <dl className="mt-4 flex flex-col gap-3 text-sm">
               <div className="flex justify-between border-b border-slate-100 pb-2">
@@ -201,7 +222,7 @@ export default function ProductSoilAmend() {
               </div>
               <div className="flex justify-between border-b border-slate-100 pb-2">
                 <dt className="text-slate-500">Water Hold Capacity</dt>
-                <dd className="font-semibold text-brand-600">14 – 15 Liters per 1 Kg Block</dd>
+                <dd className="text-brand-600 font-semibold">14 – 15 Liters per 1 Kg Block</dd>
               </div>
               <div className="flex justify-between">
                 <dt className="text-slate-500">Soil Durability</dt>
@@ -211,20 +232,20 @@ export default function ProductSoilAmend() {
           </div>
 
           {/* Average Property & Mineral Profile */}
-          <div className="lg:col-span-7 rounded-2xl bg-white p-6 shadow-card ring-1 ring-slate-200">
-            <h3 className="font-display text-fluid-lg flex items-center gap-2 font-bold text-navy-800">
-              <Sparkles className="size-5 text-brand-600" /> Average Property & Mineral Values
+          <div className="shadow-card rounded-2xl bg-white p-6 ring-1 ring-slate-200 lg:col-span-7">
+            <h3 className="font-display text-fluid-lg text-navy-800 flex items-center gap-2 font-bold">
+              <Sparkles className="text-brand-600 size-5" /> Average Property & Mineral Values
             </h3>
             <p className="mt-1 text-xs text-slate-500">
               * Electrical Conductivity (EC): 0.40 Micromhos per cM (Low Conductivity).
             </p>
 
-            <div className="mt-4 grid grid-cols-2 sm:grid-cols-4 gap-3">
+            <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-4">
               {MINERAL_VALUES.map((m) => (
                 <div key={m.symbol} className="rounded-xl bg-slate-50 p-3 text-center ring-1 ring-slate-200/60">
-                  <span className="font-display text-xs font-bold uppercase text-slate-500">{m.symbol}</span>
-                  <p className="font-display mt-1 text-base font-extrabold text-navy-900">{m.value}</p>
-                  {m.unit && <span className="text-[0.6875rem] text-slate-500 block">{m.unit}</span>}
+                  <span className="font-display text-xs font-bold text-slate-500 uppercase">{m.symbol}</span>
+                  <p className="font-display text-navy-900 mt-1 text-base font-extrabold">{m.value}</p>
+                  {m.unit && <span className="block text-[0.6875rem] text-slate-500">{m.unit}</span>}
                 </div>
               ))}
             </div>
@@ -234,33 +255,39 @@ export default function ProductSoilAmend() {
 
       {/* Usage Instructions */}
       <Section id="how-to-use" tone="white">
-        <SectionHeading title="Usage & Hydration Instructions" description="Steps for hydration, nursery potting, and open field soil amendment." />
+        <SectionHeading
+          title="Usage & Hydration Instructions"
+          description="Steps for hydration, nursery potting, and open field soil amendment."
+        />
         <div className="mt-8 grid gap-6 md:grid-cols-3">
           <div className="rounded-2xl bg-slate-50 p-6 ring-1 ring-slate-200/70">
             <span className="bg-brand-600 font-display inline-flex size-9 items-center justify-center rounded-full font-bold text-white">
               1
             </span>
-            <h3 className="font-display text-fluid-base mt-4 font-bold text-navy-900">Hydration & Mixing</h3>
+            <h3 className="font-display text-fluid-base text-navy-900 mt-4 font-bold">Hydration & Mixing</h3>
             <p className="mt-2 text-sm text-slate-600">
-              Hydrate the block using fresh water (well, stream, or irrigation). The block will expand and break apart. Loosen and mix thoroughly before applying.
+              Hydrate the block using fresh water (well, stream, or irrigation). The block will expand and break apart.
+              Loosen and mix thoroughly before applying.
             </p>
           </div>
           <div className="rounded-2xl bg-slate-50 p-6 ring-1 ring-slate-200/70">
             <span className="bg-brand-600 font-display inline-flex size-9 items-center justify-center rounded-full font-bold text-white">
               2
             </span>
-            <h3 className="font-display text-fluid-base mt-4 font-bold text-navy-900">Nursery & Plant Potting</h3>
+            <h3 className="font-display text-fluid-base text-navy-900 mt-4 font-bold">Nursery & Plant Potting</h3>
             <p className="mt-2 text-sm text-slate-600">
-              Seeds or seedlings may be directly planted in a bed of hydrated Soil Amend, or blended with existing potting soil according to soil conditions.
+              Seeds or seedlings may be directly planted in a bed of hydrated Soil Amend, or blended with existing
+              potting soil according to soil conditions.
             </p>
           </div>
           <div className="rounded-2xl bg-slate-50 p-6 ring-1 ring-slate-200/70">
             <span className="bg-brand-600 font-display inline-flex size-9 items-center justify-center rounded-full font-bold text-white">
               3
             </span>
-            <h3 className="font-display text-fluid-base mt-4 font-bold text-navy-900">Plant Beds & Open Fields</h3>
+            <h3 className="font-display text-fluid-base text-navy-900 mt-4 font-bold">Plant Beds & Open Fields</h3>
             <p className="mt-2 text-sm text-slate-600">
-              Spread blocks over field rows or plant mounds. Water blocks to loosen and break. Till and mix into soil bed around areas of root spread.
+              Spread blocks over field rows or plant mounds. Water blocks to loosen and break. Till and mix into soil
+              bed around areas of root spread.
             </p>
           </div>
         </div>
@@ -269,19 +296,25 @@ export default function ProductSoilAmend() {
       {/* Safety & Environmental Health */}
       <Section id="safety" tone="sand">
         <div className="mx-auto max-w-4xl">
-          <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-card">
+          <div className="shadow-card rounded-2xl border border-slate-200 bg-white p-6">
             <div className="flex items-center gap-2 border-b border-slate-200 pb-3">
               <HeartPulse className="size-5 text-emerald-600" />
-              <h3 className="font-display text-lg font-bold text-navy-900">Environmental Health & Safety</h3>
+              <h3 className="font-display text-navy-900 text-lg font-bold">Environmental Health & Safety</h3>
             </div>
-            <div className="mt-4 grid gap-4 sm:grid-cols-2 text-sm text-slate-700">
+            <div className="mt-4 grid gap-4 text-sm text-slate-700 sm:grid-cols-2">
               <div>
-                <h4 className="font-bold text-navy-900">Handling Safety:</h4>
-                <p className="mt-1 text-xs text-slate-600">Wear dust mask and gloves while handling. Wash hands thoroughly after handling. Follow SDS safety guidelines.</p>
+                <h4 className="text-navy-900 font-bold">Handling Safety:</h4>
+                <p className="mt-1 text-xs text-slate-600">
+                  Wear dust mask and gloves while handling. Wash hands thoroughly after handling. Follow SDS safety
+                  guidelines.
+                </p>
               </div>
               <div>
-                <h4 className="font-bold text-navy-900">Environmental Safety:</h4>
-                <p className="mt-1 text-xs text-slate-600">NON-polluting and SAFE to air, soil, and water. NON-toxic to humans and animals. NON-hazardous and safe for farm usage.</p>
+                <h4 className="text-navy-900 font-bold">Environmental Safety:</h4>
+                <p className="mt-1 text-xs text-slate-600">
+                  NON-polluting and SAFE to air, soil, and water. NON-toxic to humans and animals. NON-hazardous and
+                  safe for farm usage.
+                </p>
               </div>
             </div>
           </div>

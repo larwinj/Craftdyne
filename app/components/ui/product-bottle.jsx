@@ -29,7 +29,7 @@ export function EcoAgtaLeaf({ className }) {
  * Swap for the retouched photograph when it arrives; the surrounding layout
  * needs no changes.
  */
-export function ProductBottle({ image, alt, className }) {
+export function ProductBottle({ image, alt, className, imgClassName }) {
   const { t } = useTranslation(['products', 'home']);
 
   if (image) {
@@ -42,7 +42,11 @@ export function ProductBottle({ image, alt, className }) {
         <img
           src={image}
           alt={alt || t('ez3plus.name', { ns: 'products', defaultValue: 'EcoAgta Product' })}
-          className="relative max-h-[480px] w-auto max-w-full object-contain drop-shadow-xl rounded-2xl transition-transform duration-300 hover:scale-[1.02]"
+          className={cn(
+            'relative max-h-[480px] w-auto max-w-full rounded-2xl object-contain drop-shadow-xl transition-transform duration-300 hover:scale-[1.02]',
+            imgClassName,
+          )}
+          loading="lazy"
         />
       </div>
     );
@@ -83,7 +87,7 @@ export function ProductBottle({ image, alt, className }) {
             <img
               src="/brand/ecoagta-logo.png"
               alt="EcoAgta — Proactive, Naturally"
-              className="mx-auto h-16 w-auto object-contain rounded-sm"
+              className="mx-auto h-16 w-auto rounded-sm object-contain"
             />
 
             <p className="font-display mt-3 text-2xl font-extrabold tracking-tight text-[#E8590C]">EZ3+</p>

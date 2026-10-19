@@ -33,16 +33,18 @@ export const CONTACT = {
   },
   mapsUrl: 'https://maps.app.goo.gl/LFHY4kycUT3e8r4h6?g_st=aw',
   directionsUrl: 'https://www.google.com/maps/dir/?api=1&destination=10.383085,77.977175',
-  mapsEmbedUrl:
-    'https://maps.google.com/maps?q=10.383085,77.977175&hl=en&z=16&output=embed',
-  googleMapsEmbedUrl:
-    'https://maps.google.com/maps?q=10.383085,77.977175&hl=en&z=16&output=embed',
+  mapsEmbedUrl: 'https://maps.google.com/maps?q=10.383085,77.977175&hl=en&z=16&output=embed',
+  googleMapsEmbedUrl: 'https://maps.google.com/maps?q=10.383085,77.977175&hl=en&z=16&output=embed',
 };
 
 export const SOCIAL = [
   { key: 'linkedin', label: 'LinkedIn', href: 'https://www.linkedin.com/company/craftdyne-private-limited/' },
   { key: 'x', label: 'X', href: 'https://x.com/CraftDyne' },
-  { key: 'facebook', label: 'Facebook', href: 'https://www.facebook.com/people/CraftDyne-Private-Limite/61593103934818/' },
+  {
+    key: 'facebook',
+    label: 'Facebook',
+    href: 'https://www.facebook.com/people/CraftDyne-Private-Limite/61593103934818/',
+  },
   { key: 'instagram', label: 'Instagram', href: 'https://www.instagram.com/_craftdyne_/?hl=en' },
 ];
 

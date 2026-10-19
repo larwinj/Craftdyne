@@ -34,7 +34,10 @@ export function meta({ params }) {
     lang: params.lang,
     path: 'green-chemistry',
     title: t('greenChemistry.meta.title', 'Green Chemistry — Science for Sustainable Agriculture'),
-    description: t('greenChemistry.meta.description', 'How CraftDyne applies IUPAC Green Chemistry principles to crop protection.'),
+    description: t(
+      'greenChemistry.meta.description',
+      'How CraftDyne applies IUPAC Green Chemistry principles to crop protection.',
+    ),
   });
 }
 
@@ -46,13 +49,20 @@ export default function GreenChemistry() {
 
   return (
     <>
-      <JsonLd schema={breadcrumbSchema(lang, [{ name: t('common:nav.greenChemistry', 'Green Chemistry'), path: 'green-chemistry' }])} />
+      <JsonLd
+        schema={breadcrumbSchema(lang, [
+          { name: t('common:nav.greenChemistry', 'Green Chemistry'), path: 'green-chemistry' },
+        ])}
+      />
 
       <PageHero
         lang={lang}
         eyebrow={t('greenChemistry.eyebrow', 'Green Chemistry & Sustainability')}
         title={t('greenChemistry.title', 'Green Chemistry: Science for Sustainable Agriculture')}
-        description={t('greenChemistry.description', 'Building safety, degradability, and crop productivity into the molecule from the very start.')}
+        description={t(
+          'greenChemistry.description',
+          'Building safety, degradability, and crop productivity into the molecule from the very start.',
+        )}
         crumbs={[{ label: t('common:nav.greenChemistry', 'Green Chemistry'), path: 'green-chemistry' }]}
       />
 
@@ -121,7 +131,7 @@ export default function GreenChemistry() {
             const Icon = item.icon;
             return (
               <Reveal as="li" key={item.id} delay={index * 0.05}>
-                <div className="bg-white ring-brand-100 shadow-card flex h-full gap-4 rounded-2xl p-6 ring-1">
+                <div className="ring-brand-100 shadow-card flex h-full gap-4 rounded-2xl bg-white p-6 ring-1">
                   <span className="bg-brand-600 inline-flex size-12 shrink-0 items-center justify-center rounded-xl text-white">
                     <Icon className="size-6" aria-hidden="true" />
                   </span>

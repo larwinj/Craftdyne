@@ -47,23 +47,32 @@ export default function Contact() {
         lang={lang}
         eyebrow={t('hero.eyebrow', { defaultValue: 'Get in Touch' })}
         title={t('hero.title', { defaultValue: 'Contact CraftDyne' })}
-        description={t('hero.description', { defaultValue: 'We are here to answer your technical questions, assist with orders, and support your farming needs.' })}
+        description={t('hero.description', {
+          defaultValue:
+            'We are here to answer your technical questions, assist with orders, and support your farming needs.',
+        })}
         crumbs={[{ label: t('common:nav.contact'), path: 'contact' }]}
       />
 
       <Section tone="white">
         <div className="grid gap-12 lg:grid-cols-12 lg:items-start">
-          <div id="office-info" className="lg:col-span-5 scroll-mt-28">
-            <h2 className="text-fluid-2xl font-bold text-navy-900">{t('info.heading', { defaultValue: 'Direct Contact Channels' })}</h2>
-            <p className="mt-3 text-slate-600">{t('info.sub', { defaultValue: 'Reach our agronomist and support team directly via email, phone, or WhatsApp.' })}</p>
+          <div id="office-info" className="scroll-mt-28 lg:col-span-5">
+            <h2 className="text-fluid-2xl text-navy-900 font-bold">
+              {t('info.heading', { defaultValue: 'Direct Contact Channels' })}
+            </h2>
+            <p className="mt-3 text-slate-600">
+              {t('info.sub', {
+                defaultValue: 'Reach our agronomist and support team directly via email, phone, or WhatsApp.',
+              })}
+            </p>
 
             <div className="mt-8 space-y-6">
               <div className="flex items-start gap-4">
-                <div className="bg-brand-100/70 shrink-0 rounded-xl p-3 text-brand-700">
+                <div className="bg-brand-100/70 text-brand-700 shrink-0 rounded-xl p-3">
                   <Mail className="size-6" aria-hidden="true" />
                 </div>
                 <div>
-                  <h3 className="font-display font-semibold text-navy-900">Email Us</h3>
+                  <h3 className="font-display text-navy-900 font-semibold">Email Us</h3>
                   <a href={mailtoHref} className="hover:text-brand-700 text-slate-600 transition-colors">
                     {CONTACT.email}
                   </a>
@@ -71,11 +80,11 @@ export default function Contact() {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="bg-brand-100/70 shrink-0 rounded-xl p-3 text-brand-700">
+                <div className="bg-brand-100/70 text-brand-700 shrink-0 rounded-xl p-3">
                   <Phone className="size-6" aria-hidden="true" />
                 </div>
                 <div>
-                  <h3 className="font-display font-semibold text-navy-900">Call Us</h3>
+                  <h3 className="font-display text-navy-900 font-semibold">Call Us</h3>
                   <a href={telHref} className="hover:text-brand-700 text-slate-600 transition-colors">
                     {CONTACT.phoneDisplay}
                   </a>
@@ -84,16 +93,16 @@ export default function Contact() {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="bg-brand-100/70 shrink-0 rounded-xl p-3 text-brand-700">
+                <div className="bg-brand-100/70 text-brand-700 shrink-0 rounded-xl p-3">
                   <MessageCircle className="size-6" aria-hidden="true" />
                 </div>
                 <div>
-                  <h3 className="font-display font-semibold text-navy-900">WhatsApp Support</h3>
+                  <h3 className="font-display text-navy-900 font-semibold">WhatsApp Support</h3>
                   <a
                     href={whatsappHref(t('common:whatsappMessage'))}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:text-brand-700 font-medium text-brand-600 transition-colors"
+                    className="hover:text-brand-700 text-brand-600 font-medium transition-colors"
                   >
                     Chat with Us directly on WhatsApp →
                   </a>
@@ -101,14 +110,14 @@ export default function Contact() {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="bg-brand-100/70 shrink-0 rounded-xl p-3 text-brand-700">
+                <div className="bg-brand-100/70 text-brand-700 shrink-0 rounded-xl p-3">
                   <MapPin className="size-6" aria-hidden="true" />
                 </div>
                 <div>
-                  <h3 className="font-display font-semibold text-navy-900">Registered Office</h3>
+                  <h3 className="font-display text-navy-900 font-semibold">Registered Office</h3>
                   <div className="mt-1 space-y-0.5 text-slate-600">
                     {CONTACT.addressLines.map((line, idx) => (
-                      <p key={idx} className={idx === 0 ? 'font-bold text-navy-900' : ''}>
+                      <p key={idx} className={idx === 0 ? 'text-navy-900 font-bold' : ''}>
                         {line}
                       </p>
                     ))}
@@ -117,7 +126,7 @@ export default function Contact() {
                     href={CONTACT.mapsUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:text-brand-700 mt-2.5 inline-flex items-center gap-1 text-xs font-semibold text-brand-600 transition-colors"
+                    className="hover:text-brand-700 text-brand-600 mt-2.5 inline-flex items-center gap-1 text-xs font-semibold transition-colors"
                   >
                     Open Registered Office in Google Maps →
                   </a>
@@ -126,10 +135,14 @@ export default function Contact() {
             </div>
           </div>
 
-          <div id="enquiry-form" className="lg:col-span-7 scroll-mt-28">
-            <div className="shadow-card rounded-3xl bg-white p-6 sm:p-10 ring-1 ring-slate-100">
-              <h2 className="text-fluid-xl font-bold text-navy-900">{t('form.heading', { defaultValue: 'Send Us a Message' })}</h2>
-              <p className="mt-1.5 text-xs text-slate-500">{t('form.sub', { defaultValue: 'Fill out the form below and our team will get back to you shortly.' })}</p>
+          <div id="enquiry-form" className="scroll-mt-28 lg:col-span-7">
+            <div className="shadow-card rounded-3xl bg-white p-6 ring-1 ring-slate-100 sm:p-10">
+              <h2 className="text-fluid-xl text-navy-900 font-bold">
+                {t('form.heading', { defaultValue: 'Send Us a Message' })}
+              </h2>
+              <p className="mt-1.5 text-xs text-slate-500">
+                {t('form.sub', { defaultValue: 'Fill out the form below and our team will get back to you shortly.' })}
+              </p>
               <div className="mt-6">
                 <ContactForm lang={lang} />
               </div>
@@ -137,7 +150,6 @@ export default function Contact() {
           </div>
         </div>
       </Section>
-
     </>
   );
 }

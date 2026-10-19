@@ -18,20 +18,9 @@ import { breadcrumbSchema, buildMeta, faqSchema, productSchema } from '../lib/se
 
 const PRODUCT = PRODUCTS.find((p) => p.id === 'blumennStrong') ?? PRODUCTS[1];
 
-const INTERNAL_CAUSES = [
-  'micros',
-  'soil',
-  'flowers',
-  'ovules',
-  'competition',
-  'climate',
-  'abscission',
-];
+const INTERNAL_CAUSES = ['micros', 'soil', 'flowers', 'ovules', 'competition', 'climate', 'abscission'];
 
-const EXTERNAL_CAUSES = [
-  'fungal',
-  'suckers',
-];
+const EXTERNAL_CAUSES = ['fungal', 'suckers'];
 
 const FAQS = ['purpose', 'crops', 'dilution', 'safety'];
 
@@ -106,7 +95,7 @@ export default function ProductBlumennStrong() {
                   download
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-6 inline-flex items-center gap-2 rounded-xl bg-brand-600 px-6 py-3 font-semibold text-white shadow-md transition-all hover:bg-brand-700 hover:shadow-lg"
+                  className="bg-brand-600 hover:bg-brand-700 mt-6 inline-flex items-center gap-2 rounded-xl px-6 py-3 font-semibold text-white shadow-md transition-all hover:shadow-lg"
                 >
                   <Download className="size-5" />
                   {t('common:actions.downloadBrochure')}
@@ -122,21 +111,21 @@ export default function ProductBlumennStrong() {
               <PackageCards productId="blumennStrong" />
             </div>
 
-            <div id="causes" className="mt-8 rounded-2xl bg-brand-50/60 p-6 ring-1 ring-brand-100">
-              <h3 className="font-display text-fluid-lg font-bold text-navy-800">
+            <div id="causes" className="bg-brand-50/60 ring-brand-100 mt-8 rounded-2xl p-6 ring-1">
+              <h3 className="font-display text-fluid-lg text-navy-800 font-bold">
                 {t('blumennStrong.causes.heading')}
               </h3>
               <p className="mt-1 text-sm text-slate-600">{t('blumennStrong.causes.sub')}</p>
 
               <div className="mt-6 grid gap-6 sm:grid-cols-2">
                 <div>
-                  <h4 className="font-display font-bold text-brand-700 flex items-center gap-2">
+                  <h4 className="font-display text-brand-700 flex items-center gap-2 font-bold">
                     <Sprout className="size-5" /> {t('blumennStrong.causes.internalTitle')}
                   </h4>
                   <ul className="mt-3 flex flex-col gap-2">
                     {INTERNAL_CAUSES.map((id) => (
                       <li key={id} className="flex items-start gap-2 text-sm text-slate-700">
-                        <Check className="mt-0.5 size-4 text-brand-600 shrink-0" />
+                        <Check className="text-brand-600 mt-0.5 size-4 shrink-0" />
                         <span>{t(`blumennStrong.causes.internal.${id}`)}</span>
                       </li>
                     ))}
@@ -144,13 +133,13 @@ export default function ProductBlumennStrong() {
                 </div>
 
                 <div>
-                  <h4 className="font-display font-bold text-navy-700 flex items-center gap-2">
+                  <h4 className="font-display text-navy-700 flex items-center gap-2 font-bold">
                     <ShieldCheck className="size-5" /> {t('blumennStrong.causes.externalTitle')}
                   </h4>
                   <ul className="mt-3 flex flex-col gap-2">
                     {EXTERNAL_CAUSES.map((id) => (
                       <li key={id} className="flex items-start gap-2 text-sm text-slate-700">
-                        <Check className="mt-0.5 size-4 text-navy-600 shrink-0" />
+                        <Check className="text-navy-600 mt-0.5 size-4 shrink-0" />
                         <span>{t(`blumennStrong.causes.external.${id}`)}</span>
                       </li>
                     ))}
@@ -170,17 +159,17 @@ export default function ProductBlumennStrong() {
         />
 
         <div className="mt-8 grid gap-6 md:grid-cols-2">
-          <div className="rounded-2xl bg-white p-6 shadow-card ring-1 ring-slate-100">
-            <h3 className="font-display text-fluid-lg font-bold text-navy-800">
+          <div className="shadow-card rounded-2xl bg-white p-6 ring-1 ring-slate-100">
+            <h3 className="font-display text-fluid-lg text-navy-800 font-bold">
               {t('blumennStrong.dilution.ratioTitle')}
             </h3>
-            <p className="mt-3 font-display text-3xl font-extrabold text-brand-600">1 : 2000</p>
+            <p className="font-display text-brand-600 mt-3 text-3xl font-extrabold">1 : 2000</p>
             <p className="mt-1 text-sm text-slate-600">{t('blumennStrong.dilution.ratioExample')}</p>
             <p className="mt-4 text-sm text-slate-700">{t('blumennStrong.dilution.waterType')}</p>
           </div>
 
-          <div className="rounded-2xl bg-white p-6 shadow-card ring-1 ring-slate-100">
-            <h3 className="font-display text-fluid-lg font-bold text-navy-800">
+          <div className="shadow-card rounded-2xl bg-white p-6 ring-1 ring-slate-100">
+            <h3 className="font-display text-fluid-lg text-navy-800 font-bold">
               {t('blumennStrong.usage.timingTitle')}
             </h3>
             <p className="mt-3 text-sm text-slate-700">{t('blumennStrong.usage.timingBody')}</p>

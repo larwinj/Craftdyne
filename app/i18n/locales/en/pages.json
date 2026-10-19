@@ -46,6 +46,12 @@
     "tagline": {
       "heading": "Green & Efficient Molecules at Work",
       "body": "Our tagline is a description of method, not a slogan. \"Green\" is the design constraint: every molecule has to be safe and biodegradable by construction. \"Efficient\" is the commercial reality: it also has to work hard enough in the field that a farmer would choose it on merit. We do not treat those two as being in tension."
+    },
+    "proven": {
+      "badge": "Proven Results",
+      "heading": "Tested & Proven Field Results",
+      "subheading": "The EcoAgta products have been tested scientifically and proven to work as claimed.",
+      "testimonial": "Testimonial"
     }
   },
 

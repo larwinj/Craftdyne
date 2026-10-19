@@ -73,7 +73,7 @@ export function Header({ lang }) {
           scrolled ? 'border-slate-200 shadow-xs' : 'border-slate-100',
         )}
       >
-        <Container size="wide" className="2xl:max-w-[92rem] px-3 sm:px-6">
+        <Container size="wide" className="px-3 sm:px-6 2xl:max-w-[92rem]">
           <div
             className={cn(
               'flex items-center justify-between gap-2 transition-all duration-300 xl:gap-3',
@@ -84,8 +84,10 @@ export function Header({ lang }) {
               <BrandMark lang={lang} />
             </div>
 
-            <nav aria-label="Main" className="hidden xl:block min-w-0 flex-1 px-1">
-              <ul className={cn("flex items-center justify-center", isTamil ? "gap-0.5 2xl:gap-1.5" : "gap-1 2xl:gap-3")}>
+            <nav aria-label="Main" className="hidden min-w-0 flex-1 px-1 xl:block">
+              <ul
+                className={cn('flex items-center justify-center', isTamil ? 'gap-0.5 2xl:gap-1.5' : 'gap-1 2xl:gap-3')}
+              >
                 {MAIN_NAV.map((item) => {
                   const hasChildren = item.children && item.children.length > 0;
                   const isOpen = activeDropdown === item.key;
@@ -94,7 +96,7 @@ export function Header({ lang }) {
                   return (
                     <li
                       key={item.key}
-                      className="relative group shrink-0"
+                      className="group relative shrink-0"
                       onMouseEnter={() => hasChildren && setActiveDropdown(item.key)}
                       onMouseLeave={() => hasChildren && setActiveDropdown(null)}
                     >
@@ -107,8 +109,8 @@ export function Header({ lang }) {
                             className={cn(
                               'font-display relative inline-flex min-h-11 items-center gap-0.5 rounded-xl py-1 text-center font-extrabold transition-colors',
                               isTamil
-                                ? 'px-1 xl:px-1.5 2xl:px-2.5 text-[0.625rem] xl:text-[0.6875rem] 2xl:text-[0.75rem]'
-                                : 'px-1.5 xl:px-2.5 2xl:px-3 text-xs xl:text-[0.8125rem] 2xl:text-sm',
+                                ? 'px-1 text-[0.625rem] xl:px-1.5 xl:text-[0.6875rem] 2xl:px-2.5 2xl:text-[0.75rem]'
+                                : 'px-1.5 text-xs xl:px-2.5 xl:text-[0.8125rem] 2xl:px-3 2xl:text-sm',
                               'text-navy-900 hover:text-brand-700',
                             )}
                           >
@@ -121,8 +123,8 @@ export function Header({ lang }) {
                               cn(
                                 'font-display relative inline-flex min-h-11 items-center gap-0.5 rounded-xl py-1 text-center font-extrabold transition-colors',
                                 isTamil
-                                  ? 'px-1 xl:px-1.5 2xl:px-2.5 text-[0.625rem] xl:text-[0.6875rem] 2xl:text-[0.75rem]'
-                                  : 'px-1.5 xl:px-2.5 2xl:px-3 text-xs xl:text-[0.8125rem] 2xl:text-sm',
+                                  ? 'px-1 text-[0.625rem] xl:px-1.5 xl:text-[0.6875rem] 2xl:px-2.5 2xl:text-[0.75rem]'
+                                  : 'px-1.5 text-xs xl:px-2.5 xl:text-[0.8125rem] 2xl:px-3 2xl:text-sm',
                                 'after:absolute after:inset-x-2 after:-bottom-0.5 after:h-0.5 after:rounded-full after:transition-colors',
                                 isActive
                                   ? 'text-brand-700 after:bg-brand-600'
@@ -134,8 +136,8 @@ export function Header({ lang }) {
                             {hasChildren ? (
                               <ChevronDown
                                 className={cn(
-                                  'size-3.5 opacity-60 transition-transform duration-200 shrink-0 ml-0.5',
-                                  isOpen && 'rotate-180 opacity-100 text-brand-600',
+                                  'ml-0.5 size-3.5 shrink-0 opacity-60 transition-transform duration-200',
+                                  isOpen && 'text-brand-600 rotate-180 opacity-100',
                                 )}
                                 aria-hidden="true"
                               />
@@ -150,11 +152,11 @@ export function Header({ lang }) {
                             'absolute top-full left-0 z-50 pt-2 transition-all duration-200',
                             isTamil ? 'w-80' : 'w-72',
                             isOpen
-                              ? 'opacity-100 translate-y-0 pointer-events-auto'
-                              : 'opacity-0 translate-y-2 pointer-events-none',
+                              ? 'pointer-events-auto translate-y-0 opacity-100'
+                              : 'pointer-events-none translate-y-2 opacity-0',
                           )}
                         >
-                          <div className="rounded-xl bg-white p-2 shadow-xl border border-slate-200/80 ring-1 ring-slate-900/5 backdrop-blur-md">
+                          <div className="rounded-xl border border-slate-200/80 bg-white p-2 shadow-xl ring-1 ring-slate-900/5 backdrop-blur-md">
                             <ul className="flex flex-col gap-0.5">
                               {item.children.map((sub) => (
                                 <li key={sub.key}>
@@ -162,8 +164,10 @@ export function Header({ lang }) {
                                     to={localePath(lang, sub.path)}
                                     onClick={() => setActiveDropdown(null)}
                                     className={cn(
-                                      "flex items-center justify-between rounded-lg px-3 py-2 text-slate-700 transition-colors hover:bg-emerald-50 hover:text-brand-700",
-                                      isTamil ? "text-[0.6875rem] xl:text-xs font-semibold leading-snug" : "text-xs font-semibold"
+                                      'hover:text-brand-700 flex items-center justify-between rounded-lg px-3 py-2 text-slate-700 transition-colors hover:bg-emerald-50',
+                                      isTamil
+                                        ? 'text-[0.6875rem] leading-snug font-semibold xl:text-xs'
+                                        : 'text-xs font-semibold',
                                     )}
                                   >
                                     <span>{t(sub.labelKey, sub.fallbackLabel)}</span>
@@ -186,8 +190,8 @@ export function Header({ lang }) {
                 to={localePath(lang, 'contact')}
                 size="sm"
                 className={cn(
-                  "hidden xl:inline-flex py-2 min-h-10 font-bold shrink-0",
-                  isTamil ? "text-[0.6875rem] xl:text-xs px-2.5" : "text-xs px-3.5"
+                  'hidden min-h-10 shrink-0 py-2 font-bold xl:inline-flex',
+                  isTamil ? 'px-2.5 text-[0.6875rem] xl:text-xs' : 'px-3.5 text-xs',
                 )}
               >
                 {t('actions.enquireShort')}

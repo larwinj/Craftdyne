@@ -42,7 +42,7 @@ export function LanguageSwitcher({ lang, tone = 'dark', className }) {
               code === 'ta' ? 'text-[0.625rem] sm:text-[0.6875rem]' : 'text-[0.6875rem] sm:text-xs',
               selected
                 ? light
-                  ? 'bg-white text-navy-900 shadow-xs'
+                  ? 'text-navy-900 bg-white shadow-xs'
                   : 'bg-emerald-600 text-white shadow-xs'
                 : light
                   ? 'text-white/80 hover:bg-white/10 hover:text-white'

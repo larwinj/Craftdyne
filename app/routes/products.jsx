@@ -46,6 +46,10 @@ export default function Products() {
         title={t('index.title')}
         description={t('index.description')}
         crumbs={[{ label: t('common:nav.products'), path: 'products' }]}
+        image={{
+          src: '/images/products/products1.jpg',
+          alt: `${t('index.title')} — EcoAgta CraftDyne Products Lineup`,
+        }}
       />
 
       <Section tone="white">
@@ -56,25 +60,30 @@ export default function Products() {
                 <article className="group bg-mist ring-brand-100 hover:border-brand-300 flex w-full flex-col justify-between overflow-hidden rounded-2xl p-5 ring-1 transition-all hover:shadow-lg">
                   <div>
                     {/* Featured Product Image Showcase */}
-                    <div className="relative mb-4 flex h-52 w-full items-center justify-center rounded-xl bg-gradient-to-b from-white to-slate-50/80 p-4 ring-1 ring-slate-200/60 shadow-xs overflow-hidden">
-                      <ProductBottle image={product.image} alt={product.name} className="max-h-44 w-auto object-contain transition-transform duration-300 group-hover:scale-105" />
+                    <div className="relative mb-4 flex h-52 w-full items-center justify-center overflow-hidden rounded-xl bg-gradient-to-b from-white to-slate-50/80 p-4 shadow-xs ring-1 ring-slate-200/60">
+                      <ProductBottle
+                        image={product.image}
+                        alt={product.name}
+                        className="h-full w-full"
+                        imgClassName="max-h-40 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+                      />
                     </div>
 
                     <div>
-                      <span className="bg-brand-600 font-display inline-block rounded-full px-2.5 py-0.5 text-[0.6875rem] font-bold text-white leading-tight">
+                      <span className="bg-brand-600 font-display inline-block rounded-full px-2.5 py-0.5 text-[0.6875rem] leading-tight font-bold text-white">
                         {t(`${product.id}.kicker`, product.brand)}
                       </span>
 
-                      <h2 className="text-lg font-bold leading-snug mt-2 text-navy-900">
+                      <h2 className="text-navy-900 mt-2 text-lg leading-snug font-bold">
                         <Link
                           to={localePath(lang, product.slug)}
-                          className="hover:text-brand-700 transition-colors flex items-center gap-1.5"
+                          className="hover:text-brand-700 flex items-center gap-1.5 transition-colors"
                         >
                           <EcoAgtaLeaf className="text-eco-green size-4 shrink-0" />
                           <span>
                             {product.id === 'ez3plus' ? (
                               <span>
-                                EcoAgta EZ3+<sub className="text-[0.7rem] font-medium font-sans">concentrate</sub>
+                                EcoAgta EZ3+<sub className="font-sans text-[0.7rem] font-medium">concentrate</sub>
                               </span>
                             ) : (
                               t(`${product.id}.name`, product.name)
@@ -83,7 +92,7 @@ export default function Products() {
                         </Link>
                       </h2>
 
-                      <p className="mt-1.5 text-xs text-slate-600 leading-relaxed">
+                      <p className="mt-1.5 text-xs leading-relaxed text-slate-600">
                         {t(`${product.id}.tagline`, 'Proactive Green Chemistry Solution')}
                       </p>
                     </div>
@@ -91,13 +100,13 @@ export default function Products() {
                     {/* Quantities / Packages Badges (Ref PDF Offerings) */}
                     {product.packages && product.packages.length > 0 ? (
                       <div className="mt-4 flex flex-wrap items-center gap-1.5 border-t border-slate-200/60 pt-3">
-                        <span className="text-[0.6875rem] font-bold text-slate-500 uppercase tracking-wider flex items-center gap-1">
-                          <Package className="size-3 text-brand-600" /> Packages:
+                        <span className="flex items-center gap-1 text-[0.6875rem] font-bold tracking-wider text-slate-500 uppercase">
+                          <Package className="text-brand-600 size-3" /> Packages:
                         </span>
                         {product.packages.map((pkg) => (
                           <span
                             key={pkg}
-                            className="inline-block rounded-md bg-white px-2.5 py-0.5 text-[0.6875rem] font-semibold text-navy-800 border border-slate-200 shadow-2xs"
+                            className="text-navy-800 inline-block rounded-md border border-slate-200 bg-white px-2.5 py-0.5 text-[0.6875rem] font-semibold shadow-2xs"
                           >
                             {pkg}
                           </span>
@@ -107,7 +116,11 @@ export default function Products() {
                   </div>
 
                   <div className="mt-5 grid grid-cols-2 gap-2 border-t border-slate-200/60 pt-3.5">
-                    <Button to={localePath(lang, product.slug)} size="sm" className="w-full justify-center text-xs px-2 py-1.5 min-h-9">
+                    <Button
+                      to={localePath(lang, product.slug)}
+                      size="sm"
+                      className="min-h-9 w-full justify-center px-2 py-1.5 text-xs"
+                    >
                       {t('common:actions.viewProduct')}
                       <ArrowRight className="size-3.5" aria-hidden="true" />
                     </Button>
@@ -117,10 +130,10 @@ export default function Products() {
                         download
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex min-h-9 items-center justify-center gap-1.5 rounded-xl border border-slate-300 bg-white px-2 py-1.5 text-xs font-semibold text-slate-700 shadow-2xs transition-colors hover:bg-slate-50 hover:border-slate-400"
+                        className="inline-flex min-h-9 items-center justify-center gap-1.5 rounded-xl border border-slate-300 bg-white px-2 py-1.5 text-xs font-semibold text-slate-700 shadow-2xs transition-colors hover:border-slate-400 hover:bg-slate-50"
                         title={t('common:actions.downloadBrochure')}
                       >
-                        <Download className="size-3.5 text-brand-600" />
+                        <Download className="text-brand-600 size-3.5" />
                         <span className="truncate">Brochure</span>
                       </a>
                     )}

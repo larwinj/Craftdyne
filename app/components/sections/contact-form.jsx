@@ -109,7 +109,7 @@ export function ContactForm({ lang }) {
       ].join('\n');
 
       const mailtoUrl = `mailto:${targetEmail}?subject=${subject}&body=${encodeURIComponent(bodyLines)}`;
-      window.location.href = mailtoUrl;
+      window.location.assign(mailtoUrl);
 
       setStatus('success');
       reset();

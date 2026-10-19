@@ -25,20 +25,44 @@
     "benefits": {
       "heading": "What EZ3+ does",
       "items": {
-        "whiteflies": { "title": "Helps control and deter whiteflies", "description": "Acts on the pest that drives both direct feeding damage and honeydew production." },
-        "sootyMold": { "title": "Helps prevent sooty mold fungus", "description": "Interrupts the cycle where honeydew deposits become a black fungal film blocking photosynthesis." },
-        "growth": { "title": "Promotes healthier plant growth", "description": "Supports vigour and canopy development through the protected period." },
-        "productivity": { "title": "Supports higher crop productivity", "description": "Healthier plants hold yield potential throughout the growing season." },
-        "safety": { "title": "100% Non-toxic & Biodegradable", "description": "Zero harm to air, water, soil, and the food chain." }
+        "whiteflies": {
+          "title": "Helps control and deter whiteflies",
+          "description": "Acts on the pest that drives both direct feeding damage and honeydew production."
+        },
+        "sootyMold": {
+          "title": "Helps prevent sooty mold fungus",
+          "description": "Interrupts the cycle where honeydew deposits become a black fungal film blocking photosynthesis."
+        },
+        "growth": {
+          "title": "Promotes healthier plant growth",
+          "description": "Supports vigour and canopy development through the protected period."
+        },
+        "productivity": {
+          "title": "Supports higher crop productivity",
+          "description": "Healthier plants hold yield potential throughout the growing season."
+        },
+        "safety": {
+          "title": "100% Non-toxic & Biodegradable",
+          "description": "Zero harm to air, water, soil, and the food chain."
+        }
       }
     },
     "howItWorks": {
       "heading": "How the triple action works",
       "description": "Whitefly damage causes feeding stress and honeydew deposits that cultivate sooty mold. EZ3+ targets all three stages simultaneously.",
       "steps": {
-        "deter": { "title": "Deter the pest", "description": "Repels whiteflies, aphids, mealybugs, and larvae to prevent heavy infestations." },
-        "prevent": { "title": "Prevent secondary infection", "description": "Inhibits sooty mold fungus from colonising leaf surfaces." },
-        "promote": { "title": "Promote plant vigour", "description": "Boosts chlorophyll efficiency, photosynthesis, and natural systemic immunity." }
+        "deter": {
+          "title": "Deter the pest",
+          "description": "Repels whiteflies, aphids, mealybugs, and larvae to prevent heavy infestations."
+        },
+        "prevent": {
+          "title": "Prevent secondary infection",
+          "description": "Inhibits sooty mold fungus from colonising leaf surfaces."
+        },
+        "promote": {
+          "title": "Promote plant vigour",
+          "description": "Boosts chlorophyll efficiency, photosynthesis, and natural systemic immunity."
+        }
       }
     },
     "properties": {
@@ -63,12 +87,30 @@
     "faq": {
       "heading": "Frequently asked questions",
       "items": {
-        "howLong": { "question": "How long does one application last?", "answer": "A single application can provide up to six months of protection under standard conditions." },
-        "organic": { "question": "Is EZ3+ suitable for organic farming?", "answer": "Yes, EZ3+ is formulated according to IUPAC Green Chemistry principles using 100% readily biodegradable organic inputs." },
-        "safety": { "question": "Is it safe around farm workers and animals?", "answer": "Yes, EZ3+ is non-poisonous, non-fuming, and non-irritating." },
-        "crops": { "question": "Which crops can it be used on?", "answer": "Suitable for vegetables, fruits, commercial crops, and tree plantations." },
-        "mixing": { "question": "Can it be tank-mixed?", "answer": "Check with our technical team before tank-mixing with chemical inputs." },
-        "buy": { "question": "How do I purchase or become a distributor?", "answer": "Contact our sales team directly via WhatsApp, phone, or the enquiry form." }
+        "howLong": {
+          "question": "How long does one application last?",
+          "answer": "A single application can provide up to six months of protection under standard conditions."
+        },
+        "organic": {
+          "question": "Is EZ3+ suitable for organic farming?",
+          "answer": "Yes, EZ3+ is formulated according to IUPAC Green Chemistry principles using 100% readily biodegradable organic inputs."
+        },
+        "safety": {
+          "question": "Is it safe around farm workers and animals?",
+          "answer": "Yes, EZ3+ is non-poisonous, non-fuming, and non-irritating."
+        },
+        "crops": {
+          "question": "Which crops can it be used on?",
+          "answer": "Suitable for vegetables, fruits, commercial crops, and tree plantations."
+        },
+        "mixing": {
+          "question": "Can it be tank-mixed?",
+          "answer": "Check with our technical team before tank-mixing with chemical inputs."
+        },
+        "buy": {
+          "question": "How do I purchase or become a distributor?",
+          "answer": "Contact our sales team directly via WhatsApp, phone, or the enquiry form."
+        }
       }
     },
     "cta": {
@@ -90,11 +132,26 @@
     "benefits": {
       "heading": "Coconut Specific Benefits",
       "items": {
-        "rsw": { "title": "Controls Rugose Spiraling Whitefly", "description": "Effectively repels and deters RSW, aphids, soft scales, and felt scales on coconut fronds." },
-        "sooty": { "title": "Eradicates Sooty Mold Fungus", "description": "Clears black sooty mold film from fronds, restoring light absorption and photosynthesis within weeks." },
-        "stress": { "title": "Reduces Shade & Canopy Stress", "description": "Boosts photosynthesis in shaded canopy areas and improves overall palm vigour." },
-        "pathogens": { "title": "Prevents Secondary Diseases", "description": "Interrupts insect-vectored diseases such as Phytophthora and Fusarium." },
-        "safety": { "title": "Zero Environmental Harm", "description": "Safe for soil earthworms, surrounding livestock, and natural water bodies." }
+        "rsw": {
+          "title": "Controls Rugose Spiraling Whitefly",
+          "description": "Effectively repels and deters RSW, aphids, soft scales, and felt scales on coconut fronds."
+        },
+        "sooty": {
+          "title": "Eradicates Sooty Mold Fungus",
+          "description": "Clears black sooty mold film from fronds, restoring light absorption and photosynthesis within weeks."
+        },
+        "stress": {
+          "title": "Reduces Shade & Canopy Stress",
+          "description": "Boosts photosynthesis in shaded canopy areas and improves overall palm vigour."
+        },
+        "pathogens": {
+          "title": "Prevents Secondary Diseases",
+          "description": "Interrupts insect-vectored diseases such as Phytophthora and Fusarium."
+        },
+        "safety": {
+          "title": "Zero Environmental Harm",
+          "description": "Safe for soil earthworms, surrounding livestock, and natural water bodies."
+        }
       }
     },
     "dilution": {
@@ -107,11 +164,26 @@
     "faq": {
       "heading": "Coconut Palms FAQ",
       "items": {
-        "rswControl": { "question": "Does EZ3+ control Rugose Spiraling Whitefly (RSW)?", "answer": "Yes! EZ3+ specifically deters RSW adult feeding and egg laying while clearing sooty mold fungus." },
-        "dosage": { "question": "What is the dosage for Coconut trees?", "answer": "Use a starting dose of 1:300 for initial treatment, followed by 1:400 for maintenance sprays." },
-        "frequency": { "question": "How often should I spray coconut trees?", "answer": "Typically 2 to 3 sprays per year maintain a clear frond canopy and high nut yields." },
-        "safety": { "question": "Is it safe for beneficial insects?", "answer": "Yes, EZ3+ works via physical and repellent mechanisms without broad-spectrum chemical toxicity." },
-        "water": { "question": "What water should be used for dilution?", "answer": "Fresh well or stream water is recommended. Avoid chlorinated tap water where possible." }
+        "rswControl": {
+          "question": "Does EZ3+ control Rugose Spiraling Whitefly (RSW)?",
+          "answer": "Yes! EZ3+ specifically deters RSW adult feeding and egg laying while clearing sooty mold fungus."
+        },
+        "dosage": {
+          "question": "What is the dosage for Coconut trees?",
+          "answer": "Use a starting dose of 1:300 for initial treatment, followed by 1:400 for maintenance sprays."
+        },
+        "frequency": {
+          "question": "How often should I spray coconut trees?",
+          "answer": "Typically 2 to 3 sprays per year maintain a clear frond canopy and high nut yields."
+        },
+        "safety": {
+          "question": "Is it safe for beneficial insects?",
+          "answer": "Yes, EZ3+ works via physical and repellent mechanisms without broad-spectrum chemical toxicity."
+        },
+        "water": {
+          "question": "What water should be used for dilution?",
+          "answer": "Fresh well or stream water is recommended. Avoid chlorinated tap water where possible."
+        }
       }
     }
   },
@@ -127,11 +199,26 @@
     "benefits": {
       "heading": "Cardamom Specific Protection",
       "items": {
-        "suckers": { "title": "Controls Sap-Sucking Pests", "description": "Repels Thrips, Aphids, Mealybugs, Soft Scales, and Spider Mites." },
-        "virus": { "title": "Prevents Virus Transmission", "description": "Prevents Mosaic Virus by controlling vector insects such as Pentalonia nigronervosa." },
-        "nematodes": { "title": "Deters Soil Nematodes", "description": "Helps suppress harmful nematode populations around Cardamom root zones." },
-        "photosynthesis": { "title": "Enhances Canopy Photosynthesis", "description": "Improves plant chlorophyll activity in shaded hill-slopes and under tree shade." },
-        "biodegradable": { "title": "100% Readily Biodegradable", "description": "Leaves no chemical residues on harvested cardamom pods." }
+        "suckers": {
+          "title": "Controls Sap-Sucking Pests",
+          "description": "Repels Thrips, Aphids, Mealybugs, Soft Scales, and Spider Mites."
+        },
+        "virus": {
+          "title": "Prevents Virus Transmission",
+          "description": "Prevents Mosaic Virus by controlling vector insects such as Pentalonia nigronervosa."
+        },
+        "nematodes": {
+          "title": "Deters Soil Nematodes",
+          "description": "Helps suppress harmful nematode populations around Cardamom root zones."
+        },
+        "photosynthesis": {
+          "title": "Enhances Canopy Photosynthesis",
+          "description": "Improves plant chlorophyll activity in shaded hill-slopes and under tree shade."
+        },
+        "biodegradable": {
+          "title": "100% Readily Biodegradable",
+          "description": "Leaves no chemical residues on harvested cardamom pods."
+        }
       }
     },
     "dilution": {
@@ -144,11 +231,26 @@
     "faq": {
       "heading": "Cardamom Treatment FAQ",
       "items": {
-        "thrips": { "question": "Does EZ3+ control Cardamom Thrips?", "answer": "Yes, EZ3+ repels thrips and prevents feeding damage on cardamom shoots and pods." },
-        "dosage": { "question": "What is the recommended dilution ratio for Cardamom?", "answer": "Dilute 1:400 in fresh water (e.g. 250 mL in 100 Liters of water)." },
-        "combination": { "question": "Can it be combined with Myco Spectra?", "answer": "Yes! EZ3+ handles insect pests while Myco Spectra controls cardamom fungal diseases like Phytophthora and Pythium." },
-        "residue": { "question": "Will EZ3+ affect the flavor or aroma of Cardamom pods?", "answer": "No. EZ3+ is completely organic and readily biodegradable, leaving zero chemical residue." },
-        "safety": { "question": "Is it safe for hill-station ecosystems?", "answer": "Yes, zero harm to mountain streams, soil micro-fauna, or wildlife." }
+        "thrips": {
+          "question": "Does EZ3+ control Cardamom Thrips?",
+          "answer": "Yes, EZ3+ repels thrips and prevents feeding damage on cardamom shoots and pods."
+        },
+        "dosage": {
+          "question": "What is the recommended dilution ratio for Cardamom?",
+          "answer": "Dilute 1:400 in fresh water (e.g. 250 mL in 100 Liters of water)."
+        },
+        "combination": {
+          "question": "Can it be combined with Myco Spectra?",
+          "answer": "Yes! EZ3+ handles insect pests while Myco Spectra controls cardamom fungal diseases like Phytophthora and Pythium."
+        },
+        "residue": {
+          "question": "Will EZ3+ affect the flavor or aroma of Cardamom pods?",
+          "answer": "No. EZ3+ is completely organic and readily biodegradable, leaving zero chemical residue."
+        },
+        "safety": {
+          "question": "Is it safe for hill-station ecosystems?",
+          "answer": "Yes, zero harm to mountain streams, soil micro-fauna, or wildlife."
+        }
       }
     }
   },
@@ -164,11 +266,26 @@
     "benefits": {
       "heading": "Key Benefits",
       "items": {
-        "drop": { "title": "Prevents Premature Fruit Drop", "description": "Prevents abscission layer formation and ovule degeneration to retain viable fruit." },
-        "yield": { "title": "Increases Farm Yield & Savings", "description": "Boosts usable harvest yields and saves farming input costs over long protection periods." },
-        "immunity": { "title": "Provides Systemic Immunity", "description": "Strengthens internal plant immunity against Powdery Mildew, Anthracnose, and rot." },
-        "decay": { "title": "Repels Sap-Sucking Insects", "description": "Deters Leaf Hoppers and Mealybugs from infesting fruit clusters." },
-        "safety": { "title": "100% Non-toxic & Safe", "description": "Zero harm to air, water, soil, applicators, or the food chain." }
+        "drop": {
+          "title": "Prevents Premature Fruit Drop",
+          "description": "Prevents abscission layer formation and ovule degeneration to retain viable fruit."
+        },
+        "yield": {
+          "title": "Increases Farm Yield & Savings",
+          "description": "Boosts usable harvest yields and saves farming input costs over long protection periods."
+        },
+        "immunity": {
+          "title": "Provides Systemic Immunity",
+          "description": "Strengthens internal plant immunity against Powdery Mildew, Anthracnose, and rot."
+        },
+        "decay": {
+          "title": "Repels Sap-Sucking Insects",
+          "description": "Deters Leaf Hoppers and Mealybugs from infesting fruit clusters."
+        },
+        "safety": {
+          "title": "100% Non-toxic & Safe",
+          "description": "Zero harm to air, water, soil, applicators, or the food chain."
+        }
       }
     },
     "causes": {
@@ -209,10 +326,22 @@
     "faq": {
       "heading": "Frequently Asked Questions",
       "items": {
-        "purpose": { "question": "What is the main purpose of Blumenn Strong?", "answer": "Blumenn Strong prevents premature fruit drop and increases harvest yields across tree and plantation crops." },
-        "crops": { "question": "Which crops benefit most?", "answer": "Guava, Mango, Coconut, Lemon, Lime, Orange, and Tapioca." },
-        "dilution": { "question": "What is the dilution ratio?", "answer": "Dilute 1:2000 in fresh water (100 mL in 200 Liters of water)." },
-        "safety": { "question": "Is it safe for wildlife and water bodies?", "answer": "Yes, 100% readily biodegradable with zero environmental toxicity." }
+        "purpose": {
+          "question": "What is the main purpose of Blumenn Strong?",
+          "answer": "Blumenn Strong prevents premature fruit drop and increases harvest yields across tree and plantation crops."
+        },
+        "crops": {
+          "question": "Which crops benefit most?",
+          "answer": "Guava, Mango, Coconut, Lemon, Lime, Orange, and Tapioca."
+        },
+        "dilution": {
+          "question": "What is the dilution ratio?",
+          "answer": "Dilute 1:2000 in fresh water (100 mL in 200 Liters of water)."
+        },
+        "safety": {
+          "question": "Is it safe for wildlife and water bodies?",
+          "answer": "Yes, 100% readily biodegradable with zero environmental toxicity."
+        }
       }
     }
   },
@@ -228,11 +357,26 @@
     "benefits": {
       "heading": "Key Benefits",
       "items": {
-        "fungiControl": { "title": "Controls Major Fungal Pathogens", "description": "Suppresses Colletotrichum, Phytophthora, Pythium, Phyllosticta elettariae, Alternaria, and Root Rot." },
-        "duration": { "title": "Up to 6 Months Protection", "description": "Provides long-lasting systemic immunity against repeat fungal blights." },
-        "bioavailable": { "title": "Bioavailable Plant Nutrition", "description": "Delivers essential bioavailable nutrients that strengthen cell wall resistance." },
-        "yieldSupport": { "title": "Prevents Crop & Pod Loss", "description": "Protects Cardamom capsules, fruits, and roots from fungal decay." },
-        "greenSafety": { "title": "100% Eco-Safe Formulation", "description": "Zero chemical residues, non-toxic, and safe for soil microorganisms." }
+        "fungiControl": {
+          "title": "Controls Major Fungal Pathogens",
+          "description": "Suppresses Colletotrichum, Phytophthora, Pythium, Phyllosticta elettariae, Alternaria, and Root Rot."
+        },
+        "duration": {
+          "title": "Up to 6 Months Protection",
+          "description": "Provides long-lasting systemic immunity against repeat fungal blights."
+        },
+        "bioavailable": {
+          "title": "Bioavailable Plant Nutrition",
+          "description": "Delivers essential bioavailable nutrients that strengthen cell wall resistance."
+        },
+        "yieldSupport": {
+          "title": "Prevents Crop & Pod Loss",
+          "description": "Protects Cardamom capsules, fruits, and roots from fungal decay."
+        },
+        "greenSafety": {
+          "title": "100% Eco-Safe Formulation",
+          "description": "Zero chemical residues, non-toxic, and safe for soil microorganisms."
+        }
       }
     },
     "targets": {
@@ -255,10 +399,22 @@
     "faq": {
       "heading": "Myco Spectra FAQ",
       "items": {
-        "fungi": { "question": "Which fungal diseases does Myco Spectra control?", "answer": "It controls Colletotrichum, Phytophthora, Pythium, Phyllosticta elettariae, Alternaria, and Root Rot." },
-        "cardamom": { "question": "Is Myco Spectra effective on Cardamom plantations?", "answer": "Yes, it is specifically recommended for Cardamom to prevent Capsule Rot, Clump Rot, and Leaf Blight." },
-        "dilution": { "question": "What is the recommended dosage?", "answer": "Use a 1:400 dilution ratio in fresh water for both starting and continuing sprays." },
-        "mixing": { "question": "Can it be applied together with EZ3+?", "answer": "Yes, combining EZ3+ and Myco Spectra provides complete dual protection against both insects and fungal diseases." }
+        "fungi": {
+          "question": "Which fungal diseases does Myco Spectra control?",
+          "answer": "It controls Colletotrichum, Phytophthora, Pythium, Phyllosticta elettariae, Alternaria, and Root Rot."
+        },
+        "cardamom": {
+          "question": "Is Myco Spectra effective on Cardamom plantations?",
+          "answer": "Yes, it is specifically recommended for Cardamom to prevent Capsule Rot, Clump Rot, and Leaf Blight."
+        },
+        "dilution": {
+          "question": "What is the recommended dosage?",
+          "answer": "Use a 1:400 dilution ratio in fresh water for both starting and continuing sprays."
+        },
+        "mixing": {
+          "question": "Can it be applied together with EZ3+?",
+          "answer": "Yes, combining EZ3+ and Myco Spectra provides complete dual protection against both insects and fungal diseases."
+        }
       }
     }
   },
@@ -274,11 +430,26 @@
     "benefits": {
       "heading": "Key Benefits & Advantages",
       "items": {
-        "porosity": { "title": "Excellent Air Porosity & Water Retention", "description": "Retains 14 to 15 Liters of water per kg while maintaining root aeration in heavy soils." },
-        "nematode": { "title": "Deters Soil-Borne Nematodes", "description": "Naturally resistant to bacteria and fungi, effectively preventing root-knot nematodes." },
-        "durability": { "title": "Serves for up to 4 Years", "description": "Provides long-term soil structure improvement and boosts earthworm activity." },
-        "cec": { "title": "High Cation Exchange Capacity", "description": "Bonds fertilizer ions and releases plant nutrients gradually as demanded by roots." },
-        "usda": { "title": "USDA NOP Compliant", "description": "Permitted under USDA Title 7 CFR 205.203.C3 for organic crop fertilizer and soil amendment." }
+        "porosity": {
+          "title": "Excellent Air Porosity & Water Retention",
+          "description": "Retains 14 to 15 Liters of water per kg while maintaining root aeration in heavy soils."
+        },
+        "nematode": {
+          "title": "Deters Soil-Borne Nematodes",
+          "description": "Naturally resistant to bacteria and fungi, effectively preventing root-knot nematodes."
+        },
+        "durability": {
+          "title": "Serves for up to 4 Years",
+          "description": "Provides long-term soil structure improvement and boosts earthworm activity."
+        },
+        "cec": {
+          "title": "High Cation Exchange Capacity",
+          "description": "Bonds fertilizer ions and releases plant nutrients gradually as demanded by roots."
+        },
+        "usda": {
+          "title": "USDA NOP Compliant",
+          "description": "Permitted under USDA Title 7 CFR 205.203.C3 for organic crop fertilizer and soil amendment."
+        }
       }
     },
     "specs": {
@@ -312,10 +483,22 @@
     "faq": {
       "heading": "Soil Amend FAQ",
       "items": {
-        "water": { "question": "How much water does one 5kg block retain?", "answer": "One 5kg block holds between 70 to 75 Liters of water, releasing it slowly to plant roots." },
-        "duration": { "question": "How long does Soil Amend last in the soil?", "answer": "A single application continues to improve soil porosity and nutrient retention for up to 4 years." },
-        "nematodes": { "question": "How does it protect against nematodes?", "answer": "Its natural Limonoid and Terpenoid content creates an inhospitable environment for parasitic soil nematodes." },
-        "organic": { "question": "Is it certified organic?", "answer": "Yes, CraftDyne Soil Amend is permitted per USDA NOP rule Title 7 CFR 205.203.C3 as crop fertilizer & soil amendment." }
+        "water": {
+          "question": "How much water does one 5kg block retain?",
+          "answer": "One 5kg block holds between 70 to 75 Liters of water, releasing it slowly to plant roots."
+        },
+        "duration": {
+          "question": "How long does Soil Amend last in the soil?",
+          "answer": "A single application continues to improve soil porosity and nutrient retention for up to 4 years."
+        },
+        "nematodes": {
+          "question": "How does it protect against nematodes?",
+          "answer": "Its natural Limonoid and Terpenoid content creates an inhospitable environment for parasitic soil nematodes."
+        },
+        "organic": {
+          "question": "Is it certified organic?",
+          "answer": "Yes, CraftDyne Soil Amend is permitted per USDA NOP rule Title 7 CFR 205.203.C3 as crop fertilizer & soil amendment."
+        }
       }
     }
   }

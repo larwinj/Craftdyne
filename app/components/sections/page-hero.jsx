@@ -12,7 +12,7 @@ import { WaveDivider } from '../ui/wave-divider.jsx';
  * `crumbs` is [{ label, path }] without the locale prefix; the final entry is
  * rendered as the current page and is not a link.
  */
-export function PageHero({ lang, eyebrow, title, description, crumbs = [] }) {
+export function PageHero({ lang, eyebrow, title, description, crumbs = [], image }) {
   const { t } = useTranslation();
 
   return (
@@ -52,13 +52,43 @@ export function PageHero({ lang, eyebrow, title, description, crumbs = [] }) {
           </nav>
         ) : null}
 
-        <div className="max-w-3xl">
-          {eyebrow ? (
-            <p className="font-display text-brand-700 text-sm font-bold tracking-[0.14em] uppercase">{eyebrow}</p>
-          ) : null}
-          <h1 className="text-fluid-4xl text-navy-700 mt-3 text-balance">{title}</h1>
-          {description ? <p className="text-fluid-lg mt-5 text-pretty text-slate-600">{description}</p> : null}
-        </div>
+        {image ? (
+          <div className="grid items-center gap-8 lg:grid-cols-12 lg:gap-12">
+            <div className="lg:col-span-7">
+              {eyebrow ? (
+                <p className="font-display text-brand-700 text-sm font-bold tracking-[0.14em] uppercase">{eyebrow}</p>
+              ) : null}
+              <h1 className="text-fluid-4xl text-navy-700 mt-3 font-extrabold text-balance">{title}</h1>
+              {description ? (
+                <p className="text-fluid-lg mt-5 leading-relaxed text-pretty text-slate-600">{description}</p>
+              ) : null}
+            </div>
+
+            <div className="lg:col-span-5">
+              <div className="group shadow-card relative overflow-hidden rounded-2xl border border-slate-200/80 bg-white/70 p-2 backdrop-blur-xs transition-all duration-300 hover:shadow-lg">
+                {/* Soft gradient fade along the edge facing the text on desktop */}
+                <div
+                  aria-hidden="true"
+                  className="from-mist/95 via-mist/50 pointer-events-none absolute inset-y-0 left-0 z-10 hidden w-20 bg-gradient-to-r to-transparent lg:block"
+                />
+                <img
+                  src={image.src || image}
+                  alt={image.alt || (typeof title === 'string' ? title : 'EcoAgta Products')}
+                  className="h-auto max-h-[340px] w-full rounded-xl object-cover transition-transform duration-500 group-hover:scale-[1.02] lg:[mask-image:linear-gradient(to_right,rgba(0,0,0,0.5),black_18%,black)] lg:[-webkit-mask-image:linear-gradient(to_right,rgba(0,0,0,0.5),black_18%,black)]"
+                  loading="eager"
+                />
+              </div>
+            </div>
+          </div>
+        ) : (
+          <div className="max-w-3xl">
+            {eyebrow ? (
+              <p className="font-display text-brand-700 text-sm font-bold tracking-[0.14em] uppercase">{eyebrow}</p>
+            ) : null}
+            <h1 className="text-fluid-4xl text-navy-700 mt-3 text-balance">{title}</h1>
+            {description ? <p className="text-fluid-lg mt-5 text-pretty text-slate-600">{description}</p> : null}
+          </div>
+        )}
       </Container>
 
       <WaveDivider fill="fill-white" />

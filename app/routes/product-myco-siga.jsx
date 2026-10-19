@@ -19,6 +19,7 @@ const PRODUCT = PRODUCTS.find((p) => p.id === 'mycoSiga') ?? {
   slug: 'products/ecoagta-myco-siga',
   brand: 'EcoAgta',
   name: 'EcoAgta Myco Siga',
+  image: '/images/products/myco-siga.jpg',
   brochureUrl: '/downloads/CraftDyne_EcoAgta_Myco_Siga_Brochure.pdf',
 };
 
@@ -54,7 +55,7 @@ const SYMPTOMS = [
 ];
 
 export function meta({ params }) {
-  const t = getI18n(params.lang).getFixedT(params.lang, 'products');
+  const _t = getI18n(params.lang).getFixedT(params.lang, 'products');
   return buildMeta({
     lang: params.lang,
     path: PRODUCT.slug,
@@ -110,7 +111,7 @@ export default function ProductMycoSiga() {
                   download
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-6 inline-flex items-center gap-2 rounded-xl bg-brand-600 px-6 py-3 font-semibold text-white shadow-md transition-all hover:bg-brand-700 hover:shadow-lg"
+                  className="bg-brand-600 hover:bg-brand-700 mt-6 inline-flex items-center gap-2 rounded-xl px-6 py-3 font-semibold text-white shadow-md transition-all hover:shadow-lg"
                 >
                   <Download className="size-5" />
                   Download Official PDF Brochure
@@ -125,18 +126,20 @@ export default function ProductMycoSiga() {
               PROVEN • Less than ₹2 per Tree • 100% Non-Toxic
             </div>
 
-            <h2 className="font-display text-fluid-2xl mt-4 font-bold text-navy-900">
+            <h2 className="font-display text-fluid-2xl text-navy-900 mt-4 font-bold">
               Treatment for Yellow Sigatoka Fungal Disease (Manjal Vaadal Noi)
             </h2>
 
             <p className="text-fluid-lg mt-3 text-pretty text-slate-600">
-              Yellow Sigatoka is a destructive fungal leaf-spot disease in banana crops that impairs photosynthesis, weakens plants, and severely lowers fruit yield, grade, and harvest quality. EcoAgta Myco Siga is presented as a safe, non-toxic, non-poisonous 1-part concentrate solution.
+              Yellow Sigatoka is a destructive fungal leaf-spot disease in banana crops that impairs photosynthesis,
+              weakens plants, and severely lowers fruit yield, grade, and harvest quality. EcoAgta Myco Siga is
+              presented as a safe, non-toxic, non-poisonous 1-part concentrate solution.
             </p>
 
             {/* Feature Highlights Grid */}
             <div className="mt-6 grid gap-3 sm:grid-cols-3">
               <div className="rounded-xl border border-slate-200 bg-slate-50 p-4 text-center">
-                <span className="font-display block text-xl font-extrabold text-brand-700">&lt; ₹2 / Tree</span>
+                <span className="font-display text-brand-700 block text-xl font-extrabold">&lt; ₹2 / Tree</span>
                 <span className="text-xs font-semibold text-slate-600">Ultra-Cost Effective</span>
               </div>
               <div className="rounded-xl border border-slate-200 bg-slate-50 p-4 text-center">
@@ -144,7 +147,7 @@ export default function ProductMycoSiga() {
                 <span className="text-xs font-semibold text-slate-600">Easy Concentrate Mix</span>
               </div>
               <div className="rounded-xl border border-slate-200 bg-slate-50 p-4 text-center">
-                <span className="font-display block text-xl font-extrabold text-navy-800">Pakka Kannu</span>
+                <span className="font-display text-navy-800 block text-xl font-extrabold">Pakka Kannu</span>
                 <span className="text-xs font-semibold text-slate-600">Protects Side Suckers</span>
               </div>
             </div>
@@ -159,10 +162,10 @@ export default function ProductMycoSiga() {
       {/* Disease Symptoms Breakdown */}
       <Section id="symptoms" tone="mist">
         <div className="mx-auto max-w-4xl text-center">
-          <span className="bg-amber-100 text-amber-900 inline-flex items-center gap-1.5 rounded-full px-3.5 py-1 text-xs font-bold uppercase tracking-wider">
+          <span className="inline-flex items-center gap-1.5 rounded-full bg-amber-100 px-3.5 py-1 text-xs font-bold tracking-wider text-amber-900 uppercase">
             <AlertTriangle className="size-4 text-amber-700" /> Disease Identification
           </span>
-          <h2 className="font-display text-fluid-2xl mt-3 font-bold text-navy-900">
+          <h2 className="font-display text-fluid-2xl text-navy-900 mt-3 font-bold">
             Yellow Sigatoka Symptoms & Progression
           </h2>
           <p className="mt-2 text-slate-600">
@@ -179,7 +182,7 @@ export default function ProductMycoSiga() {
                     <span className="bg-brand-50 text-brand-700 font-display flex size-7 items-center justify-center rounded-full text-xs font-bold">
                       {idx + 1}
                     </span>
-                    <h3 className="font-display text-base font-bold text-navy-900">{sym.stage}</h3>
+                    <h3 className="font-display text-navy-900 text-base font-bold">{sym.stage}</h3>
                   </div>
                   <p className="mt-3 text-sm leading-relaxed text-slate-600">{sym.desc}</p>
                 </div>
@@ -192,10 +195,10 @@ export default function ProductMycoSiga() {
       {/* Usage & Mixing Instructions */}
       <Section id="usage" tone="white">
         <div className="mx-auto max-w-4xl text-center">
-          <span className="bg-brand-100 text-brand-800 inline-flex items-center gap-1.5 rounded-full px-3.5 py-1 text-xs font-bold uppercase tracking-wider">
-            <Droplets className="size-4 text-brand-600" /> Technical Instructions
+          <span className="bg-brand-100 text-brand-800 inline-flex items-center gap-1.5 rounded-full px-3.5 py-1 text-xs font-bold tracking-wider uppercase">
+            <Droplets className="text-brand-600 size-4" /> Technical Instructions
           </span>
-          <h2 className="font-display text-fluid-2xl mt-3 font-bold text-navy-900">
+          <h2 className="font-display text-fluid-2xl text-navy-900 mt-3 font-bold">
             Mixing & Application Instructions
           </h2>
         </div>
@@ -204,19 +207,24 @@ export default function ProductMycoSiga() {
           {/* Part A: Mixing */}
           <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6 shadow-xs">
             <div className="flex items-center gap-2 border-b border-slate-200 pb-3">
-              <span className="bg-brand-600 text-white font-display flex size-7 items-center justify-center rounded-lg text-xs font-bold">
+              <span className="bg-brand-600 font-display flex size-7 items-center justify-center rounded-lg text-xs font-bold text-white">
                 A
               </span>
-              <h3 className="font-display text-lg font-bold text-navy-900">Instructions for Mixing & Diluting</h3>
+              <h3 className="font-display text-navy-900 text-lg font-bold">Instructions for Mixing & Diluting</h3>
             </div>
             <ol className="mt-4 space-y-4 text-sm text-slate-700">
               <li className="flex gap-3">
-                <span className="font-bold text-brand-700">1.</span>
-                <span>Pour ALL contents of TWO Bottles labeled as <strong>Sigatoka Treatment Concentrate</strong> into 200 Liters of fresh water (2 bottles per 200L drum).</span>
+                <span className="text-brand-700 font-bold">1.</span>
+                <span>
+                  Pour ALL contents of TWO Bottles labeled as <strong>Sigatoka Treatment Concentrate</strong> into 200
+                  Liters of fresh water (2 bottles per 200L drum).
+                </span>
               </li>
               <li className="flex gap-3">
-                <span className="font-bold text-brand-700">2.</span>
-                <span>Use a clean dry PVC pipe or clean dry bamboo stick to mix thoroughly for <strong>3 Minutes</strong>.</span>
+                <span className="text-brand-700 font-bold">2.</span>
+                <span>
+                  Use a clean dry PVC pipe or clean dry bamboo stick to mix thoroughly for <strong>3 Minutes</strong>.
+                </span>
               </li>
             </ol>
           </div>
@@ -224,19 +232,24 @@ export default function ProductMycoSiga() {
           {/* Part B: Application */}
           <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6 shadow-xs">
             <div className="flex items-center gap-2 border-b border-slate-200 pb-3">
-              <span className="bg-emerald-600 text-white font-display flex size-7 items-center justify-center rounded-lg text-xs font-bold">
+              <span className="font-display flex size-7 items-center justify-center rounded-lg bg-emerald-600 text-xs font-bold text-white">
                 B
               </span>
-              <h3 className="font-display text-lg font-bold text-navy-900">Instructions for Spray Application</h3>
+              <h3 className="font-display text-navy-900 text-lg font-bold">Instructions for Spray Application</h3>
             </div>
             <ol className="mt-4 space-y-4 text-sm text-slate-700">
               <li className="flex gap-3">
                 <span className="font-bold text-emerald-700">3.</span>
-                <span><strong>SPRAY thoroughly</strong> all over affected and unaffected trees in the plot. Side suckers (<em>pakka kannu</em>) will be protected.</span>
+                <span>
+                  <strong>SPRAY thoroughly</strong> all over affected and unaffected trees in the plot. Side suckers (
+                  <em>pakka kannu</em>) will be protected.
+                </span>
               </li>
               <li className="flex gap-3">
                 <span className="font-bold text-emerald-700">4.</span>
-                <span>Use up all prepared treatment quantity <strong>WITHIN 2 Hours</strong> after mixing.</span>
+                <span>
+                  Use up all prepared treatment quantity <strong>WITHIN 2 Hours</strong> after mixing.
+                </span>
               </li>
             </ol>
           </div>
@@ -246,34 +259,40 @@ export default function ProductMycoSiga() {
       {/* Benefits Summary */}
       <Section id="benefits" tone="mist">
         <div className="mx-auto max-w-4xl text-center">
-          <h2 className="font-display text-fluid-2xl font-bold text-navy-900">Product Highlights</h2>
+          <h2 className="font-display text-fluid-2xl text-navy-900 font-bold">Product Highlights</h2>
         </div>
         <ul className="mt-8 grid gap-4 md:grid-cols-3">
           <li className="flex gap-3.5 rounded-xl border border-slate-200 bg-white p-5 shadow-xs">
-            <span className="bg-emerald-50 text-emerald-700 mt-0.5 inline-flex size-9 shrink-0 items-center justify-center rounded-full">
+            <span className="mt-0.5 inline-flex size-9 shrink-0 items-center justify-center rounded-full bg-emerald-50 text-emerald-700">
               <ShieldCheck className="size-5" />
             </span>
             <div>
-              <h3 className="font-bold text-navy-900">Proven Efficacy</h3>
-              <p className="mt-1 text-xs text-slate-600">Effective against Yellow Sigatoka even at late stages, best applied upon early diagnosis.</p>
+              <h3 className="text-navy-900 font-bold">Proven Efficacy</h3>
+              <p className="mt-1 text-xs text-slate-600">
+                Effective against Yellow Sigatoka even at late stages, best applied upon early diagnosis.
+              </p>
             </div>
           </li>
           <li className="flex gap-3.5 rounded-xl border border-slate-200 bg-white p-5 shadow-xs">
-            <span className="bg-emerald-50 text-emerald-700 mt-0.5 inline-flex size-9 shrink-0 items-center justify-center rounded-full">
+            <span className="mt-0.5 inline-flex size-9 shrink-0 items-center justify-center rounded-full bg-emerald-50 text-emerald-700">
               <Sprout className="size-5" />
             </span>
             <div>
-              <h3 className="font-bold text-navy-900">Side Sucker Protection</h3>
-              <p className="mt-1 text-xs text-slate-600">Protects side suckers (pakka kannu) ensuring continuous healthy ratoon crops.</p>
+              <h3 className="text-navy-900 font-bold">Side Sucker Protection</h3>
+              <p className="mt-1 text-xs text-slate-600">
+                Protects side suckers (pakka kannu) ensuring continuous healthy ratoon crops.
+              </p>
             </div>
           </li>
           <li className="flex gap-3.5 rounded-xl border border-slate-200 bg-white p-5 shadow-xs">
-            <span className="bg-emerald-50 text-emerald-700 mt-0.5 inline-flex size-9 shrink-0 items-center justify-center rounded-full">
+            <span className="mt-0.5 inline-flex size-9 shrink-0 items-center justify-center rounded-full bg-emerald-50 text-emerald-700">
               <Check className="size-5" />
             </span>
             <div>
-              <h3 className="font-bold text-navy-900">Safe & Non-Toxic</h3>
-              <p className="mt-1 text-xs text-slate-600">100% non-toxic, non-poisonous formulation safe for workers, soil, and environment.</p>
+              <h3 className="text-navy-900 font-bold">Safe & Non-Toxic</h3>
+              <p className="mt-1 text-xs text-slate-600">
+                100% non-toxic, non-poisonous formulation safe for workers, soil, and environment.
+              </p>
             </div>
           </li>
         </ul>

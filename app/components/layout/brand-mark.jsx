@@ -111,7 +111,7 @@ export function BrandMark({
         width={asset.width}
         height={asset.height}
         alt={label}
-        className="h-14 w-auto sm:h-16 lg:h-20 transition-transform duration-200 group-hover:scale-102"
+        className="h-14 w-auto transition-transform duration-200 group-hover:scale-102 sm:h-16 lg:h-20"
       />
     </Link>
   );

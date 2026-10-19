@@ -101,5 +101,86 @@
   "meta": {
     "titleSuffix": "CraftDyne",
     "defaultDescription": "CraftDyne Private Limited develops Green Chemistry solutions for sustainable agriculture — eco-friendly crop protection that is safe for people, animals and the environment."
+  },
+  "reviews": {
+    "heading": "Proven Results from Farmers & Planters",
+    "description": "Read how CraftDyne Green Chemistry products enhance yields, protect crops, and restore soil health across farms in India.",
+    "pageHeroDescription": "See how CraftDyne Green Chemistry products enhance harvest yields, eradicate whiteflies, control fungal rots, and restore soil health.",
+    "viewAll": "Read All Farmer Reviews & Case Studies",
+    "avgSatisfaction": "Average Farmer Satisfaction",
+    "verifiedFarms": "500+ Verified Farms",
+    "nonToxic": "100% Non-Toxic",
+    "filterBy": "Filter by Product:",
+    "allProducts": "All Products",
+    "verifiedFarmer": "Verified Farmer",
+    "brochure": "Brochure",
+    "items": {
+      "rev-selvam": {
+        "storyHeading": "Farmer Success Story – EZ3+",
+        "name": "Mr. T. Selvam",
+        "role": "Guava Cultivation Farmer",
+        "location": "Santhampadi, Natham",
+        "crop": "Guava",
+        "outcome": "Whiteflies & Mealybugs Completely Reduced",
+        "headline": "A great experience with EZ3+ — traders now offer higher prices for my guavas",
+        "quote": "In my guava orchard, the infestation of whiteflies and mealybugs was very severe. After using EZ3+, pest infestation has now reduced to almost none. The plants are extremely healthy. The guavas are of high quality and look visually appealing. Because of this, traders are offering higher prices for my guavas. I have had a great experience using EZ3+!",
+        "tagline": "🌿 EcoAgta EZ3+ – Healthy Plants, Quality Guavas, Higher Market Value!"
+      },
+      "rev-ramesh": {
+        "storyHeading": "Farmer Success Story – EZ3+",
+        "name": "Mr. Ramesh",
+        "role": "Guava Farmer",
+        "location": "Chellakkuttiyur, Ramanathapuram, Dindigul District",
+        "crop": "Guava",
+        "outcome": "Pest & Sooty Mold Disease Controlled",
+        "headline": "From thinking of abandoning guava farming, today I am happily expanding it!",
+        "quote": "In my guava cultivation, due to severe attacks of whiteflies, mealybugs, and sooty mold fungus disease, the yield dropped by half. Unable to sell the damaged fruits, I reached a point where I thought of cutting down the trees. After using EcoAgta EZ3+ through a friend, pest and disease infestations decreased, and the plants began to grow healthily. New buds emerged and yields increased. From thinking of giving up guava cultivation, today I am happily expanding it! This transformation has given me immense confidence and joy.",
+        "tagline": "🌿 EcoAgta EZ3+ – Renewed Confidence, Healthier Trees, Higher Yields!"
+      },
+      "rev-varadarajan": {
+        "storyHeading": "Community Recommendation & Field Success – EZ3+",
+        "name": "Mr. Varadarajan",
+        "role": "Farmer & Community Advisor",
+        "location": "Mamsapuram, Sivakasi",
+        "crop": "Brinjal, Okra, Cluster Beans, Snake Gourd, Yam, Papaya, Lemon",
+        "outcome": "Multi-Crop Fungal & Pest Control",
+        "headline": "Recommended EZ3+ to farmers across Mamsapuram with outstanding multi-crop results",
+        "quote": "I recommended the EZ3+ product to farmers across the Mamsapuram region. Farmers who used it on diverse crops including brinjal, okra, cluster beans, snake gourd, elephant foot yam, papaya, and lemon reported excellent results in controlling whiteflies, mealybugs, and sooty mold fungus. EZ3+ has truly helped farmers manage pest pressures and safeguard their crops.",
+        "tagline": "🌿 EcoAgta EZ3+ – Trusted Multi-Crop Protection, Reliable Pest & Fungal Control!"
+      },
+      "rev-naidu": {
+        "storyHeading": "Farmer Success Story – EZ3+",
+        "name": "Mr. T. Naidu",
+        "role": "Farm Owner",
+        "location": "Amaravathi, Thiruppur District, Tamil Nadu",
+        "crop": "Coconut",
+        "outcome": "Whiteflies & Sooty Mold Fungus Controlled",
+        "headline": "Quickly improved the grade and quantity of coconut yield",
+        "quote": "EZ3+ completely repelled and controlled Spiraling Whiteflies from our coconut trees in a few days and completely removed the Sooty Mold Fungus (Capnodium) quickly improving the grade and quantity of the yield.",
+        "tagline": "🌿 EcoAgta EZ3+ – Rapid Whitefly & Sooty Mold Eradication in Coconut Palms"
+      },
+      "rev-thyaharajan": {
+        "storyHeading": "Farmer Success Story – EZ3+",
+        "name": "Mr. T. R. Thyaharajan",
+        "role": "Farm Owner",
+        "location": "Shenbaga Thoppu, Srivilliputtur, Tamil Nadu",
+        "crop": "Mango & Coconut",
+        "outcome": "Eradicated Whiteflies & Reduced Fungus",
+        "headline": "Fruits are much bigger and better after spraying EcoAgta EZ3+",
+        "quote": "After spraying EcoAgta EZ3+ in our mango and coconut farm twice in a year, we have completely eradicated whiteflies and other sap sucking insects. The problem of fungus during the fruit season has also reduced substantially. The fruits are much bigger and better.",
+        "tagline": "🌿 EcoAgta EZ3+ – Healthier Trees, Bigger Fruits, Lasting Protection"
+      },
+      "rev-thai-silk": {
+        "storyHeading": "Commercial Success Story – EZ3+",
+        "name": "Farm Manager",
+        "role": "C Thai Silk",
+        "location": "Petchabun, Thailand",
+        "crop": "Mulberry & Silk",
+        "outcome": "Reduced Withholding Period from 20 to 10 Days",
+        "headline": "Silkworms produce 0.012g of silk per cocoon with healthy leaves",
+        "quote": "EZ3+ completely repelled and controlled Whiteflies and Aphids in our Mulberry bushes and completely controlled the fungal attack in a week’s time. The use of EZ3+ has reduced the withholding period from 20 days to 10; this increases our productivity. The silk worms which feed on the leaves treated with EZ3+ are healthy and produce 0.012 grams of silk per cocoon.",
+        "tagline": "🌿 EcoAgta EZ3+ – Non-Toxic Protection Safe for Silkworms, Higher Silk Yield"
+      }
+    }
   }
 }

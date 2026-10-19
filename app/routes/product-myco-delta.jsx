@@ -19,6 +19,7 @@ const PRODUCT = PRODUCTS.find((p) => p.id === 'mycoDelta') ?? {
   slug: 'products/ecoagta-myco-delta',
   brand: 'EcoAgta',
   name: 'EcoAgta Myco Delta',
+  image: '/images/products/myco-delta.jpg',
   brochureUrl: '/downloads/CraftDyne_EcoAgta_Myco_Delta_Brochure.pdf',
 };
 
@@ -54,7 +55,7 @@ const SYMPTOMS = [
 ];
 
 export function meta({ params }) {
-  const t = getI18n(params.lang).getFixedT(params.lang, 'products');
+  const _t = getI18n(params.lang).getFixedT(params.lang, 'products');
   return buildMeta({
     lang: params.lang,
     path: PRODUCT.slug,
@@ -110,7 +111,7 @@ export default function ProductMycoDelta() {
                   download
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-6 inline-flex items-center gap-2 rounded-xl bg-brand-600 px-6 py-3 font-semibold text-white shadow-md transition-all hover:bg-brand-700 hover:shadow-lg"
+                  className="bg-brand-600 hover:bg-brand-700 mt-6 inline-flex items-center gap-2 rounded-xl px-6 py-3 font-semibold text-white shadow-md transition-all hover:shadow-lg"
                 >
                   <Download className="size-5" />
                   Download Official PDF Brochure
@@ -125,18 +126,21 @@ export default function ProductMycoDelta() {
               PROVEN • Systemic Fungi Control • Less than ₹2 per Tree
             </div>
 
-            <h2 className="font-display text-fluid-2xl mt-4 font-bold text-navy-900">
+            <h2 className="font-display text-fluid-2xl text-navy-900 mt-4 font-bold">
               Treatment for Vedi Vaalzhai Noi – Fusarium Wilt (Panama Wilt)
             </h2>
 
             <p className="text-fluid-lg mt-3 text-pretty text-slate-600">
-              Caused by <em>Fusarium oxysporum cubense</em> fungus, Fusarium Wilt is a severe vascular disease in bananas. EcoAgta Myco Delta Super Concentrate is effective against systemic fungi even at a late stage (better when diagnosed early). Presented in a 2-part concentrate (Part A liquid & Part B spherical white grains).
+              Caused by <em>Fusarium oxysporum cubense</em> fungus, Fusarium Wilt is a severe vascular disease in
+              bananas. EcoAgta Myco Delta Super Concentrate is effective against systemic fungi even at a late stage
+              (better when diagnosed early). Presented in a 2-part concentrate (Part A liquid & Part B spherical white
+              grains).
             </p>
 
             {/* Highlights Grid */}
             <div className="mt-6 grid gap-3 sm:grid-cols-3">
               <div className="rounded-xl border border-slate-200 bg-slate-50 p-4 text-center">
-                <span className="font-display block text-xl font-extrabold text-brand-700">&lt; ₹2 / Tree</span>
+                <span className="font-display text-brand-700 block text-xl font-extrabold">&lt; ₹2 / Tree</span>
                 <span className="text-xs font-semibold text-slate-600">Ultra-Cost Effective</span>
               </div>
               <div className="rounded-xl border border-slate-200 bg-slate-50 p-4 text-center">
@@ -144,7 +148,7 @@ export default function ProductMycoDelta() {
                 <span className="text-xs font-semibold text-slate-600">Part A Liquid + Part B Grains</span>
               </div>
               <div className="rounded-xl border border-slate-200 bg-slate-50 p-4 text-center">
-                <span className="font-display block text-xl font-extrabold text-navy-800">Trunk Pour</span>
+                <span className="font-display text-navy-800 block text-xl font-extrabold">Trunk Pour</span>
                 <span className="text-xs font-semibold text-slate-600">Root & Trunk Drench</span>
               </div>
             </div>
@@ -159,10 +163,10 @@ export default function ProductMycoDelta() {
       {/* Disease Symptoms Section */}
       <Section id="symptoms" tone="mist">
         <div className="mx-auto max-w-4xl text-center">
-          <span className="bg-amber-100 text-amber-900 inline-flex items-center gap-1.5 rounded-full px-3.5 py-1 text-xs font-bold uppercase tracking-wider">
+          <span className="inline-flex items-center gap-1.5 rounded-full bg-amber-100 px-3.5 py-1 text-xs font-bold tracking-wider text-amber-900 uppercase">
             <AlertTriangle className="size-4 text-amber-700" /> Disease Identification
           </span>
-          <h2 className="font-display text-fluid-2xl mt-3 font-bold text-navy-900">
+          <h2 className="font-display text-fluid-2xl text-navy-900 mt-3 font-bold">
             Fusarium Wilt Symptoms (Vedi Vaalzhai Noi)
           </h2>
           <p className="mt-2 text-slate-600">
@@ -179,7 +183,7 @@ export default function ProductMycoDelta() {
                     <span className="bg-brand-50 text-brand-700 font-display flex size-7 items-center justify-center rounded-full text-xs font-bold">
                       {idx + 1}
                     </span>
-                    <h3 className="font-display text-base font-bold text-navy-900">{sym.title}</h3>
+                    <h3 className="font-display text-navy-900 text-base font-bold">{sym.title}</h3>
                   </div>
                   <p className="mt-3 text-sm leading-relaxed text-slate-600">{sym.desc}</p>
                 </div>
@@ -192,10 +196,10 @@ export default function ProductMycoDelta() {
       {/* 2-Part Mixing & Application Instructions */}
       <Section id="usage" tone="white">
         <div className="mx-auto max-w-4xl text-center">
-          <span className="bg-brand-100 text-brand-800 inline-flex items-center gap-1.5 rounded-full px-3.5 py-1 text-xs font-bold uppercase tracking-wider">
-            <Droplets className="size-4 text-brand-600" /> Technical Usage Instructions
+          <span className="bg-brand-100 text-brand-800 inline-flex items-center gap-1.5 rounded-full px-3.5 py-1 text-xs font-bold tracking-wider uppercase">
+            <Droplets className="text-brand-600 size-4" /> Technical Usage Instructions
           </span>
-          <h2 className="font-display text-fluid-2xl mt-3 font-bold text-navy-900">
+          <h2 className="font-display text-fluid-2xl text-navy-900 mt-3 font-bold">
             2-Part Mixing & Trunk Application Directions
           </h2>
         </div>
@@ -204,35 +208,50 @@ export default function ProductMycoDelta() {
           {/* Part A: Mixing */}
           <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6 shadow-xs">
             <div className="flex items-center gap-2 border-b border-slate-200 pb-3">
-              <span className="bg-brand-600 text-white font-display flex size-7 items-center justify-center rounded-lg text-xs font-bold">
+              <span className="bg-brand-600 font-display flex size-7 items-center justify-center rounded-lg text-xs font-bold text-white">
                 A
               </span>
-              <h3 className="font-display text-lg font-bold text-navy-900">Instructions for Mixing 2-Part Concentrates</h3>
+              <h3 className="font-display text-navy-900 text-lg font-bold">
+                Instructions for Mixing 2-Part Concentrates
+              </h3>
             </div>
             <ol className="mt-4 space-y-3 text-sm text-slate-700">
               <li className="flex gap-2.5">
-                <span className="font-bold text-brand-700">1.</span>
-                <span>Fill <strong>1 Liter</strong> of fresh water in a 2-Liter bottle.</span>
+                <span className="text-brand-700 font-bold">1.</span>
+                <span>
+                  Fill <strong>1 Liter</strong> of fresh water in a 2-Liter bottle.
+                </span>
               </li>
               <li className="flex gap-2.5">
-                <span className="font-bold text-brand-700">2.</span>
-                <span>Pour all <strong>30 mL of VEDI VALZHAI Concentrate Part A</strong> into the 1 Liter water.</span>
+                <span className="text-brand-700 font-bold">2.</span>
+                <span>
+                  Pour all <strong>30 mL of VEDI VALZHAI Concentrate Part A</strong> into the 1 Liter water.
+                </span>
               </li>
               <li className="flex gap-2.5">
-                <span className="font-bold text-brand-700">3.</span>
-                <span>Empty all spherical white grains of <strong>VEDI VALZHAI Concentrate Part B</strong> into the 1 Liter water.</span>
+                <span className="text-brand-700 font-bold">3.</span>
+                <span>
+                  Empty all spherical white grains of <strong>VEDI VALZHAI Concentrate Part B</strong> into the 1 Liter
+                  water.
+                </span>
               </li>
               <li className="flex gap-2.5">
-                <span className="font-bold text-brand-700">4.</span>
+                <span className="text-brand-700 font-bold">4.</span>
                 <span>Cap bottle and shake thoroughly until all white grains are completely dissolved.</span>
               </li>
               <li className="flex gap-2.5">
-                <span className="font-bold text-brand-700">5.</span>
-                <span>Pour the 1 Liter dissolved solution into a barrel filled with <strong>199 Liters</strong> of fresh water (Total 200 Liters).</span>
+                <span className="text-brand-700 font-bold">5.</span>
+                <span>
+                  Pour the 1 Liter dissolved solution into a barrel filled with <strong>199 Liters</strong> of fresh
+                  water (Total 200 Liters).
+                </span>
               </li>
               <li className="flex gap-2.5">
-                <span className="font-bold text-brand-700">6.</span>
-                <span>Mix <strong>Clockwise for 1.5 Minutes</strong> and <strong>Anti-clockwise for 1.5 Minutes</strong> using a PVC pipe or bamboo stick. Total 200L ready.</span>
+                <span className="text-brand-700 font-bold">6.</span>
+                <span>
+                  Mix <strong>Clockwise for 1.5 Minutes</strong> and <strong>Anti-clockwise for 1.5 Minutes</strong>{' '}
+                  using a PVC pipe or bamboo stick. Total 200L ready.
+                </span>
               </li>
             </ol>
           </div>
@@ -240,23 +259,32 @@ export default function ProductMycoDelta() {
           {/* Part B: Application */}
           <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6 shadow-xs">
             <div className="flex items-center gap-2 border-b border-slate-200 pb-3">
-              <span className="bg-emerald-600 text-white font-display flex size-7 items-center justify-center rounded-lg text-xs font-bold">
+              <span className="font-display flex size-7 items-center justify-center rounded-lg bg-emerald-600 text-xs font-bold text-white">
                 B
               </span>
-              <h3 className="font-display text-lg font-bold text-navy-900">Instructions for Trunk Drenching</h3>
+              <h3 className="font-display text-navy-900 text-lg font-bold">Instructions for Trunk Drenching</h3>
             </div>
             <ol className="mt-4 space-y-4 text-sm text-slate-700">
               <li className="flex gap-3">
                 <span className="font-bold text-emerald-700">7.</span>
-                <span>Pour <strong>500 to 750 mL</strong> of diluted treatment <strong>AROUND the TRUNK</strong> at about 1.5 Feet (45 cm) from the ground. If pseudostem burst is above 1.5ft, pour above the burst, covering the main trunk.</span>
+                <span>
+                  Pour <strong>500 to 750 mL</strong> of diluted treatment <strong>AROUND the TRUNK</strong> at about
+                  1.5 Feet (45 cm) from the ground. If pseudostem burst is above 1.5ft, pour above the burst, covering
+                  the main trunk.
+                </span>
               </li>
               <li className="flex gap-3">
                 <span className="font-bold text-emerald-700">8.</span>
-                <span>Side suckers (<em>pakka kannu</em>) will be protected during treatment.</span>
+                <span>
+                  Side suckers (<em>pakka kannu</em>) will be protected during treatment.
+                </span>
               </li>
               <li className="flex gap-3">
                 <span className="font-bold text-emerald-700">9.</span>
-                <span>Use up all prepared 200 Liters <strong>WITHIN 2 Hours</strong> after mixing. Do NOT store leftover mixed product.</span>
+                <span>
+                  Use up all prepared 200 Liters <strong>WITHIN 2 Hours</strong> after mixing. Do NOT store leftover
+                  mixed product.
+                </span>
               </li>
             </ol>
           </div>
@@ -266,34 +294,40 @@ export default function ProductMycoDelta() {
       {/* Features Summary */}
       <Section id="benefits" tone="mist">
         <div className="mx-auto max-w-4xl text-center">
-          <h2 className="font-display text-fluid-2xl font-bold text-navy-900">Key Advantages</h2>
+          <h2 className="font-display text-fluid-2xl text-navy-900 font-bold">Key Advantages</h2>
         </div>
         <ul className="mt-8 grid gap-4 md:grid-cols-3">
           <li className="flex gap-3.5 rounded-xl border border-slate-200 bg-white p-5 shadow-xs">
-            <span className="bg-emerald-50 text-emerald-700 mt-0.5 inline-flex size-9 shrink-0 items-center justify-center rounded-full">
+            <span className="mt-0.5 inline-flex size-9 shrink-0 items-center justify-center rounded-full bg-emerald-50 text-emerald-700">
               <ShieldCheck className="size-5" />
             </span>
             <div>
-              <h3 className="font-bold text-navy-900">Late-Stage Recovery</h3>
-              <p className="mt-1 text-xs text-slate-600">Effective against systemic fungi even at late infection stages.</p>
+              <h3 className="text-navy-900 font-bold">Late-Stage Recovery</h3>
+              <p className="mt-1 text-xs text-slate-600">
+                Effective against systemic fungi even at late infection stages.
+              </p>
             </div>
           </li>
           <li className="flex gap-3.5 rounded-xl border border-slate-200 bg-white p-5 shadow-xs">
-            <span className="bg-emerald-50 text-emerald-700 mt-0.5 inline-flex size-9 shrink-0 items-center justify-center rounded-full">
+            <span className="mt-0.5 inline-flex size-9 shrink-0 items-center justify-center rounded-full bg-emerald-50 text-emerald-700">
               <Sprout className="size-5" />
             </span>
             <div>
-              <h3 className="font-bold text-navy-900">Protects Side Suckers</h3>
-              <p className="mt-1 text-xs text-slate-600">Drenching around main trunk protects pakka kannu for future harvest cycles.</p>
+              <h3 className="text-navy-900 font-bold">Protects Side Suckers</h3>
+              <p className="mt-1 text-xs text-slate-600">
+                Drenching around main trunk protects pakka kannu for future harvest cycles.
+              </p>
             </div>
           </li>
           <li className="flex gap-3.5 rounded-xl border border-slate-200 bg-white p-5 shadow-xs">
-            <span className="bg-emerald-50 text-emerald-700 mt-0.5 inline-flex size-9 shrink-0 items-center justify-center rounded-full">
+            <span className="mt-0.5 inline-flex size-9 shrink-0 items-center justify-center rounded-full bg-emerald-50 text-emerald-700">
               <Check className="size-5" />
             </span>
             <div>
-              <h3 className="font-bold text-navy-900">100% Non-Toxic</h3>
-              <p className="mt-1 text-xs text-slate-600">Safe and non-poisonous for soil health, water bodies, and workers.</p>
+              <h3 className="text-navy-900 font-bold">100% Non-Toxic</h3>
+              <p className="mt-1 text-xs text-slate-600">
+                Safe and non-poisonous for soil health, water bodies, and workers.
+              </p>
             </div>
           </li>
         </ul>
